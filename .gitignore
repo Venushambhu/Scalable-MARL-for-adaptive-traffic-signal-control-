@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+envs/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
