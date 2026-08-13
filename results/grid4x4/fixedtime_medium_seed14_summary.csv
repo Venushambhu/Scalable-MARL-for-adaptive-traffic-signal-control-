@@ -1,0 +1,2 @@
+controller,grid,scenario,seed,completed_trips,avg_travel_time,avg_waiting_time,avg_time_loss
+fixedtime,4x4,medium,14,1834,144.84,40.3,62.76

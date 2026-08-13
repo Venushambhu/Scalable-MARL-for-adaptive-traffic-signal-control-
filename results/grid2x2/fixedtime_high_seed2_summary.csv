@@ -1,0 +1,2 @@
+controller,scenario,seed,completed_trips,avg_travel_time,avg_waiting_time,avg_time_loss
+fixedtime,high,2,345,305.97,191.62,227.81

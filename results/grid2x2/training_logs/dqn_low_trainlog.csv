@@ -1,0 +1,2 @@
+algorithm,grid,scenario,episode,step,avg_reward,reward_B1,reward_B2,reward_C1,reward_C2
+dqn,2x2,low,1,360,-86.37500000000003,-78.50000000000004,-71.10000000000004,-96.30000000000003,-99.60000000000002

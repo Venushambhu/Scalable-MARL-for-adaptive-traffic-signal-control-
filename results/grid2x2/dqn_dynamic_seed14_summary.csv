@@ -1,0 +1,2 @@
+controller,scenario,seed,completed_trips,avg_travel_time,avg_waiting_time,avg_time_loss
+dqn,dynamic,14,1127,98.51,12.88,32.37

@@ -1,0 +1,2 @@
+controller,grid,scenario,seed,completed_trips,avg_travel_time,avg_waiting_time,avg_time_loss
+dqn,3x3,medium,13,1690,113.97,18.23,41.49
