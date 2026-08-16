@@ -1,0 +1,37 @@
+THESIS REVISION V2 — RESULTS PACKAGE
+
+TABLES
+------
+table_demand_sensitivity.tex
+    2x2 low/medium/high/dynamic performance.
+
+table_medium_scalability.tex
+    2x2 through 5x5 medium-demand performance.
+
+table_computational_scalability.tex
+    Training/runtime/memory/model/inference scaling.
+
+table_learned_vs_actuated_statistics.tex
+    DQN/PPO vs actuated Holm-adjusted paired statistics.
+
+
+FIGURES
+-------
+fig_demand_completion
+fig_demand_travel
+fig_demand_waiting
+
+fig_scalability_completion
+fig_scalability_travel
+fig_scalability_waiting
+
+fig_compute_training_runtime
+fig_compute_training_ram
+fig_compute_model_size
+fig_compute_decision_latency
+
+Each figure is provided as:
+    PDF  - preferred vector format for thesis
+    PNG  - 300 dpi preview/fallback
+
+All files are derived from checksum-verified frozen results.

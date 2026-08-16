@@ -1,0 +1,150 @@
+
+==================================================================================
+THESIS REVISION V2 — CONVENTIONAL CONTROLLER SMOKE TEST
+==================================================================================
+
+Grid:       2x2
+Scenario:   medium
+Seed:       11
+Duration:   1800s
+PASS: all controller/network/route files exist.
+
+==================================================================================
+RUNNING: original_fixed
+==================================================================================
+
+Network:
+/Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml
+
+Route:
+/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml
+ Retrying in 1 seconds
+
+Traffic lights detected: 4
+Representative TLS: B1
+
+Active programs:
+  B1: 0
+  B2: 0
+  C1: 0
+  C2: 0
+PASS: intended TLS program is active.
+Non-internal lanes monitored: 48
+
+RESULTS
+  Simulation time:      1800s
+  Departed vehicles:    1498
+  Arrived vehicles:     1397
+  Completion rate:      93.26%
+  Active at end:        101
+  Min expected at end:  103
+  Starting teleports:   0
+  Mean network queue:   28.33
+  Maximum network queue: 53
+  Wall runtime:         3.105s
+
+Representative TLS B1 green durations:
+  43s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s, 42s
+  ... (40 green segments total)
+
+PASS: controller completed the smoke-test simulation.
+
+==================================================================================
+RUNNING: webster_fixed
+==================================================================================
+
+Network:
+/Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml
+
+Route:
+/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml
+
+Additional TLS file:
+/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_medium_webster.add.xml
+ Retrying in 1 seconds
+
+Traffic lights detected: 4
+Representative TLS: B1
+
+Activating TLS program 'a'...
+
+Active programs:
+  B1: a
+  B2: a
+  C1: a
+  C2: a
+PASS: intended TLS program is active.
+Non-internal lanes monitored: 48
+
+RESULTS
+  Simulation time:      1800s
+  Departed vehicles:    1500
+  Arrived vehicles:     1414
+  Completion rate:      94.27%
+  Active at end:        86
+  Min expected at end:  86
+  Starting teleports:   0
+  Mean network queue:   11.59
+  Maximum network queue: 33
+  Wall runtime:         3.119s
+
+Representative TLS B1 green durations:
+  11s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s, 10s
+  ... (139 green segments total)
+
+PASS: controller completed the smoke-test simulation.
+
+==================================================================================
+RUNNING: actuated
+==================================================================================
+
+Network:
+/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/actuated/grid2x2/grid2x2_actuated.net.xml
+
+Route:
+/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml
+ Retrying in 1 seconds
+
+Traffic lights detected: 4
+Representative TLS: B1
+
+Active programs:
+  B1: 0
+  B2: 0
+  C1: 0
+  C2: 0
+PASS: intended TLS program is active.
+Non-internal lanes monitored: 48
+
+RESULTS
+  Simulation time:      1800s
+  Departed vehicles:    1499
+  Arrived vehicles:     1418
+  Completion rate:      94.60%
+  Active at end:        81
+  Min expected at end:  82
+  Starting teleports:   0
+  Mean network queue:   11.52
+  Maximum network queue: 34
+  Wall runtime:         3.115s
+
+Representative TLS B1 green durations:
+  11s, 10s, 10s, 10s, 12s, 10s, 10s, 10s, 18s, 11s, 11s, 10s, 10s, 10s, 16s, 19s, 10s, 11s, 19s, 10s
+  ... (114 green segments total)
+
+PASS: controller completed the smoke-test simulation.
+
+Smoke-test CSV:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional_smoke_test.csv
+
+==================================================================================
+PASS: ALL CONVENTIONAL CONTROLLER SMOKE TESTS COMPLETED
+==================================================================================
+
+Controllers validated:
+  [PASS] Original fixed-time
+  [PASS] Webster tuned fixed-time
+  [PASS] SUMO actuated
+
+IMPORTANT:
+These are diagnostic smoke-test results, not final thesis statistics.

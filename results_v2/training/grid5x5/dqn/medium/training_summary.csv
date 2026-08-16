@@ -1,0 +1,2 @@
+algorithm,grid,scenario,training_seed,agents,total_steps,episodes_completed,learning_rate,buffer_size_per_agent,learning_starts,batch_size,gamma,train_frequency,target_update_interval,epsilon_start,epsilon_end,epsilon_decay_fraction,replay_buffer_mb_per_agent,replay_buffer_total_mb,model_size_mb_per_agent,model_size_total_mb,peak_process_tree_ram_mb,training_runtime_s,status
+dqn,5x5,medium,1,25,50000,138,0.001,50000,500,64,0.95,4,250,1.0,0.05,0.7,3.24249267578125,81.06231689453125,0.09216022491455078,2.3040056228637695,422.65625,1398.060564290965,PASS

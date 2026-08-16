@@ -1,0 +1,8 @@
+grid,scenario,route_file,total_vehicles,numeric_departures,non_numeric_departures,earliest_departure_s,latest_departure_s,simulation_horizon_s,scheduled_by_horizon,scheduled_after_horizon,coverage_percent,status
+2x2,low,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/low_demand.rou.xml,600,600,0,0.0,1797.0,1800,600,0,100.0,PASS
+2x2,medium,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml,1500,1500,0,0.0,1798.8,1800,1500,0,100.0,PASS
+2x2,high,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/high_demand.rou.xml,3000,3000,0,0.0,1799.4,1800,3000,0,100.0,PASS
+2x2,dynamic,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/dynamic_demand.rou.xml,1200,1200,0,0.0,1798.5,1800,1200,0,100.0,PASS
+3x3,medium,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid3x3/medium_demand.rou.xml,1800,1800,0,0.0,1799.0,1800,1800,0,100.0,PASS
+4x4,medium,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid4x4/medium_demand.rou.xml,2000,2000,0,0.0,1799.1,1800,2000,0,100.0,PASS
+5x5,medium,/Users/venushambhuhullukattenataraju/thesis_project/routes/grid5x5/medium_demand.rou.xml,1566,1566,0,0.0,1799.75,1800,1566,0,100.0,PASS

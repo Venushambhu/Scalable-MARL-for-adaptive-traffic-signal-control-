@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Medium-demand traffic-control performance across network sizes. Values are five-seed means.}
+\label{tab:medium_scalability_v2}
+\small
+\begin{tabular}{rrlrrrr}
+\hline
+Grid & Agents & Controller & Completion (\%) & Travel (s) & Waiting (s) & Queue \\
+\hline
+2x2 & 4 & Original fixed & 92.95 & 122.23 & 36.24 & 6.513 \\
+2x2 & 4 & Webster & 94.27 & 98.89 & 15.13 & 2.315 \\
+2x2 & 4 & Actuated & 94.43 & 96.62 & 14.85 & 2.128 \\
+2x2 & 4 & DQN & 94.13 & 98.48 & 15.49 & 2.192 \\
+2x2 & 4 & PPO & 94.12 & 100.96 & 17.07 & 2.511 \\
+\hline
+3x3 & 9 & Original fixed & 91.69 & 135.94 & 40.06 & 4.086 \\
+3x3 & 9 & Webster & 93.58 & 111.52 & 16.10 & 1.507 \\
+3x3 & 9 & Actuated & 93.73 & 107.20 & 14.28 & 1.324 \\
+3x3 & 9 & DQN & 93.49 & 110.99 & 16.48 & 1.444 \\
+3x3 & 9 & PPO & 93.28 & 115.63 & 19.68 & 1.753 \\
+\hline
+4x4 & 16 & Original fixed & 91.57 & 144.55 & 40.10 & 2.650 \\
+4x4 & 16 & Webster & 92.98 & 121.26 & 15.02 & 0.909 \\
+4x4 & 16 & Actuated & 93.12 & 116.34 & 12.85 & 0.767 \\
+4x4 & 16 & DQN & 92.95 & 120.53 & 15.73 & 0.862 \\
+4x4 & 16 & PPO & 92.47 & 124.13 & 18.28 & 1.033 \\
+\hline
+5x5 & 25 & Original fixed & 91.26 & 156.21 & 43.14 & 1.484 \\
+5x5 & 25 & Webster & 92.36 & 132.23 & 15.18 & 0.484 \\
+5x5 & 25 & Actuated & 92.81 & 125.43 & 12.07 & 0.385 \\
+5x5 & 25 & DQN & 92.57 & 129.50 & 15.20 & 0.417 \\
+5x5 & 25 & PPO & 92.48 & 131.49 & 16.64 & 0.469 \\
+\hline
+\end{tabular}
+\end{table}

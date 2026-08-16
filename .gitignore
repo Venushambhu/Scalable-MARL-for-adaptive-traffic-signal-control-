@@ -40,4 +40,8 @@ dist/
 # Cache
 .cache/
 .pytest_cache/
-.mypy_cache/
+.mypy_cache/*_smoke_output.txt
+*_pilot_output.txt
+thesis_final_results_for_chapter4.zip
+__pycache__/
+.DS_Store

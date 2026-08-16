@@ -1,0 +1,38 @@
+
+================================================================================
+THESIS REVISION V2 — PPO TRAINING
+================================================================================
+Grid:             2x2
+Scenario:         medium
+Agents:           4
+Training steps:   800
+Training seed:    1
+
+Training device:          cpu
+Rollout buffer / agent:   0.0068 MB
+Rollout buffers total:    0.0273 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-292.92 | updates=2
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-264.05 | updates=5
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/ppo/medium/ppo_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/ppo/medium/ppo_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/ppo/medium/ppo_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/ppo/medium/ppo_C2_medium.zip
+
+================================================================================
+PPO TRAINING COMPLETE
+================================================================================
+Training runtime:        6.26s
+Peak process-tree RAM:   328.94 MB
+Rollout buffers total:   0.0273 MB
+Saved models total:      0.531 MB
+Saved model per agent:   0.133 MB
+Episodes completed:      2
+PPO updates completed:   6
+Partial final buffer:    32 steps
+Training device:         cpu
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid2x2/ppo/medium/training_summary.csv

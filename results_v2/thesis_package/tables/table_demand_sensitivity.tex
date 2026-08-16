@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Traffic-control performance across demand scenarios on the 2$\times$2 network. Values are five-seed means.}
+\label{tab:demand_sensitivity_v2}
+\small
+\begin{tabular}{llrrrr}
+\hline
+Scenario & Controller & Completion (\%) & Travel (s) & Waiting (s) & Queue \\
+\hline
+Low & Original fixed & 94.93 & 97.43 & 19.57 & 1.63 \\
+Low & Webster & 95.03 & 83.73 & 6.32 & 0.47 \\
+Low & Actuated & 95.37 & 81.59 & 4.81 & 0.36 \\
+Low & DQN & 95.17 & 83.15 & 6.11 & 0.38 \\
+Low & PPO & 95.07 & 83.07 & 5.97 & 0.38 \\
+\hline
+Medium & Original fixed & 92.95 & 122.23 & 36.24 & 6.51 \\
+Medium & Webster & 94.27 & 98.89 & 15.13 & 2.31 \\
+Medium & Actuated & 94.43 & 96.62 & 14.85 & 2.13 \\
+Medium & DQN & 94.13 & 98.48 & 15.49 & 2.19 \\
+Medium & PPO & 94.12 & 100.96 & 17.07 & 2.51 \\
+\hline
+High & Original fixed & 13.44 & 273.54 & 162.00 & 74.09 \\
+High & Webster & 15.53 & 258.63 & 134.48 & 70.12 \\
+High & Actuated & 13.17 & 288.17 & 177.36 & 73.68 \\
+High & DQN & 14.55 & 261.99 & 139.49 & 72.38 \\
+High & PPO & 7.45 & 358.44 & 233.98 & 74.15 \\
+\hline
+Dynamic & Original fixed & 93.02 & 116.10 & 28.95 & 4.33 \\
+Dynamic & Webster & 93.95 & 102.84 & 14.54 & 2.00 \\
+Dynamic & Actuated & 94.40 & 94.47 & 10.69 & 1.36 \\
+Dynamic & DQN & 93.97 & 97.19 & 12.36 & 1.60 \\
+Dynamic & PPO & 93.28 & 104.20 & 16.09 & 2.15 \\
+\hline
+\end{tabular}
+\end{table}

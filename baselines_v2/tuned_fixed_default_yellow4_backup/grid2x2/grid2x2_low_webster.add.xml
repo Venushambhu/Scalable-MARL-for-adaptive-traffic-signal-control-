@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-08-15 02:30:19.151056 by Eclipse SUMO tlsCycleAdaptation.py v1.27.1
+<configuration>
+    <net-file value="/Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml"/>
+    <output-file value="/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_low_webster.add.xml"/>
+    <route-files value="/Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/low_demand.rou.xml"/>
+    <begin value="0.0"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="B1" type="static" programID="a" offset="0">
+        <phase duration="6" state="GGggrrrrGGggrrrr"/>
+        <phase duration="4" state="yyyyrrrryyyyrrrr"/>
+        <phase duration="6" state="rrrrGGggrrrrGGgg"/>
+        <phase duration="4" state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+    <tlLogic id="B2" type="static" programID="a" offset="0">
+        <phase duration="5" state="GGggrrrrGGggrrrr"/>
+        <phase duration="4" state="yyyyrrrryyyyrrrr"/>
+        <phase duration="7" state="rrrrGGggrrrrGGgg"/>
+        <phase duration="4" state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+    <tlLogic id="C1" type="static" programID="a" offset="0">
+        <phase duration="6" state="GGggrrrrGGggrrrr"/>
+        <phase duration="4" state="yyyyrrrryyyyrrrr"/>
+        <phase duration="6" state="rrrrGGggrrrrGGgg"/>
+        <phase duration="4" state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+    <tlLogic id="C2" type="static" programID="a" offset="0">
+        <phase duration="6" state="GGggrrrrGGggrrrr"/>
+        <phase duration="4" state="yyyyrrrryyyyrrrr"/>
+        <phase duration="6" state="rrrrGGggrrrrGGgg"/>
+        <phase duration="4" state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+</additional>

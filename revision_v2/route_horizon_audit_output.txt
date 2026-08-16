@@ -1,0 +1,114 @@
+
+==================================================================================
+THESIS REVISION V2 — ROUTE HORIZON AUDIT
+==================================================================================
+
+Configured simulation horizon: 1800s
+
+2x2 / low
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/low_demand.rou.xml
+  Vehicles: 600
+  Numeric departures: 600
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1797.0s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 600
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+2x2 / medium
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml
+  Vehicles: 1500
+  Numeric departures: 1500
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1798.8s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 1500
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+2x2 / high
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/high_demand.rou.xml
+  Vehicles: 3000
+  Numeric departures: 3000
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1799.4s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 3000
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+2x2 / dynamic
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/dynamic_demand.rou.xml
+  Vehicles: 1200
+  Numeric departures: 1200
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1798.5s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 1200
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+3x3 / medium
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid3x3/medium_demand.rou.xml
+  Vehicles: 1800
+  Numeric departures: 1800
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1799.0s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 1800
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+4x4 / medium
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid4x4/medium_demand.rou.xml
+  Vehicles: 2000
+  Numeric departures: 2000
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1799.1s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 2000
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+5x5 / medium
+  Route file: /Users/venushambhuhullukattenataraju/thesis_project/routes/grid5x5/medium_demand.rou.xml
+  Vehicles: 1566
+  Numeric departures: 1566
+  Non-numeric departures: 0
+  Earliest departure: 0.0s
+  Latest departure:   1799.8s
+  Simulation horizon: 1800s
+  Scheduled <= horizon: 1566
+  Scheduled > horizon:  0
+  Demand coverage: 100.00%
+  STATUS: PASS
+
+==================================================================================
+ROUTE HORIZON AUDIT SUMMARY
+==================================================================================
+
+Audit CSV written to:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/route_horizon_audit.csv
+
+Experiments audited: 7
+Experiments passed: 7
+Experiments requiring attention: 0
+
+PASS: ALL ROUTE FILES FIT WITHIN THE SIMULATION HORIZON
+
+All explicitly scheduled vehicles depart at or before 1800s.
+
+We can proceed to conventional controller smoke testing.

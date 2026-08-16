@@ -1,0 +1,25 @@
+
+========================================================================================
+VERIFYING FROZEN SOURCE DATA
+========================================================================================
+PASS: results_v2/analysis/2x2_demand/summary_2x2_demand.csv
+PASS: results_v2/analysis/medium_scalability/summary_medium_scalability.csv
+PASS: results_v2/analysis/computational_scalability/computational_scalability_summary.csv
+PASS: results_v2/analysis/medium_scalability/statistics/paired_tests_medium_scalability_all.csv
+
+PASS: all thesis package inputs match frozen checksums.
+
+========================================================================================
+THESIS RESULTS PACKAGE CREATED
+========================================================================================
+LaTeX tables: 4
+PDF figures: 10
+PNG figures: 10
+
+Package:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/thesis_package
+
+Derived manifest:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/thesis_package/DERIVED_PACKAGE_MANIFEST.txt
+
+PASS: thesis-ready results package generated only from frozen evidence.

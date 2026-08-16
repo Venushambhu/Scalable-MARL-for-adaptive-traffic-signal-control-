@@ -1,0 +1,2 @@
+algorithm,grid,scenario,training_seed,agents,total_steps,episodes_completed,ppo_updates,partial_final_buffer_steps,n_steps,batch_size,n_epochs,learning_rate,gamma,gae_lambda,clip_range,ent_coef,training_device,rollout_buffer_mb_per_agent,rollout_buffer_total_mb,model_size_mb_per_agent,model_size_total_mb,peak_process_tree_ram_mb,training_runtime_s,status
+ppo,2x2,low,1,4,50000,138,390,80,128,32,4,0.0003,0.95,0.9,0.2,0.01,cpu,0.0068359375,0.02734375,0.1328125,0.53125,332.28125,374.9196406669216,PASS

@@ -1,0 +1,121 @@
+
+==============================================================================
+PPO V2 | 3x3 | medium | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1681/1800 (93.39%)
+Travel:          114.75s
+Waiting:         19.25s
+Queue:           1.73
+Teleports:       0
+Joint latency:   0.6269 ms
+Actions:
+  B1: A0=63, A1=297
+  B2: A0=0, A1=360
+  B3: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+  C3: A0=0, A1=360
+  D1: A0=0, A1=360
+  D2: A0=0, A1=360
+  D3: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 3x3 | medium | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1679/1800 (93.28%)
+Travel:          115.68s
+Waiting:         19.63s
+Queue:           1.73
+Teleports:       0
+Joint latency:   0.5967 ms
+Actions:
+  B1: A0=72, A1=288
+  B2: A0=0, A1=360
+  B3: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+  C3: A0=0, A1=360
+  D1: A0=0, A1=360
+  D2: A0=0, A1=360
+  D3: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 3x3 | medium | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1679/1800 (93.28%)
+Travel:          117.70s
+Waiting:         20.72s
+Queue:           1.85
+Teleports:       0
+Joint latency:   0.5928 ms
+Actions:
+  B1: A0=65, A1=295
+  B2: A0=0, A1=360
+  B3: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+  C3: A0=0, A1=360
+  D1: A0=0, A1=360
+  D2: A0=0, A1=360
+  D3: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 3x3 | medium | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1677/1800 (93.17%)
+Travel:          114.74s
+Waiting:         19.18s
+Queue:           1.70
+Teleports:       0
+Joint latency:   0.5895 ms
+Actions:
+  B1: A0=69, A1=291
+  B2: A0=0, A1=360
+  B3: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+  C3: A0=0, A1=360
+  D1: A0=0, A1=360
+  D2: A0=0, A1=360
+  D3: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 3x3 | medium | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1679/1800 (93.28%)
+Travel:          115.28s
+Waiting:         19.61s
+Queue:           1.76
+Teleports:       0
+Joint latency:   0.5916 ms
+Actions:
+  B1: A0=64, A1=296
+  B2: A0=0, A1=360
+  B3: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+  C3: A0=0, A1=360
+  D1: A0=0, A1=360
+  D2: A0=0, A1=360
+  D3: A0=0, A1=360
+
+==============================================================================
+PPO V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                93.278 +/- 0.079
+avg_travel_time                   115.630 +/- 1.221
+avg_waiting_time                   19.677 +/- 0.615
+avg_time_loss                      43.454 +/- 1.063
+mean_queue_length                   1.753 +/- 0.056
+teleports_started                   0.000 +/- 0.000
+mean_joint_decision_ms              0.600 +/- 0.016
+peak_process_tree_ram_mb          332.359 +/- 2.692
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid3x3/ppo/medium/ppo_medium_all_seeds.csv
+
+PASS: 5/5 deterministic PPO evaluation seeds completed.

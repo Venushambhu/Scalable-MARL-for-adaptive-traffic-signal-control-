@@ -1,0 +1,163 @@
+
+=====================================================================================
+THESIS REVISION V2 — BASELINE TLS STRUCTURAL AUDIT
+=====================================================================================
+
+=====================================================================================
+A. ORIGINAL FIXED-TIME BASELINE
+=====================================================================================
+
+GRID 2x2: 4 TLS (expected 4)
+  PASS: all TLS use 42/3/42/3 static timing.
+
+GRID 3x3: 9 TLS (expected 9)
+  PASS: all TLS use 42/3/42/3 static timing.
+
+GRID 4x4: 16 TLS (expected 16)
+  PASS: all TLS use 42/3/42/3 static timing.
+
+GRID 5x5: 25 TLS (expected 25)
+  PASS: all TLS use 42/3/42/3 static timing.
+
+Original TLS audited: 54
+PASS: all 54 original TLS programs validated.
+
+=====================================================================================
+B. WEBSTER DEMAND-TUNED FIXED-TIME
+=====================================================================================
+
+2x2 / low
+  TLS programs: 4 (expected 4)
+  Cycle range: 26.0–26.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+2x2 / medium
+  TLS programs: 4 (expected 4)
+  Cycle range: 26.0–26.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+2x2 / high
+  TLS programs: 4 (expected 4)
+  Cycle range: 33.0–34.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=34.0s
+  phase  0 | GREEN    | duration=  14.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  14.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+2x2 / dynamic
+  TLS programs: 4 (expected 4)
+  Cycle range: 26.0–28.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+3x3 / medium
+  TLS programs: 9 (expected 9)
+  Cycle range: 26.0–26.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+4x4 / medium
+  TLS programs: 16 (expected 16)
+  Cycle range: 26.0–26.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+5x5 / medium
+  TLS programs: 25 (expected 25)
+  Cycle range: 26.0–26.0s
+  PASS: TLS count and yellow timing validated.
+
+TLS B1 | program=a | type=static | phases=4 | nominal cycle=26.0s
+  phase  0 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  10.0s | minDur=    - | maxDur=    -
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+=====================================================================================
+C. SUMO ACTUATED BASELINE
+=====================================================================================
+
+GRID 2x2: 4 TLS (expected 4)
+  PASS: actuated type, 10s minimum green, 50s maximum green and 3s yellow validated.
+
+TLS B1 | program=0 | type=actuated | phases=4 | nominal cycle=90.0s
+  phase  0 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+GRID 3x3: 9 TLS (expected 9)
+  PASS: actuated type, 10s minimum green, 50s maximum green and 3s yellow validated.
+
+TLS B1 | program=0 | type=actuated | phases=4 | nominal cycle=90.0s
+  phase  0 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+GRID 4x4: 16 TLS (expected 16)
+  PASS: actuated type, 10s minimum green, 50s maximum green and 3s yellow validated.
+
+TLS B1 | program=0 | type=actuated | phases=4 | nominal cycle=90.0s
+  phase  0 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+GRID 5x5: 25 TLS (expected 25)
+  PASS: actuated type, 10s minimum green, 50s maximum green and 3s yellow validated.
+
+TLS B1 | program=0 | type=actuated | phases=4 | nominal cycle=90.0s
+  phase  0 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  1 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+  phase  2 | GREEN    | duration=  42.0s | minDur=   10 | maxDur=   50
+  phase  3 | YELLOW   | duration=   3.0s | minDur=    - | maxDur=    -
+
+Actuated TLS audited: 54
+PASS: all 54 actuated TLS programs validated.
+
+Audit CSV written to:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/baseline_tls_audit.csv
+
+=====================================================================================
+PASS: COMPLETE BASELINE STRUCTURAL AUDIT
+=====================================================================================
+
+Validated:
+  [PASS] Original fixed-time 54 TLS
+  [PASS] Webster tuned plans for all 7 experiments
+  [PASS] Actuated 54 TLS
+  [PASS] Original project files unchanged
+
+No performance claim has been made yet.
+The next stage is controller smoke testing and evaluation.

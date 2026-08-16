@@ -1,0 +1,196 @@
+
+==============================================================================================================
+2x2 LOW — FIVE-CONTROLLER FIVE-SEED SUMMARY
+==============================================================================================================
+Controller            Comp.%      Travel     Waiting    TimeLoss      Queue     Tele
+--------------------------------------------------------------------------------------------------------------
+original_fixed         94.93       97.43       19.57       33.80       1.63     0.00
+webster_fixed          95.03       83.73        6.32       20.05       0.47     0.00
+actuated               95.37       81.59        4.81       17.88       0.36     0.00
+dqn_v2                 95.17       83.15        6.11       19.43       0.38     0.00
+ppo_v2                 95.07       83.07        5.97       19.34       0.38     0.00
+
+==============================================================================================================
+2x2 MEDIUM — FIVE-CONTROLLER FIVE-SEED SUMMARY
+==============================================================================================================
+Controller            Comp.%      Travel     Waiting    TimeLoss      Queue     Tele
+--------------------------------------------------------------------------------------------------------------
+original_fixed         92.95      122.23       36.24       59.56       6.51     0.00
+webster_fixed          94.27       98.89       15.13       36.28       2.31     0.00
+actuated               94.43       96.62       14.85       33.95       2.13     0.00
+dqn_v2                 94.13       98.48       15.49       35.85       2.19     0.00
+ppo_v2                 94.12      100.96       17.07       38.34       2.51     0.00
+
+==============================================================================================================
+2x2 HIGH — FIVE-CONTROLLER FIVE-SEED SUMMARY
+==============================================================================================================
+Controller            Comp.%      Travel     Waiting    TimeLoss      Queue     Tele
+--------------------------------------------------------------------------------------------------------------
+original_fixed         13.44      273.54      162.00      200.89      74.09   103.00
+webster_fixed          15.53      258.63      134.48      187.96      70.12    87.00
+actuated               13.17      288.17      177.36      215.33      73.68   105.60
+dqn_v2                 14.55      261.99      139.49      189.10      72.38   107.80
+ppo_v2                  7.45      358.44      233.98      259.01      74.15   130.80
+
+==============================================================================================================
+2x2 DYNAMIC — FIVE-CONTROLLER FIVE-SEED SUMMARY
+==============================================================================================================
+Controller            Comp.%      Travel     Waiting    TimeLoss      Queue     Tele
+--------------------------------------------------------------------------------------------------------------
+original_fixed         93.02      116.10       28.95       50.18       4.33     0.00
+webster_fixed          93.95      102.84       14.54       36.87       2.00     0.00
+actuated               94.40       94.47       10.69       28.49       1.36     0.00
+dqn_v2                 93.97       97.19       12.36       31.22       1.60     0.00
+ppo_v2                 93.28      104.20       16.09       38.28       2.15     0.00
+
+==============================================================================================================
+DQN/PPO RELATIVE TO ACTUATED AND WEBSTER
+==============================================================================================================
+
+--- LOW ---
+
+dqn_v2
+  vs webster_fixed:
+    completion delta: +0.13 pp
+    travel reduction: +0.69%
+    waiting reduction: +3.27%
+    queue reduction: +18.28%
+  vs actuated:
+    completion delta: -0.20 pp
+    travel reduction: -1.92%
+    waiting reduction: -26.98%
+    queue reduction: -7.45%
+
+ppo_v2
+  vs webster_fixed:
+    completion delta: +0.03 pp
+    travel reduction: +0.79%
+    waiting reduction: +5.51%
+    queue reduction: +19.53%
+  vs actuated:
+    completion delta: -0.30 pp
+    travel reduction: -1.81%
+    waiting reduction: -24.04%
+    queue reduction: -5.81%
+
+--- MEDIUM ---
+
+dqn_v2
+  vs webster_fixed:
+    completion delta: -0.13 pp
+    travel reduction: +0.42%
+    waiting reduction: -2.37%
+    queue reduction: +5.31%
+  vs actuated:
+    completion delta: -0.29 pp
+    travel reduction: -1.92%
+    waiting reduction: -4.28%
+    queue reduction: -3.00%
+
+ppo_v2
+  vs webster_fixed:
+    completion delta: -0.15 pp
+    travel reduction: -2.09%
+    waiting reduction: -12.84%
+    queue reduction: -8.47%
+  vs actuated:
+    completion delta: -0.31 pp
+    travel reduction: -4.49%
+    waiting reduction: -14.94%
+    queue reduction: -18.00%
+
+--- HIGH ---
+
+dqn_v2
+  vs webster_fixed:
+    completion delta: -0.98 pp
+    travel reduction: -1.30%
+    waiting reduction: -3.73%
+    queue reduction: -3.23%
+  vs actuated:
+    completion delta: +1.37 pp
+    travel reduction: +9.09%
+    waiting reduction: +21.35%
+    queue reduction: +1.76%
+
+ppo_v2
+  vs webster_fixed:
+    completion delta: -8.08 pp
+    travel reduction: -38.59%
+    waiting reduction: -73.99%
+    queue reduction: -5.75%
+  vs actuated:
+    completion delta: -5.73 pp
+    travel reduction: -24.39%
+    waiting reduction: -31.92%
+    queue reduction: -0.64%
+
+--- DYNAMIC ---
+
+dqn_v2
+  vs webster_fixed:
+    completion delta: +0.02 pp
+    travel reduction: +5.50%
+    waiting reduction: +15.02%
+    queue reduction: +20.33%
+  vs actuated:
+    completion delta: -0.43 pp
+    travel reduction: -2.88%
+    waiting reduction: -15.60%
+    queue reduction: -17.35%
+
+ppo_v2
+  vs webster_fixed:
+    completion delta: -0.67 pp
+    travel reduction: -1.32%
+    waiting reduction: -10.69%
+    queue reduction: -7.18%
+  vs actuated:
+    completion delta: -1.12 pp
+    travel reduction: -10.30%
+    waiting reduction: -50.55%
+    queue reduction: -57.86%
+
+==============================================================================================================
+DESCRIPTIVE BEST CONTROLLER BY SCENARIO
+(No significance claim — descriptive means only)
+==============================================================================================================
+
+LOW
+  Highest completion: actuated (95.37%)
+  Lowest travel:      actuated (81.59s)
+  Lowest waiting:     actuated (4.81s)
+  Lowest queue:       actuated (0.36)
+
+MEDIUM
+  Highest completion: actuated (94.43%)
+  Lowest travel:      actuated (96.62s)
+  Lowest waiting:     actuated (14.85s)
+  Lowest queue:       actuated (2.13)
+
+HIGH
+  Highest completion: webster_fixed (15.53%)
+  Lowest travel:      webster_fixed (258.63s)
+  Lowest waiting:     webster_fixed (134.48s)
+  Lowest queue:       webster_fixed (70.12)
+
+DYNAMIC
+  Highest completion: actuated (94.40%)
+  Lowest travel:      actuated (94.47s)
+  Lowest waiting:     actuated (10.69s)
+  Lowest queue:       actuated (1.36)
+
+==============================================================================================================
+ANALYSIS DATASET VALIDATION
+==============================================================================================================
+Conventional runs: 60
+Learned runs:      40
+Total runs:        100
+
+Raw combined dataset:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/analysis/2x2_demand/combined_2x2_100_runs.csv
+
+Summary dataset:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/analysis/2x2_demand/summary_2x2_demand.csv
+
+PASS: authoritative 100-run 2x2 demand dataset created.

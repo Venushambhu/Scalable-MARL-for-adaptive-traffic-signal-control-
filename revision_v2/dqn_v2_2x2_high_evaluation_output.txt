@@ -1,0 +1,96 @@
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       454/3000 (15.13%)
+Travel:          268.86s
+Waiting:         149.99s
+Queue:           71.00
+Teleports:       93
+Joint latency:   0.1809 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=239, A1=121
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       430/3000 (14.33%)
+Travel:          272.27s
+Waiting:         146.82s
+Queue:           72.96
+Teleports:       114
+Joint latency:   0.1812 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=264, A1=96
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       386/3000 (12.87%)
+Travel:          246.60s
+Waiting:         127.28s
+Queue:           74.16
+Teleports:       105
+Joint latency:   0.1834 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=266, A1=94
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       410/3000 (13.67%)
+Travel:          263.08s
+Waiting:         139.90s
+Queue:           74.72
+Teleports:       130
+Joint latency:   0.1833 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=275, A1=85
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       502/3000 (16.73%)
+Travel:          259.12s
+Waiting:         133.45s
+Queue:           69.08
+Teleports:       97
+Joint latency:   0.1832 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=236, A1=124
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                14.547 +/- 1.481
+avg_travel_time                   261.985 +/- 9.989
+avg_waiting_time                  139.491 +/- 9.350
+avg_time_loss                     189.104 +/- 12.422
+mean_queue_length                  72.385 +/- 2.335
+teleports_started                 107.800 +/- 14.789
+mean_joint_decision_ms              0.182 +/- 0.001
+peak_process_tree_ram_mb          370.619 +/- 17.005
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/dqn/high/dqn_high_all_seeds.csv
+
+PASS: 5/5 deterministic DQN evaluation seeds completed.

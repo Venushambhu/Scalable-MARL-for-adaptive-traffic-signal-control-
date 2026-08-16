@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Computational scalability of the independent DQN and PPO controllers.}
+\label{tab:computational_scalability_v2}
+\small
+\begin{tabular}{lrrrrrr}
+\hline
+Algorithm & Agents & Train (s) & Peak RAM (MB) & Model (MB) & Joint latency (ms) & Budget (\%) \\
+\hline
+DQN & 4 & 357.24 & 343.30 & 0.369 & 0.1978 & 0.00396 \\
+DQN & 9 & 692.93 & 357.94 & 0.829 & 0.3926 & 0.00785 \\
+DQN & 16 & 1046.14 & 388.56 & 1.475 & 0.6537 & 0.01307 \\
+DQN & 25 & 1398.06 & 422.66 & 2.304 & 1.0388 & 0.02078 \\
+PPO & 4 & 388.05 & 335.06 & 0.531 & 0.2827 & 0.00565 \\
+PPO & 9 & 731.54 & 334.73 & 1.195 & 0.5995 & 0.01199 \\
+PPO & 16 & 1018.70 & 339.75 & 2.125 & 0.9859 & 0.01972 \\
+PPO & 25 & 1469.70 & 343.27 & 3.320 & 1.5655 & 0.03131 \\
+\hline
+\end{tabular}
+\end{table}

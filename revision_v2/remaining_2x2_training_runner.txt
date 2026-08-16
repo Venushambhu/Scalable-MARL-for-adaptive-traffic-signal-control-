@@ -1,0 +1,31 @@
+
+==========================================================================================
+THESIS REVISION V2 — TRAINING PLAN
+==========================================================================================
+ 1. DQN  2x2  low      SKIP - already complete
+ 2. PPO  2x2  low      SKIP - already complete
+ 3. DQN  2x2  high     SKIP - already complete
+ 4. PPO  2x2  high     SKIP - already complete
+ 5. DQN  2x2  dynamic  SKIP - already complete
+ 6. PPO  2x2  dynamic  SKIP - already complete
+
+SKIP: DQN 2x2/low already has a valid 50k PASS result.
+
+SKIP: PPO 2x2/low already has a valid 50k PASS result.
+
+SKIP: DQN 2x2/high already has a valid 50k PASS result.
+
+SKIP: PPO 2x2/high already has a valid 50k PASS result.
+
+SKIP: DQN 2x2/dynamic already has a valid 50k PASS result.
+
+SKIP: PPO 2x2/dynamic already has a valid 50k PASS result.
+
+==========================================================================================
+TRAINING PHASE COMPLETE
+==========================================================================================
+New experiments completed: 0
+Experiments skipped:       6
+
+Master compute table:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training_compute_master.csv

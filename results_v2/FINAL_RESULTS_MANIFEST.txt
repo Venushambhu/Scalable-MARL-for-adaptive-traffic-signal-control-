@@ -1,0 +1,26 @@
+THESIS REVISION V2 — FINAL RESULTS MANIFEST
+================================================================================
+Created: 2026-08-16T00:09:58.392267
+Experimental evaluation runs: 175
+Evaluation seeds: 11,12,13,14,15
+Training steps per learned experiment: 50000
+Training seed: 1
+2x2 demand Holm significant: 81/140
+Scalability Holm significant: 101/140
+
+58028c29ac4e1fdbe2aec6abb4170a819fbd383defae89d891dee1c1cd97e379  results_v2/analysis/2x2_demand/combined_2x2_100_runs.csv
+25352c957c44eeef1005b86ebf2e9d98694854ea55251df322da79f19282555a  results_v2/analysis/2x2_demand/summary_2x2_demand.csv
+b59ab50441be2551191ace7083ae54752b9bd100882acbe79bd765d83226a27b  results_v2/analysis/2x2_demand/statistics/paired_tests_2x2_all.csv
+ea8ebf44db5496f9ad501bc480d1436c1fb5a98fc02b23720a05b002b5e32f47  results_v2/analysis/2x2_demand/statistics/paired_tests_2x2_holm_significant.csv
+52d092e4bca874c460930a74ebe0ef22b776414891f10c854620880901e01a6b  results_v2/analysis/medium_scalability/combined_medium_scalability_100_runs.csv
+a6f886f9bc31f42d28da8327562b709395e92c1b5c1471710459c70d8abe5b36  results_v2/analysis/medium_scalability/summary_medium_scalability.csv
+d3c8a47558bce804c72a31885da70a3ce87a5ba60b1fb2cbe8b762a325b96f48  results_v2/analysis/medium_scalability/statistics/paired_tests_medium_scalability_all.csv
+f234fe692d9f6c7ba660bb6aecfcab49b93f91b84fe3ed6fb2397d6e395c91b8  results_v2/analysis/medium_scalability/statistics/paired_tests_medium_scalability_holm_significant.csv
+df44eaf903e84250c8f2d0fa1998770582b187d1286e93db578444593329c302  results_v2/analysis/computational_scalability/computational_scalability_summary.csv
+27254f0f3ddfadd44fccc358e085b63df0b8202694ee10f64147d9c249630f7c  results_v2/analysis/computational_scalability/computational_scalability_trends.csv
+c741ce77f927a8a074b49034e0361275e9b8a0ad1df7dcd9147235df55c33ec1  results_v2/training_compute_master.csv
+c5f8d7dbcf79e31545c9eed1fb2293095c67f2fb4801f1539498bc5c78ca89e2  revision_v2/final_2x2_demand_analysis.txt
+5addf2f886f511e9f61845591213b903f720f0e666a5c820bcf7e285f9b6595f  revision_v2/final_2x2_statistical_analysis.txt
+b94b402cde912c0d8ef1cc464fa69d71cbf72fac259e8304aa912075279247c6  revision_v2/final_medium_scalability_analysis.txt
+c423d6d56ff0b7105841301c8fe054577ed7a03778d486c8d19487f5c530adc9  revision_v2/final_computational_scalability_analysis.txt
+5d2f4f6892350408c24ab3de42c2b60d9d16f84a38c611da5894fefb19a46a97  revision_v2/final_scalability_statistical_analysis.txt

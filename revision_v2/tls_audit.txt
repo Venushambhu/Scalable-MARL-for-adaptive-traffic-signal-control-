@@ -1,0 +1,904 @@
+
+THESIS REVISION V2
+SUMO TRAFFIC-LIGHT PROGRAM AUDIT
+
+================================================================================
+GRID 2x2 (expected agents: 4)
+================================================================================
+Network file: /Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml
+Traffic-light programs found: 4
+Unique TLS IDs: 4
+TLS count matches expected agent count.
+
+--------------------------------------------------------------------------------
+TLS ID: B1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+================================================================================
+GRID 3x3 (expected agents: 9)
+================================================================================
+Network file: /Users/venushambhuhullukattenataraju/thesis_project/network/grid3x3/grid3x3.net.xml
+Traffic-light programs found: 9
+Unique TLS IDs: 9
+TLS count matches expected agent count.
+
+--------------------------------------------------------------------------------
+TLS ID: B1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+================================================================================
+GRID 4x4 (expected agents: 16)
+================================================================================
+Network file: /Users/venushambhuhullukattenataraju/thesis_project/network/grid4x4/grid4x4.net.xml
+Traffic-light programs found: 16
+Unique TLS IDs: 16
+TLS count matches expected agent count.
+
+--------------------------------------------------------------------------------
+TLS ID: B1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+================================================================================
+GRID 5x5 (expected agents: 25)
+================================================================================
+Network file: /Users/venushambhuhullukattenataraju/thesis_project/network/grid5x5/grid5x5.net.xml
+Traffic-light programs found: 25
+Unique TLS IDs: 25
+TLS count matches expected agent count.
+
+--------------------------------------------------------------------------------
+TLS ID: B1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: B5
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: C5
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: D5
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: E5
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: F1
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: F2
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: F3
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: F4
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+--------------------------------------------------------------------------------
+TLS ID: F5
+Program ID: 0
+Type: static
+Offset: 0
+Phase count: 4
+Phase  0: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=GGggrrrrGGggrrrr
+Phase  1: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=yyyyrrrryyyyrrrr
+Phase  2: GREEN    duration= 42.0s minDur=- maxDur=-
+          state=rrrrGGggrrrrGGgg
+Phase  3: YELLOW   duration=  3.0s minDur=- maxDur=-
+          state=rrrryyyyrrrryyyy
+Nominal cycle duration: 90.0 seconds
+
+================================================================================
+AUDIT COMPLETE
+No network files were modified.
+================================================================================

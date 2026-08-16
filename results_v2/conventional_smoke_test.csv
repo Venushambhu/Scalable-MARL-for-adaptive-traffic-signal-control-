@@ -1,0 +1,4 @@
+controller,grid,scenario,seed,simulation_duration_s,departed,arrived,completion_rate_percent,active_at_end,min_expected_at_end,starting_teleports,mean_network_queue,max_network_queue,representative_tls,green_segments_observed,green_min_observed_s,green_max_observed_s,wall_runtime_s,status
+original_fixed,2x2,medium,11,1800,1498,1397,93.25767690253672,101,103,0,28.33222222222222,53,B1,40,42,43,3.1045158749911934,PASS
+webster_fixed,2x2,medium,11,1800,1500,1414,94.26666666666667,86,86,0,11.589444444444444,33,B1,139,5,11,3.1190286660566926,PASS
+actuated,2x2,medium,11,1800,1499,1418,94.59639759839892,81,82,0,11.517777777777777,34,B1,114,10,25,3.1150017080362886,PASS

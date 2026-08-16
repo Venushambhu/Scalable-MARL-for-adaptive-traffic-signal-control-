@@ -1,0 +1,3015 @@
+
+========================================================================================
+THESIS REVISION V2 — CONVENTIONAL EVALUATION
+========================================================================================
+
+Mode: full
+Runs scheduled: 105
+Simulation duration: 1800s
+Metric logging interval: 5s
+
+########################################################################################
+RUN 1/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | low | seed 11
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             568
+  Completion rate:       94.67%
+  Avg travel time:       96.89s
+  Avg waiting time:      19.40s
+  Avg time loss:         33.64s
+  Mean queue length:     1.64
+  Max queue length:      8
+  Teleports started:     0
+  Peak process RAM:      87.92 MB
+  Simulation runtime:    8.309s
+  Total wall runtime:    9.361s
+  Status:                PASS
+
+########################################################################################
+RUN 2/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | low | seed 12
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             568
+  Completion rate:       94.67%
+  Avg travel time:       98.35s
+  Avg waiting time:      20.61s
+  Avg time loss:         34.88s
+  Mean queue length:     1.68
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      88.94 MB
+  Simulation runtime:    8.290s
+  Total wall runtime:    9.337s
+  Status:                PASS
+
+########################################################################################
+RUN 3/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | low | seed 13
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             573
+  Completion rate:       95.50%
+  Avg travel time:       97.66s
+  Avg waiting time:      19.34s
+  Avg time loss:         33.63s
+  Mean queue length:     1.61
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      88.91 MB
+  Simulation runtime:    8.364s
+  Total wall runtime:    9.412s
+  Status:                PASS
+
+########################################################################################
+RUN 4/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | low | seed 14
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             570
+  Completion rate:       95.00%
+  Avg travel time:       97.35s
+  Avg waiting time:      19.16s
+  Avg time loss:         33.47s
+  Mean queue length:     1.59
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      88.95 MB
+  Simulation runtime:    8.327s
+  Total wall runtime:    9.375s
+  Status:                PASS
+
+########################################################################################
+RUN 5/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | low | seed 15
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             569
+  Completion rate:       94.83%
+  Avg travel time:       96.90s
+  Avg waiting time:      19.37s
+  Avg time loss:         33.39s
+  Mean queue length:     1.62
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      89.08 MB
+  Simulation runtime:    8.372s
+  Total wall runtime:    9.419s
+  Status:                PASS
+
+########################################################################################
+RUN 6/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | low | seed 11
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             570
+  Completion rate:       95.00%
+  Avg travel time:       83.05s
+  Avg waiting time:      6.08s
+  Avg time loss:         19.74s
+  Mean queue length:     0.45
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      95.22 MB
+  Simulation runtime:    8.418s
+  Total wall runtime:    9.505s
+  Status:                PASS
+
+########################################################################################
+RUN 7/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | low | seed 12
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             570
+  Completion rate:       95.00%
+  Avg travel time:       83.33s
+  Avg waiting time:      6.24s
+  Avg time loss:         19.73s
+  Mean queue length:     0.47
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      95.41 MB
+  Simulation runtime:    8.411s
+  Total wall runtime:    9.495s
+  Status:                PASS
+
+########################################################################################
+RUN 8/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | low | seed 13
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             571
+  Completion rate:       95.17%
+  Avg travel time:       84.12s
+  Avg waiting time:      6.20s
+  Avg time loss:         20.08s
+  Mean queue length:     0.46
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      95.84 MB
+  Simulation runtime:    8.505s
+  Total wall runtime:    9.598s
+  Status:                PASS
+
+########################################################################################
+RUN 9/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | low | seed 14
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             572
+  Completion rate:       95.33%
+  Avg travel time:       84.37s
+  Avg waiting time:      6.56s
+  Avg time loss:         20.43s
+  Mean queue length:     0.49
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      96.39 MB
+  Simulation runtime:    8.521s
+  Total wall runtime:    9.611s
+  Status:                PASS
+
+########################################################################################
+RUN 10/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | low | seed 15
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             568
+  Completion rate:       94.67%
+  Avg travel time:       83.76s
+  Avg waiting time:      6.52s
+  Avg time loss:         20.29s
+  Mean queue length:     0.48
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      96.58 MB
+  Simulation runtime:    8.427s
+  Total wall runtime:    9.521s
+  Status:                PASS
+
+########################################################################################
+RUN 11/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | low | seed 11
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             572
+  Completion rate:       95.33%
+  Avg travel time:       80.79s
+  Avg waiting time:      4.63s
+  Avg time loss:         17.49s
+  Mean queue length:     0.35
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      90.41 MB
+  Simulation runtime:    8.550s
+  Total wall runtime:    9.601s
+  Status:                PASS
+
+########################################################################################
+RUN 12/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | low | seed 12
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             571
+  Completion rate:       95.17%
+  Avg travel time:       82.07s
+  Avg waiting time:      5.35s
+  Avg time loss:         18.47s
+  Mean queue length:     0.39
+  Max queue length:      8
+  Teleports started:     0
+  Peak process RAM:      89.72 MB
+  Simulation runtime:    8.518s
+  Total wall runtime:    9.566s
+  Status:                PASS
+
+########################################################################################
+RUN 13/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | low | seed 13
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             573
+  Completion rate:       95.50%
+  Avg travel time:       81.95s
+  Avg waiting time:      4.50s
+  Avg time loss:         17.84s
+  Mean queue length:     0.34
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      89.83 MB
+  Simulation runtime:    8.476s
+  Total wall runtime:    9.521s
+  Status:                PASS
+
+########################################################################################
+RUN 14/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | low | seed 14
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             574
+  Completion rate:       95.67%
+  Avg travel time:       82.06s
+  Avg waiting time:      4.90s
+  Avg time loss:         18.11s
+  Mean queue length:     0.37
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      90.23 MB
+  Simulation runtime:    8.464s
+  Total wall runtime:    9.512s
+  Status:                PASS
+
+########################################################################################
+RUN 15/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | low | seed 15
+========================================================================================
+Loaded vehicles: 600
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                600
+  Departed:              600
+  Completed:             571
+  Completion rate:       95.17%
+  Avg travel time:       81.07s
+  Avg waiting time:      4.69s
+  Avg time loss:         17.48s
+  Mean queue length:     0.34
+  Max queue length:      4
+  Teleports started:     0
+  Peak process RAM:      89.67 MB
+  Simulation runtime:    8.438s
+  Total wall runtime:    9.480s
+  Status:                PASS
+
+########################################################################################
+RUN 16/105
+########################################################################################
+
+SKIP: completed result exists:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional/grid2x2/original_fixed_medium_seed11_summary.csv
+
+########################################################################################
+RUN 17/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1500
+  Completed:             1395
+  Completion rate:       93.00%
+  Avg travel time:       121.89s
+  Avg waiting time:      35.88s
+  Avg time loss:         59.08s
+  Mean queue length:     6.56
+  Max queue length:      26
+  Teleports started:     0
+  Peak process RAM:      91.23 MB
+  Simulation runtime:    8.533s
+  Total wall runtime:    9.581s
+  Status:                PASS
+
+########################################################################################
+RUN 18/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1498
+  Completed:             1398
+  Completion rate:       93.20%
+  Avg travel time:       123.06s
+  Avg waiting time:      36.62s
+  Avg time loss:         60.12s
+  Mean queue length:     6.66
+  Max queue length:      24
+  Teleports started:     0
+  Peak process RAM:      92.38 MB
+  Simulation runtime:    8.913s
+  Total wall runtime:    9.956s
+  Status:                PASS
+
+########################################################################################
+RUN 19/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1499
+  Completed:             1383
+  Completion rate:       92.20%
+  Avg travel time:       125.09s
+  Avg waiting time:      38.19s
+  Avg time loss:         62.46s
+  Mean queue length:     6.86
+  Max queue length:      25
+  Teleports started:     0
+  Peak process RAM:      93.45 MB
+  Simulation runtime:    8.712s
+  Total wall runtime:    9.763s
+  Status:                PASS
+
+########################################################################################
+RUN 20/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1498
+  Completed:             1398
+  Completion rate:       93.20%
+  Avg travel time:       118.21s
+  Avg waiting time:      33.57s
+  Avg time loss:         55.77s
+  Mean queue length:     5.96
+  Max queue length:      27
+  Teleports started:     0
+  Peak process RAM:      92.70 MB
+  Simulation runtime:    8.648s
+  Total wall runtime:    9.690s
+  Status:                PASS
+
+########################################################################################
+RUN 21/105
+########################################################################################
+
+SKIP: completed result exists:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional/grid2x2/webster_fixed_medium_seed11_summary.csv
+
+########################################################################################
+RUN 22/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1500
+  Completed:             1417
+  Completion rate:       94.47%
+  Avg travel time:       98.46s
+  Avg waiting time:      15.00s
+  Avg time loss:         35.75s
+  Mean queue length:     2.21
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      99.20 MB
+  Simulation runtime:    8.658s
+  Total wall runtime:    9.751s
+  Status:                PASS
+
+########################################################################################
+RUN 23/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1499
+  Completed:             1411
+  Completion rate:       94.07%
+  Avg travel time:       99.07s
+  Avg waiting time:      15.03s
+  Avg time loss:         36.19s
+  Mean queue length:     2.28
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      99.55 MB
+  Simulation runtime:    8.640s
+  Total wall runtime:    9.732s
+  Status:                PASS
+
+########################################################################################
+RUN 24/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1498
+  Completed:             1412
+  Completion rate:       94.13%
+  Avg travel time:       98.91s
+  Avg waiting time:      15.08s
+  Avg time loss:         36.27s
+  Mean queue length:     2.36
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      99.05 MB
+  Simulation runtime:    8.532s
+  Total wall runtime:    9.617s
+  Status:                PASS
+
+########################################################################################
+RUN 25/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1499
+  Completed:             1416
+  Completion rate:       94.40%
+  Avg travel time:       98.77s
+  Avg waiting time:      15.03s
+  Avg time loss:         36.37s
+  Mean queue length:     2.36
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      99.45 MB
+  Simulation runtime:    8.544s
+  Total wall runtime:    9.634s
+  Status:                PASS
+
+########################################################################################
+RUN 26/105
+########################################################################################
+
+SKIP: completed result exists:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional/grid2x2/actuated_medium_seed11_summary.csv
+
+########################################################################################
+RUN 27/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1500
+  Completed:             1417
+  Completion rate:       94.47%
+  Avg travel time:       96.90s
+  Avg waiting time:      15.19s
+  Avg time loss:         34.18s
+  Mean queue length:     2.12
+  Max queue length:      13
+  Teleports started:     0
+  Peak process RAM:      93.03 MB
+  Simulation runtime:    8.599s
+  Total wall runtime:    9.643s
+  Status:                PASS
+
+########################################################################################
+RUN 28/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1498
+  Completed:             1414
+  Completion rate:       94.27%
+  Avg travel time:       96.85s
+  Avg waiting time:      14.92s
+  Avg time loss:         33.95s
+  Mean queue length:     2.13
+  Max queue length:      15
+  Teleports started:     0
+  Peak process RAM:      92.55 MB
+  Simulation runtime:    8.584s
+  Total wall runtime:    9.618s
+  Status:                PASS
+
+########################################################################################
+RUN 29/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1498
+  Completed:             1410
+  Completion rate:       94.00%
+  Avg travel time:       96.66s
+  Avg waiting time:      14.59s
+  Avg time loss:         33.93s
+  Mean queue length:     2.21
+  Max queue length:      14
+  Teleports started:     0
+  Peak process RAM:      93.14 MB
+  Simulation runtime:    8.590s
+  Total wall runtime:    9.638s
+  Status:                PASS
+
+########################################################################################
+RUN 30/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1500
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1500
+  Departed:              1499
+  Completed:             1423
+  Completion rate:       94.87%
+  Avg travel time:       95.39s
+  Avg waiting time:      14.16s
+  Avg time loss:         32.90s
+  Mean queue length:     2.03
+  Max queue length:      13
+  Teleports started:     0
+  Peak process RAM:      92.91 MB
+  Simulation runtime:    8.568s
+  Total wall runtime:    9.616s
+  Status:                PASS
+
+########################################################################################
+RUN 31/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | high | seed 11
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1575
+  Completed:             356
+  Completion rate:       11.87%
+  Avg travel time:       271.80s
+  Avg waiting time:      164.97s
+  Avg time loss:         199.49s
+  Mean queue length:     74.90
+  Max queue length:      100
+  Teleports started:     97
+  Peak process RAM:      107.77 MB
+  Simulation runtime:    9.769s
+  Total wall runtime:    10.818s
+  Status:                PASS
+
+########################################################################################
+RUN 32/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | high | seed 12
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1627
+  Completed:             415
+  Completion rate:       13.83%
+  Avg travel time:       290.35s
+  Avg waiting time:      176.31s
+  Avg time loss:         215.32s
+  Mean queue length:     74.80
+  Max queue length:      100
+  Teleports started:     111
+  Peak process RAM:      108.48 MB
+  Simulation runtime:    9.761s
+  Total wall runtime:    10.812s
+  Status:                PASS
+
+########################################################################################
+RUN 33/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | high | seed 13
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1645
+  Completed:             421
+  Completion rate:       14.03%
+  Avg travel time:       262.02s
+  Avg waiting time:      149.66s
+  Avg time loss:         187.78s
+  Mean queue length:     74.19
+  Max queue length:      100
+  Teleports started:     114
+  Peak process RAM:      107.67 MB
+  Simulation runtime:    9.723s
+  Total wall runtime:    10.771s
+  Status:                PASS
+
+########################################################################################
+RUN 34/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | high | seed 14
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1671
+  Completed:             459
+  Completion rate:       15.30%
+  Avg travel time:       273.70s
+  Avg waiting time:      158.50s
+  Avg time loss:         205.12s
+  Mean queue length:     71.43
+  Max queue length:      100
+  Teleports started:     89
+  Peak process RAM:      108.72 MB
+  Simulation runtime:    9.735s
+  Total wall runtime:    10.785s
+  Status:                PASS
+
+########################################################################################
+RUN 35/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | high | seed 15
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1582
+  Completed:             365
+  Completion rate:       12.17%
+  Avg travel time:       269.83s
+  Avg waiting time:      160.57s
+  Avg time loss:         196.76s
+  Mean queue length:     75.15
+  Max queue length:      100
+  Teleports started:     104
+  Peak process RAM:      108.50 MB
+  Simulation runtime:    9.714s
+  Total wall runtime:    10.759s
+  Status:                PASS
+
+########################################################################################
+RUN 36/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | high | seed 11
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1692
+  Completed:             472
+  Completion rate:       15.73%
+  Avg travel time:       253.46s
+  Avg waiting time:      129.83s
+  Avg time loss:         184.95s
+  Mean queue length:     69.81
+  Max queue length:      100
+  Teleports started:     94
+  Peak process RAM:      114.42 MB
+  Simulation runtime:    9.734s
+  Total wall runtime:    10.807s
+  Status:                PASS
+
+########################################################################################
+RUN 37/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | high | seed 12
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1702
+  Completed:             496
+  Completion rate:       16.53%
+  Avg travel time:       259.45s
+  Avg waiting time:      131.41s
+  Avg time loss:         189.29s
+  Mean queue length:     69.50
+  Max queue length:      100
+  Teleports started:     91
+  Peak process RAM:      114.38 MB
+  Simulation runtime:    9.719s
+  Total wall runtime:    10.806s
+  Status:                PASS
+
+########################################################################################
+RUN 38/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | high | seed 13
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1678
+  Completed:             456
+  Completion rate:       15.20%
+  Avg travel time:       267.32s
+  Avg waiting time:      141.15s
+  Avg time loss:         194.05s
+  Mean queue length:     69.87
+  Max queue length:      100
+  Teleports started:     77
+  Peak process RAM:      114.64 MB
+  Simulation runtime:    9.759s
+  Total wall runtime:    10.841s
+  Status:                PASS
+
+########################################################################################
+RUN 39/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | high | seed 14
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1677
+  Completed:             460
+  Completion rate:       15.33%
+  Avg travel time:       258.39s
+  Avg waiting time:      137.01s
+  Avg time loss:         193.39s
+  Mean queue length:     69.98
+  Max queue length:      100
+  Teleports started:     76
+  Peak process RAM:      114.66 MB
+  Simulation runtime:    9.710s
+  Total wall runtime:    10.800s
+  Status:                PASS
+
+########################################################################################
+RUN 40/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | high | seed 15
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1656
+  Completed:             445
+  Completion rate:       14.83%
+  Avg travel time:       254.52s
+  Avg waiting time:      132.98s
+  Avg time loss:         178.12s
+  Mean queue length:     71.45
+  Max queue length:      100
+  Teleports started:     97
+  Peak process RAM:      114.45 MB
+  Simulation runtime:    9.837s
+  Total wall runtime:    10.927s
+  Status:                PASS
+
+########################################################################################
+RUN 41/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | high | seed 11
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1578
+  Completed:             365
+  Completion rate:       12.17%
+  Avg travel time:       297.83s
+  Avg waiting time:      186.56s
+  Avg time loss:         222.77s
+  Mean queue length:     73.42
+  Max queue length:      100
+  Teleports started:     105
+  Peak process RAM:      109.23 MB
+  Simulation runtime:    9.877s
+  Total wall runtime:    10.928s
+  Status:                PASS
+
+########################################################################################
+RUN 42/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | high | seed 12
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1620
+  Completed:             408
+  Completion rate:       13.60%
+  Avg travel time:       305.63s
+  Avg waiting time:      192.11s
+  Avg time loss:         233.03s
+  Mean queue length:     72.96
+  Max queue length:      100
+  Teleports started:     111
+  Peak process RAM:      108.75 MB
+  Simulation runtime:    9.831s
+  Total wall runtime:    10.884s
+  Status:                PASS
+
+########################################################################################
+RUN 43/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | high | seed 13
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1571
+  Completed:             360
+  Completion rate:       12.00%
+  Avg travel time:       287.36s
+  Avg waiting time:      178.53s
+  Avg time loss:         212.49s
+  Mean queue length:     75.33
+  Max queue length:      100
+  Teleports started:     116
+  Peak process RAM:      108.75 MB
+  Simulation runtime:    9.823s
+  Total wall runtime:    10.872s
+  Status:                PASS
+
+########################################################################################
+RUN 44/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | high | seed 14
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1630
+  Completed:             410
+  Completion rate:       13.67%
+  Avg travel time:       276.00s
+  Avg waiting time:      169.01s
+  Avg time loss:         206.83s
+  Mean queue length:     73.46
+  Max queue length:      100
+  Teleports started:     96
+  Peak process RAM:      108.62 MB
+  Simulation runtime:    9.865s
+  Total wall runtime:    10.909s
+  Status:                PASS
+
+########################################################################################
+RUN 45/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | high | seed 15
+========================================================================================
+Loaded vehicles: 3000
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                3000
+  Departed:              1656
+  Completed:             433
+  Completion rate:       14.43%
+  Avg travel time:       274.00s
+  Avg waiting time:      160.58s
+  Avg time loss:         201.53s
+  Mean queue length:     73.24
+  Max queue length:      100
+  Teleports started:     100
+  Peak process RAM:      108.47 MB
+  Simulation runtime:    9.846s
+  Total wall runtime:    10.890s
+  Status:                PASS
+
+########################################################################################
+RUN 46/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | dynamic | seed 11
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1199
+  Completed:             1115
+  Completion rate:       92.92%
+  Avg travel time:       115.40s
+  Avg waiting time:      28.54s
+  Avg time loss:         49.70s
+  Mean queue length:     4.27
+  Max queue length:      16
+  Teleports started:     0
+  Peak process RAM:      92.52 MB
+  Simulation runtime:    8.628s
+  Total wall runtime:    9.666s
+  Status:                PASS
+
+########################################################################################
+RUN 47/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | dynamic | seed 12
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1117
+  Completion rate:       93.08%
+  Avg travel time:       117.25s
+  Avg waiting time:      29.95s
+  Avg time loss:         51.46s
+  Mean queue length:     4.43
+  Max queue length:      18
+  Teleports started:     0
+  Peak process RAM:      92.52 MB
+  Simulation runtime:    8.582s
+  Total wall runtime:    9.623s
+  Status:                PASS
+
+########################################################################################
+RUN 48/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | dynamic | seed 13
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1199
+  Completed:             1119
+  Completion rate:       93.25%
+  Avg travel time:       117.53s
+  Avg waiting time:      29.48s
+  Avg time loss:         51.27s
+  Mean queue length:     4.46
+  Max queue length:      19
+  Teleports started:     0
+  Peak process RAM:      92.48 MB
+  Simulation runtime:    8.595s
+  Total wall runtime:    9.637s
+  Status:                PASS
+
+########################################################################################
+RUN 49/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | dynamic | seed 14
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1117
+  Completion rate:       93.08%
+  Avg travel time:       114.99s
+  Avg waiting time:      27.98s
+  Avg time loss:         48.81s
+  Mean queue length:     4.22
+  Max queue length:      18
+  Teleports started:     0
+  Peak process RAM:      92.42 MB
+  Simulation runtime:    8.601s
+  Total wall runtime:    9.643s
+  Status:                PASS
+
+########################################################################################
+RUN 50/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 2x2 | dynamic | seed 15
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1113
+  Completion rate:       92.75%
+  Avg travel time:       115.35s
+  Avg waiting time:      28.79s
+  Avg time loss:         49.67s
+  Mean queue length:     4.29
+  Max queue length:      15
+  Teleports started:     0
+  Peak process RAM:      92.47 MB
+  Simulation runtime:    8.611s
+  Total wall runtime:    9.653s
+  Status:                PASS
+
+########################################################################################
+RUN 51/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | dynamic | seed 11
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1199
+  Completed:             1129
+  Completion rate:       94.08%
+  Avg travel time:       100.77s
+  Avg waiting time:      13.97s
+  Avg time loss:         34.89s
+  Mean queue length:     1.88
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      98.06 MB
+  Simulation runtime:    8.617s
+  Total wall runtime:    9.703s
+  Status:                PASS
+
+########################################################################################
+RUN 52/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | dynamic | seed 12
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1125
+  Completion rate:       93.75%
+  Avg travel time:       101.59s
+  Avg waiting time:      13.98s
+  Avg time loss:         35.79s
+  Mean queue length:     1.90
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      98.94 MB
+  Simulation runtime:    8.617s
+  Total wall runtime:    9.685s
+  Status:                PASS
+
+########################################################################################
+RUN 53/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | dynamic | seed 13
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1127
+  Completion rate:       93.92%
+  Avg travel time:       107.08s
+  Avg waiting time:      15.71s
+  Avg time loss:         40.76s
+  Mean queue length:     2.26
+  Max queue length:      13
+  Teleports started:     0
+  Peak process RAM:      99.12 MB
+  Simulation runtime:    8.617s
+  Total wall runtime:    9.697s
+  Status:                PASS
+
+########################################################################################
+RUN 54/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | dynamic | seed 14
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1127
+  Completion rate:       93.92%
+  Avg travel time:       102.24s
+  Avg waiting time:      14.23s
+  Avg time loss:         36.10s
+  Mean queue length:     2.00
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      99.38 MB
+  Simulation runtime:    8.620s
+  Total wall runtime:    9.708s
+  Status:                PASS
+
+########################################################################################
+RUN 55/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 2x2 | dynamic | seed 15
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1129
+  Completion rate:       94.08%
+  Avg travel time:       102.54s
+  Avg waiting time:      14.80s
+  Avg time loss:         36.79s
+  Mean queue length:     1.99
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      99.39 MB
+  Simulation runtime:    8.529s
+  Total wall runtime:    9.616s
+  Status:                PASS
+
+########################################################################################
+RUN 56/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | dynamic | seed 11
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1135
+  Completion rate:       94.58%
+  Avg travel time:       93.44s
+  Avg waiting time:      9.99s
+  Avg time loss:         27.56s
+  Mean queue length:     1.24
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      92.73 MB
+  Simulation runtime:    8.603s
+  Total wall runtime:    9.643s
+  Status:                PASS
+
+########################################################################################
+RUN 57/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | dynamic | seed 12
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1129
+  Completion rate:       94.08%
+  Avg travel time:       94.49s
+  Avg waiting time:      10.58s
+  Avg time loss:         28.60s
+  Mean queue length:     1.41
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      92.66 MB
+  Simulation runtime:    8.539s
+  Total wall runtime:    9.585s
+  Status:                PASS
+
+########################################################################################
+RUN 58/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | dynamic | seed 13
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1132
+  Completion rate:       94.33%
+  Avg travel time:       95.68s
+  Avg waiting time:      11.24s
+  Avg time loss:         29.35s
+  Mean queue length:     1.45
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      92.61 MB
+  Simulation runtime:    8.642s
+  Total wall runtime:    9.683s
+  Status:                PASS
+
+########################################################################################
+RUN 59/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | dynamic | seed 14
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1134
+  Completion rate:       94.50%
+  Avg travel time:       94.41s
+  Avg waiting time:      10.63s
+  Avg time loss:         28.29s
+  Mean queue length:     1.34
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      92.77 MB
+  Simulation runtime:    8.623s
+  Total wall runtime:    9.669s
+  Status:                PASS
+
+########################################################################################
+RUN 60/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 2x2 | dynamic | seed 15
+========================================================================================
+Loaded vehicles: 1200
+Expected TLS: 4
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1200
+  Departed:              1200
+  Completed:             1134
+  Completion rate:       94.50%
+  Avg travel time:       94.32s
+  Avg waiting time:      10.99s
+  Avg time loss:         28.65s
+  Mean queue length:     1.36
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      92.56 MB
+  Simulation runtime:    8.617s
+  Total wall runtime:    9.660s
+  Status:                PASS
+
+########################################################################################
+RUN 61/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 3x3 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1798
+  Completed:             1651
+  Completion rate:       91.72%
+  Avg travel time:       136.48s
+  Avg waiting time:      40.60s
+  Avg time loss:         64.52s
+  Mean queue length:     4.13
+  Max queue length:      22
+  Teleports started:     0
+  Peak process RAM:      95.23 MB
+  Simulation runtime:    10.079s
+  Total wall runtime:    11.130s
+  Status:                PASS
+
+########################################################################################
+RUN 62/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 3x3 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1652
+  Completion rate:       91.78%
+  Avg travel time:       139.59s
+  Avg waiting time:      42.85s
+  Avg time loss:         67.42s
+  Mean queue length:     4.34
+  Max queue length:      25
+  Teleports started:     0
+  Peak process RAM:      95.64 MB
+  Simulation runtime:    10.165s
+  Total wall runtime:    11.222s
+  Status:                PASS
+
+########################################################################################
+RUN 63/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 3x3 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1650
+  Completion rate:       91.67%
+  Avg travel time:       136.36s
+  Avg waiting time:      39.82s
+  Avg time loss:         64.00s
+  Mean queue length:     4.05
+  Max queue length:      23
+  Teleports started:     0
+  Peak process RAM:      95.62 MB
+  Simulation runtime:    10.204s
+  Total wall runtime:    11.258s
+  Status:                PASS
+
+########################################################################################
+RUN 64/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 3x3 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1650
+  Completion rate:       91.67%
+  Avg travel time:       134.81s
+  Avg waiting time:      39.23s
+  Avg time loss:         62.66s
+  Mean queue length:     4.00
+  Max queue length:      16
+  Teleports started:     0
+  Peak process RAM:      95.64 MB
+  Simulation runtime:    10.076s
+  Total wall runtime:    11.132s
+  Status:                PASS
+
+########################################################################################
+RUN 65/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 3x3 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1649
+  Completion rate:       91.61%
+  Avg travel time:       132.44s
+  Avg waiting time:      37.80s
+  Avg time loss:         60.61s
+  Mean queue length:     3.91
+  Max queue length:      18
+  Teleports started:     0
+  Peak process RAM:      95.62 MB
+  Simulation runtime:    10.010s
+  Total wall runtime:    11.074s
+  Status:                PASS
+
+########################################################################################
+RUN 66/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 3x3 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1677
+  Completion rate:       93.17%
+  Avg travel time:       112.30s
+  Avg waiting time:      16.67s
+  Avg time loss:         40.32s
+  Mean queue length:     1.53
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      102.05 MB
+  Simulation runtime:    9.951s
+  Total wall runtime:    11.042s
+  Status:                PASS
+
+########################################################################################
+RUN 67/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 3x3 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1688
+  Completion rate:       93.78%
+  Avg travel time:       110.42s
+  Avg waiting time:      15.32s
+  Avg time loss:         38.16s
+  Mean queue length:     1.45
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      101.75 MB
+  Simulation runtime:    9.973s
+  Total wall runtime:    11.075s
+  Status:                PASS
+
+########################################################################################
+RUN 68/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 3x3 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1798
+  Completed:             1691
+  Completion rate:       93.94%
+  Avg travel time:       111.82s
+  Avg waiting time:      16.12s
+  Avg time loss:         39.25s
+  Mean queue length:     1.50
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      101.72 MB
+  Simulation runtime:    10.001s
+  Total wall runtime:    11.104s
+  Status:                PASS
+
+########################################################################################
+RUN 69/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 3x3 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1679
+  Completion rate:       93.28%
+  Avg travel time:       111.27s
+  Avg waiting time:      16.01s
+  Avg time loss:         39.09s
+  Mean queue length:     1.50
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      102.05 MB
+  Simulation runtime:    10.015s
+  Total wall runtime:    11.104s
+  Status:                PASS
+
+########################################################################################
+RUN 70/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 3x3 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1800
+  Completed:             1687
+  Completion rate:       93.72%
+  Avg travel time:       111.77s
+  Avg waiting time:      16.39s
+  Avg time loss:         39.82s
+  Mean queue length:     1.55
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      101.84 MB
+  Simulation runtime:    10.038s
+  Total wall runtime:    11.137s
+  Status:                PASS
+
+########################################################################################
+RUN 71/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 3x3 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1797
+  Completed:             1691
+  Completion rate:       93.94%
+  Avg travel time:       105.93s
+  Avg waiting time:      13.45s
+  Avg time loss:         33.95s
+  Mean queue length:     1.23
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      95.94 MB
+  Simulation runtime:    10.035s
+  Total wall runtime:    11.095s
+  Status:                PASS
+
+########################################################################################
+RUN 72/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 3x3 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1689
+  Completion rate:       93.83%
+  Avg travel time:       106.67s
+  Avg waiting time:      13.85s
+  Avg time loss:         34.42s
+  Mean queue length:     1.29
+  Max queue length:      16
+  Teleports started:     0
+  Peak process RAM:      95.89 MB
+  Simulation runtime:    10.047s
+  Total wall runtime:    11.100s
+  Status:                PASS
+
+########################################################################################
+RUN 73/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 3x3 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1684
+  Completion rate:       93.56%
+  Avg travel time:       109.01s
+  Avg waiting time:      15.39s
+  Avg time loss:         36.56s
+  Mean queue length:     1.41
+  Max queue length:      14
+  Teleports started:     0
+  Peak process RAM:      95.95 MB
+  Simulation runtime:    10.053s
+  Total wall runtime:    11.110s
+  Status:                PASS
+
+########################################################################################
+RUN 74/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 3x3 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1798
+  Completed:             1684
+  Completion rate:       93.56%
+  Avg travel time:       105.89s
+  Avg waiting time:      13.31s
+  Avg time loss:         33.59s
+  Mean queue length:     1.27
+  Max queue length:      13
+  Teleports started:     0
+  Peak process RAM:      95.81 MB
+  Simulation runtime:    10.065s
+  Total wall runtime:    11.120s
+  Status:                PASS
+
+########################################################################################
+RUN 75/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 3x3 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1800
+Expected TLS: 9
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1800
+  Departed:              1799
+  Completed:             1688
+  Completion rate:       93.78%
+  Avg travel time:       108.52s
+  Avg waiting time:      15.42s
+  Avg time loss:         36.53s
+  Mean queue length:     1.42
+  Max queue length:      17
+  Teleports started:     0
+  Peak process RAM:      95.88 MB
+  Simulation runtime:    10.029s
+  Total wall runtime:    11.082s
+  Status:                PASS
+
+########################################################################################
+RUN 76/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 4x4 | medium | seed 11
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1834
+  Completion rate:       91.70%
+  Avg travel time:       144.70s
+  Avg waiting time:      40.41s
+  Avg time loss:         62.90s
+  Mean queue length:     2.67
+  Max queue length:      14
+  Teleports started:     0
+  Peak process RAM:      97.58 MB
+  Simulation runtime:    11.624s
+  Total wall runtime:    12.689s
+  Status:                PASS
+
+########################################################################################
+RUN 77/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 4x4 | medium | seed 12
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1828
+  Completion rate:       91.40%
+  Avg travel time:       144.17s
+  Avg waiting time:      39.83s
+  Avg time loss:         62.02s
+  Mean queue length:     2.64
+  Max queue length:      21
+  Teleports started:     0
+  Peak process RAM:      96.95 MB
+  Simulation runtime:    11.620s
+  Total wall runtime:    12.675s
+  Status:                PASS
+
+########################################################################################
+RUN 78/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 4x4 | medium | seed 13
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1835
+  Completion rate:       91.75%
+  Avg travel time:       143.71s
+  Avg waiting time:      39.26s
+  Avg time loss:         61.58s
+  Mean queue length:     2.59
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      97.58 MB
+  Simulation runtime:    11.828s
+  Total wall runtime:    12.886s
+  Status:                PASS
+
+########################################################################################
+RUN 79/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 4x4 | medium | seed 14
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1834
+  Completion rate:       91.70%
+  Avg travel time:       144.84s
+  Avg waiting time:      40.30s
+  Avg time loss:         62.76s
+  Mean queue length:     2.67
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      97.31 MB
+  Simulation runtime:    11.808s
+  Total wall runtime:    12.878s
+  Status:                PASS
+
+########################################################################################
+RUN 80/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 4x4 | medium | seed 15
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1998
+  Completed:             1826
+  Completion rate:       91.30%
+  Avg travel time:       145.31s
+  Avg waiting time:      40.69s
+  Avg time loss:         63.45s
+  Mean queue length:     2.68
+  Max queue length:      17
+  Teleports started:     0
+  Peak process RAM:      97.58 MB
+  Simulation runtime:    11.813s
+  Total wall runtime:    12.869s
+  Status:                PASS
+
+########################################################################################
+RUN 81/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 4x4 | medium | seed 11
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1998
+  Completed:             1862
+  Completion rate:       93.10%
+  Avg travel time:       120.93s
+  Avg waiting time:      14.90s
+  Avg time loss:         39.00s
+  Mean queue length:     0.90
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      103.75 MB
+  Simulation runtime:    11.880s
+  Total wall runtime:    12.986s
+  Status:                PASS
+
+########################################################################################
+RUN 82/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 4x4 | medium | seed 12
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1856
+  Completion rate:       92.80%
+  Avg travel time:       121.60s
+  Avg waiting time:      15.17s
+  Avg time loss:         39.34s
+  Mean queue length:     0.93
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      103.80 MB
+  Simulation runtime:    12.016s
+  Total wall runtime:    13.124s
+  Status:                PASS
+
+########################################################################################
+RUN 83/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 4x4 | medium | seed 13
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1998
+  Completed:             1859
+  Completion rate:       92.95%
+  Avg travel time:       121.55s
+  Avg waiting time:      15.16s
+  Avg time loss:         39.23s
+  Mean queue length:     0.92
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      103.83 MB
+  Simulation runtime:    11.932s
+  Total wall runtime:    13.041s
+  Status:                PASS
+
+########################################################################################
+RUN 84/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 4x4 | medium | seed 14
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1864
+  Completion rate:       93.20%
+  Avg travel time:       120.59s
+  Avg waiting time:      14.51s
+  Avg time loss:         38.39s
+  Mean queue length:     0.88
+  Max queue length:      8
+  Teleports started:     0
+  Peak process RAM:      103.89 MB
+  Simulation runtime:    11.802s
+  Total wall runtime:    12.899s
+  Status:                PASS
+
+########################################################################################
+RUN 85/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 4x4 | medium | seed 15
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1857
+  Completion rate:       92.85%
+  Avg travel time:       121.64s
+  Avg waiting time:      15.37s
+  Avg time loss:         39.70s
+  Mean queue length:     0.92
+  Max queue length:      9
+  Teleports started:     0
+  Peak process RAM:      103.92 MB
+  Simulation runtime:    11.768s
+  Total wall runtime:    12.875s
+  Status:                PASS
+
+########################################################################################
+RUN 86/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 4x4 | medium | seed 11
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1870
+  Completion rate:       93.50%
+  Avg travel time:       115.70s
+  Avg waiting time:      12.76s
+  Avg time loss:         33.81s
+  Mean queue length:     0.74
+  Max queue length:      8
+  Teleports started:     0
+  Peak process RAM:      98.14 MB
+  Simulation runtime:    11.765s
+  Total wall runtime:    12.836s
+  Status:                PASS
+
+########################################################################################
+RUN 87/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 4x4 | medium | seed 12
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1998
+  Completed:             1860
+  Completion rate:       93.00%
+  Avg travel time:       118.07s
+  Avg waiting time:      13.69s
+  Avg time loss:         35.82s
+  Mean queue length:     0.82
+  Max queue length:      12
+  Teleports started:     0
+  Peak process RAM:      98.08 MB
+  Simulation runtime:    11.800s
+  Total wall runtime:    12.870s
+  Status:                PASS
+
+########################################################################################
+RUN 88/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 4x4 | medium | seed 13
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1864
+  Completion rate:       93.20%
+  Avg travel time:       116.37s
+  Avg waiting time:      12.62s
+  Avg time loss:         34.00s
+  Mean queue length:     0.76
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      98.16 MB
+  Simulation runtime:    11.808s
+  Total wall runtime:    12.876s
+  Status:                PASS
+
+########################################################################################
+RUN 89/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 4x4 | medium | seed 14
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1857
+  Completion rate:       92.85%
+  Avg travel time:       116.62s
+  Avg waiting time:      12.97s
+  Avg time loss:         34.40s
+  Mean queue length:     0.77
+  Max queue length:      7
+  Teleports started:     0
+  Peak process RAM:      98.23 MB
+  Simulation runtime:    11.828s
+  Total wall runtime:    12.906s
+  Status:                PASS
+
+########################################################################################
+RUN 90/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 4x4 | medium | seed 15
+========================================================================================
+Loaded vehicles: 2000
+Expected TLS: 16
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                2000
+  Departed:              1999
+  Completed:             1861
+  Completion rate:       93.05%
+  Avg travel time:       114.94s
+  Avg waiting time:      12.22s
+  Avg time loss:         33.07s
+  Mean queue length:     0.74
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      98.08 MB
+  Simulation runtime:    11.803s
+  Total wall runtime:    12.877s
+  Status:                PASS
+
+########################################################################################
+RUN 91/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 5x5 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1564
+  Completed:             1431
+  Completion rate:       91.38%
+  Avg travel time:       155.75s
+  Avg waiting time:      42.97s
+  Avg time loss:         64.67s
+  Mean queue length:     1.48
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      98.95 MB
+  Simulation runtime:    11.809s
+  Total wall runtime:    12.885s
+  Status:                PASS
+
+########################################################################################
+RUN 92/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 5x5 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1423
+  Completion rate:       90.87%
+  Avg travel time:       156.07s
+  Avg waiting time:      43.08s
+  Avg time loss:         64.78s
+  Mean queue length:     1.49
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      99.22 MB
+  Simulation runtime:    11.791s
+  Total wall runtime:    12.861s
+  Status:                PASS
+
+########################################################################################
+RUN 93/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 5x5 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1564
+  Completed:             1431
+  Completion rate:       91.38%
+  Avg travel time:       158.06s
+  Avg waiting time:      44.42s
+  Avg time loss:         66.42s
+  Mean queue length:     1.52
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      99.16 MB
+  Simulation runtime:    11.844s
+  Total wall runtime:    12.919s
+  Status:                PASS
+
+########################################################################################
+RUN 94/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 5x5 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1564
+  Completed:             1430
+  Completion rate:       91.32%
+  Avg travel time:       156.09s
+  Avg waiting time:      42.91s
+  Avg time loss:         64.61s
+  Mean queue length:     1.48
+  Max queue length:      11
+  Teleports started:     0
+  Peak process RAM:      98.50 MB
+  Simulation runtime:    11.902s
+  Total wall runtime:    12.958s
+  Status:                PASS
+
+########################################################################################
+RUN 95/105
+########################################################################################
+
+========================================================================================
+ORIGINAL_FIXED | 5x5 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1431
+  Completion rate:       91.38%
+  Avg travel time:       155.05s
+  Avg waiting time:      42.31s
+  Avg time loss:         63.96s
+  Mean queue length:     1.46
+  Max queue length:      10
+  Teleports started:     0
+  Peak process RAM:      99.12 MB
+  Simulation runtime:    11.953s
+  Total wall runtime:    13.031s
+  Status:                PASS
+
+########################################################################################
+RUN 96/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 5x5 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1449
+  Completion rate:       92.53%
+  Avg travel time:       131.86s
+  Avg waiting time:      15.18s
+  Avg time loss:         40.76s
+  Mean queue length:     0.49
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      105.59 MB
+  Simulation runtime:    11.784s
+  Total wall runtime:    12.899s
+  Status:                PASS
+
+########################################################################################
+RUN 97/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 5x5 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1564
+  Completed:             1443
+  Completion rate:       92.15%
+  Avg travel time:       132.07s
+  Avg waiting time:      15.04s
+  Avg time loss:         40.66s
+  Mean queue length:     0.48
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      105.38 MB
+  Simulation runtime:    11.929s
+  Total wall runtime:    13.036s
+  Status:                PASS
+
+########################################################################################
+RUN 98/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 5x5 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1563
+  Completed:             1448
+  Completion rate:       92.46%
+  Avg travel time:       132.40s
+  Avg waiting time:      15.16s
+  Avg time loss:         40.69s
+  Mean queue length:     0.48
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      105.69 MB
+  Simulation runtime:    11.827s
+  Total wall runtime:    12.940s
+  Status:                PASS
+
+########################################################################################
+RUN 99/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 5x5 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1445
+  Completion rate:       92.27%
+  Avg travel time:       132.42s
+  Avg waiting time:      15.27s
+  Avg time loss:         41.07s
+  Mean queue length:     0.49
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      105.61 MB
+  Simulation runtime:    11.725s
+  Total wall runtime:    12.837s
+  Status:                PASS
+
+########################################################################################
+RUN 100/105
+########################################################################################
+
+========================================================================================
+WEBSTER_FIXED | 5x5 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: a
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1447
+  Completion rate:       92.40%
+  Avg travel time:       132.42s
+  Avg waiting time:      15.23s
+  Avg time loss:         41.14s
+  Mean queue length:     0.48
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      105.58 MB
+  Simulation runtime:    11.749s
+  Total wall runtime:    12.856s
+  Status:                PASS
+
+########################################################################################
+RUN 101/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 5x5 | medium | seed 11
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1448
+  Completion rate:       92.46%
+  Avg travel time:       125.12s
+  Avg waiting time:      11.88s
+  Avg time loss:         33.99s
+  Mean queue length:     0.38
+  Max queue length:      7
+  Teleports started:     0
+  Peak process RAM:      100.02 MB
+  Simulation runtime:    11.676s
+  Total wall runtime:    12.747s
+  Status:                PASS
+
+########################################################################################
+RUN 102/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 5x5 | medium | seed 12
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1455
+  Completion rate:       92.91%
+  Avg travel time:       125.11s
+  Avg waiting time:      11.86s
+  Avg time loss:         33.63s
+  Mean queue length:     0.38
+  Max queue length:      5
+  Teleports started:     0
+  Peak process RAM:      99.28 MB
+  Simulation runtime:    11.836s
+  Total wall runtime:    12.899s
+  Status:                PASS
+
+########################################################################################
+RUN 103/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 5x5 | medium | seed 13
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1456
+  Completion rate:       92.98%
+  Avg travel time:       124.62s
+  Avg waiting time:      11.47s
+  Avg time loss:         32.86s
+  Mean queue length:     0.36
+  Max queue length:      5
+  Teleports started:     0
+  Peak process RAM:      99.81 MB
+  Simulation runtime:    11.837s
+  Total wall runtime:    12.906s
+  Status:                PASS
+
+########################################################################################
+RUN 104/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 5x5 | medium | seed 14
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1565
+  Completed:             1452
+  Completion rate:       92.72%
+  Avg travel time:       126.75s
+  Avg waiting time:      12.98s
+  Avg time loss:         35.23s
+  Mean queue length:     0.41
+  Max queue length:      5
+  Teleports started:     0
+  Peak process RAM:      99.98 MB
+  Simulation runtime:    11.945s
+  Total wall runtime:    13.014s
+  Status:                PASS
+
+########################################################################################
+RUN 105/105
+########################################################################################
+
+========================================================================================
+ACTUATED | 5x5 | medium | seed 15
+========================================================================================
+Loaded vehicles: 1566
+Expected TLS: 25
+Expected active program: 0
+ Retrying in 1 seconds
+PASS: intended TLS program active on all intersections.
+
+RESULT
+  Loaded:                1566
+  Departed:              1564
+  Completed:             1456
+  Completion rate:       92.98%
+  Avg travel time:       125.56s
+  Avg waiting time:      12.17s
+  Avg time loss:         34.28s
+  Mean queue length:     0.39
+  Max queue length:      6
+  Teleports started:     0
+  Peak process RAM:      100.00 MB
+  Simulation runtime:    12.008s
+  Total wall runtime:    13.082s
+  Status:                PASS
+
+========================================================================================
+EVALUATION COMPLETE
+========================================================================================
+
+Runs completed/loaded: 105
+
+Master summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional/conventional_all_runs_summary.csv
+
+Aggregate summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/conventional/conventional_aggregate_summary.csv
+
+Metric compatibility:
+  [PASS] tripinfo.duration
+  [PASS] tripinfo.waitingTime
+  [PASS] tripinfo.timeLoss
+  [PASS] completed tripinfo count
+  [PASS] queue sampled every 5 seconds
+
+Revision metrics:
+  [PASS] completion rate
+  [PASS] teleports
+  [PASS] peak RAM
+  [PASS] simulation runtime
+
+No original experiment files were modified.

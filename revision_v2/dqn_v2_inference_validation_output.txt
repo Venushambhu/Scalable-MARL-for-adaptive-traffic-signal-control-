@@ -1,0 +1,46 @@
+
+========================================================================
+DQN V2 INFERENCE VALIDATION
+========================================================================
+Agents: ['B1', 'B2', 'C1', 'C2']
+PASS: loaded dqn_B1_medium.zip
+PASS: loaded dqn_B2_medium.zip
+PASS: loaded dqn_C1_medium.zip
+PASS: loaded dqn_C2_medium.zip
+ Retrying in 1 seconds
+
+Checking deterministic predictions...
+PASS: B1 -> action 1
+PASS: B2 -> action 1
+PASS: C1 -> action 1
+PASS: C2 -> action 1
+
+========================================================================
+PASS: DQN INFERENCE VALIDATION COMPLETE
+========================================================================
+Decisions:             360
+Prediction calls:      1440
+Mean agent latency:    0.0421 ms
+P95 agent latency:     0.0550 ms
+Mean joint latency:    0.1709 ms
+P95 joint latency:     0.1874 ms
+Decision budget used:  0.0034%
+Peak RAM:              332.11 MB
+Model size total:      0.369 MB
+Wall runtime:          1.461s
+
+Action counts:
+  B1: Action0=0, Action1=360
+  B2: Action0=0, Action1=360
+  C1: Action0=0, Action1=360
+  C2: Action0=0, Action1=360
+
+[PASS] deterministic inference
+[PASS] valid binary actions
+[PASS] 360 decision intervals
+[PASS] 1440 prediction calls
+[PASS] legal green phase at every decision boundary
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/validation/dqn_2x2_medium_inference_validation.csv
+
+NOTE: performance is not being judged here because these models were trained for only 800 steps.

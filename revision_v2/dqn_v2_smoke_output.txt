@@ -1,0 +1,39 @@
+
+================================================================================
+THESIS REVISION V2 — DQN TRAINING
+================================================================================
+Grid:             2x2
+Scenario:         medium
+Agents:           4
+Training steps:   800
+Training seed:    1
+Decision interval:5s
+
+Agents:
+  B1, B2, C1, C2
+
+Allocated replay-buffer memory:
+  Per agent: 3.242 MB
+  Total:     12.970 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-829.55 | epsilon=0.391
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-4027.95 | epsilon=0.050
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/dqn/medium/dqn_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/dqn/medium/dqn_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/dqn/medium/dqn_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid2x2/dqn/medium/dqn_C2_medium.zip
+
+================================================================================
+DQN TRAINING COMPLETE
+================================================================================
+Training runtime:       5.61s
+Peak process-tree RAM:  343.42 MB
+Replay buffer total:    12.970 MB
+Saved models total:     0.369 MB
+Saved model per agent:  0.092 MB
+Episodes completed:     2
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid2x2/dqn/medium/training_summary.csv

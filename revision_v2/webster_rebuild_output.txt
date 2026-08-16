@@ -1,0 +1,162 @@
+
+==============================================================================
+THESIS REVISION V2 — REBUILD WEBSTER BASELINES
+==============================================================================
+
+Explicit parameters:
+  Yellow time:    3s
+  All-red time:   0s
+  Lost time:      4s
+  Minimum green:  10s
+  Minimum cycle:  20s
+  Maximum cycle:  120s
+
+Tool:
+/Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py
+
+==============================================================================
+A. BACKING UP PREVIOUS WEBSTER OUTPUTS
+==============================================================================
+PASS: previous Webster files backed up to:
+/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed_default_yellow4_backup
+PASS: clean tuned_fixed directory created.
+
+==============================================================================
+B. GENERATING CORRECTED WEBSTER PLANS
+==============================================================================
+
+==============================================================================
+WEBSTER: 2x2 / low
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/low_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_low_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.5005555555555556.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 2x2 / medium
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/medium_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_medium_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.5000555555555555.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 2x2 / high
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/high_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_high_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.4998888888888888.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 2x2 / dynamic
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid2x2/grid2x2.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid2x2/dynamic_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_dynamic_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.500138888888889.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 3x3 / medium
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid3x3/grid3x3.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid3x3/medium_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid3x3/grid3x3_medium_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.5.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 4x4 / medium
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid4x4/grid4x4.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid4x4/medium_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid4x4/grid4x4_medium_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.4999722222222223.
+Begin time:0.0
+
+==============================================================================
+WEBSTER: 5x5 / medium
+==============================================================================
+
+COMMAND:
+/opt/anaconda3/envs/thesis/bin/python /Library/Frameworks/EclipseSUMO.framework/Versions/1.27.1/EclipseSUMO/share/sumo/tools/tlsCycleAdaptation.py -n /Users/venushambhuhullukattenataraju/thesis_project/network/grid5x5/grid5x5.net.xml -r /Users/venushambhuhullukattenataraju/thesis_project/routes/grid5x5/medium_demand.rou.xml -o /Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid5x5/grid5x5_medium_webster.add.xml -b 0 -y 3 -a 0 -l 4 -g 10 --min-cycle 20 --max-cycle 120
+
+SUMO OUTPUT:
+Warning: The period is less than 1 hour. The flows will be proportionally scaled up to 1-hour flow with the scaling factor 1.4997916666666666.
+Begin time:0.0
+
+==============================================================================
+C. AUDITING CORRECTED WEBSTER PLANS
+==============================================================================
+
+PASS: 2x2/low
+  TLS count: 4
+  Cycle range: 26.0–26.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+PASS: 2x2/medium
+  TLS count: 4
+  Cycle range: 26.0–26.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+PASS: 2x2/high
+  TLS count: 4
+  Cycle range: 33.0–34.0s
+  Minimum observed green: 13.0s
+  Yellow phases: 3s
+
+PASS: 2x2/dynamic
+  TLS count: 4
+  Cycle range: 26.0–28.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+PASS: 3x3/medium
+  TLS count: 9
+  Cycle range: 26.0–26.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+PASS: 4x4/medium
+  TLS count: 16
+  Cycle range: 26.0–26.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+PASS: 5x5/medium
+  TLS count: 25
+  Cycle range: 26.0–26.0s
+  Minimum observed green: 10.0s
+  Yellow phases: 3s
+
+==============================================================================
+PASS: CORRECTED WEBSTER BASELINES GENERATED
+==============================================================================
+
+All Webster plans now use:
+  [PASS] 3-second yellow
+  [PASS] 0-second all-red
+  [PASS] 10-second minimum green constraint
+  [PASS] explicit Webster lost time = 4 s
+  [PASS] cycle search range = 20–120 s
+
+Original networks and routes were not modified.

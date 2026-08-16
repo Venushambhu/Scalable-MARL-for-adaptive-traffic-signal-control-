@@ -1,0 +1,607 @@
+============================================================
+2x2 LEARNED-CONTROLLER FINAL EVALUATIONS
+============================================================
+
+============================================================
+DQN | 2x2 | low | seeds 11-15
+============================================================
+
+==============================================================================
+DQN V2 | 2x2 | low | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       568/600 (94.67%)
+Travel:          83.09s
+Waiting:         6.32s
+Queue:           0.39
+Teleports:       0
+Joint latency:   0.2173 ms
+Actions:
+  B1: A0=277, A1=83
+  B2: A0=271, A1=89
+  C1: A0=160, A1=200
+  C2: A0=235, A1=125
+
+==============================================================================
+DQN V2 | 2x2 | low | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       570/600 (95.00%)
+Travel:          83.04s
+Waiting:         6.05s
+Queue:           0.38
+Teleports:       0
+Joint latency:   0.1821 ms
+Actions:
+  B1: A0=277, A1=83
+  B2: A0=263, A1=97
+  C1: A0=155, A1=205
+  C2: A0=230, A1=130
+
+==============================================================================
+DQN V2 | 2x2 | low | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       573/600 (95.50%)
+Travel:          83.51s
+Waiting:         5.90s
+Queue:           0.38
+Teleports:       0
+Joint latency:   0.1932 ms
+Actions:
+  B1: A0=275, A1=85
+  B2: A0=275, A1=85
+  C1: A0=149, A1=211
+  C2: A0=222, A1=138
+
+==============================================================================
+DQN V2 | 2x2 | low | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       572/600 (95.33%)
+Travel:          83.85s
+Waiting:         6.50s
+Queue:           0.39
+Teleports:       0
+Joint latency:   0.1916 ms
+Actions:
+  B1: A0=274, A1=86
+  B2: A0=286, A1=74
+  C1: A0=155, A1=205
+  C2: A0=227, A1=133
+
+==============================================================================
+DQN V2 | 2x2 | low | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       572/600 (95.33%)
+Travel:          82.27s
+Waiting:         5.80s
+Queue:           0.38
+Teleports:       0
+Joint latency:   0.1934 ms
+Actions:
+  B1: A0=276, A1=84
+  B2: A0=268, A1=92
+  C1: A0=150, A1=210
+  C2: A0=231, A1=129
+
+==============================================================================
+DQN V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                95.167 +/- 0.333
+avg_travel_time                    83.152 +/- 0.595
+avg_waiting_time                    6.113 +/- 0.292
+avg_time_loss                      19.433 +/- 0.401
+mean_queue_length                   0.383 +/- 0.006
+teleports_started                   0.000 +/- 0.000
+mean_joint_decision_ms              0.196 +/- 0.013
+peak_process_tree_ram_mb          328.900 +/- 51.345
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/dqn/low/dqn_low_all_seeds.csv
+
+PASS: 5/5 deterministic DQN evaluation seeds completed.
+
+============================================================
+PPO | 2x2 | low | seeds 11-15
+============================================================
+
+==============================================================================
+PPO V2 | 2x2 | low | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       569/600 (94.83%)
+Travel:          82.82s
+Waiting:         6.05s
+Queue:           0.37
+Teleports:       0
+Joint latency:   0.3096 ms
+Actions:
+  B1: A0=147, A1=213
+  B2: A0=265, A1=95
+  C1: A0=250, A1=110
+  C2: A0=278, A1=82
+
+==============================================================================
+PPO V2 | 2x2 | low | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       567/600 (94.50%)
+Travel:          82.99s
+Waiting:         6.01s
+Queue:           0.38
+Teleports:       0
+Joint latency:   0.2838 ms
+Actions:
+  B1: A0=141, A1=219
+  B2: A0=252, A1=108
+  C1: A0=234, A1=126
+  C2: A0=275, A1=85
+
+==============================================================================
+PPO V2 | 2x2 | low | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       573/600 (95.50%)
+Travel:          83.16s
+Waiting:         5.76s
+Queue:           0.37
+Teleports:       0
+Joint latency:   0.2815 ms
+Actions:
+  B1: A0=158, A1=202
+  B2: A0=256, A1=104
+  C1: A0=232, A1=128
+  C2: A0=279, A1=81
+
+==============================================================================
+PPO V2 | 2x2 | low | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       571/600 (95.17%)
+Travel:          84.07s
+Waiting:         6.42s
+Queue:           0.41
+Teleports:       0
+Joint latency:   0.2844 ms
+Actions:
+  B1: A0=136, A1=224
+  B2: A0=258, A1=102
+  C1: A0=231, A1=129
+  C2: A0=264, A1=96
+
+==============================================================================
+PPO V2 | 2x2 | low | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       572/600 (95.33%)
+Travel:          82.30s
+Waiting:         5.62s
+Queue:           0.35
+Teleports:       0
+Joint latency:   0.2796 ms
+Actions:
+  B1: A0=139, A1=221
+  B2: A0=277, A1=83
+  C1: A0=243, A1=117
+  C2: A0=281, A1=79
+
+==============================================================================
+PPO V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                95.067 +/- 0.401
+avg_travel_time                    83.067 +/- 0.646
+avg_waiting_time                    5.971 +/- 0.310
+avg_time_loss                      19.345 +/- 0.469
+mean_queue_length                   0.377 +/- 0.024
+teleports_started                   0.000 +/- 0.000
+mean_joint_decision_ms              0.288 +/- 0.012
+peak_process_tree_ram_mb          326.738 +/- 1.302
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/ppo/low/ppo_low_all_seeds.csv
+
+PASS: 5/5 deterministic PPO evaluation seeds completed.
+
+============================================================
+DQN | 2x2 | high | seeds 11-15
+============================================================
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       454/3000 (15.13%)
+Travel:          268.86s
+Waiting:         149.99s
+Queue:           71.00
+Teleports:       93
+Joint latency:   0.1809 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=239, A1=121
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       430/3000 (14.33%)
+Travel:          272.27s
+Waiting:         146.82s
+Queue:           72.96
+Teleports:       114
+Joint latency:   0.1812 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=264, A1=96
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       386/3000 (12.87%)
+Travel:          246.60s
+Waiting:         127.28s
+Queue:           74.16
+Teleports:       105
+Joint latency:   0.1834 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=266, A1=94
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       410/3000 (13.67%)
+Travel:          263.08s
+Waiting:         139.90s
+Queue:           74.72
+Teleports:       130
+Joint latency:   0.1833 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=275, A1=85
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 | 2x2 | high | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       502/3000 (16.73%)
+Travel:          259.12s
+Waiting:         133.45s
+Queue:           69.08
+Teleports:       97
+Joint latency:   0.1832 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=2, A1=358
+  C1: A0=236, A1=124
+  C2: A0=0, A1=360
+
+==============================================================================
+DQN V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                14.547 +/- 1.481
+avg_travel_time                   261.985 +/- 9.989
+avg_waiting_time                  139.491 +/- 9.350
+avg_time_loss                     189.104 +/- 12.422
+mean_queue_length                  72.385 +/- 2.335
+teleports_started                 107.800 +/- 14.789
+mean_joint_decision_ms              0.182 +/- 0.001
+peak_process_tree_ram_mb          370.619 +/- 17.005
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/dqn/high/dqn_high_all_seeds.csv
+
+PASS: 5/5 deterministic DQN evaluation seeds completed.
+
+============================================================
+PPO | 2x2 | high | seeds 11-15
+============================================================
+
+==============================================================================
+PPO V2 | 2x2 | high | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       225/3000 (7.50%)
+Travel:          357.52s
+Waiting:         238.07s
+Queue:           74.05
+Teleports:       130
+Joint latency:   0.2974 ms
+Actions:
+  B1: A0=360, A1=0
+  B2: A0=285, A1=75
+  C1: A0=360, A1=0
+  C2: A0=358, A1=2
+
+==============================================================================
+PPO V2 | 2x2 | high | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       213/3000 (7.10%)
+Travel:          343.46s
+Waiting:         222.73s
+Queue:           74.70
+Teleports:       134
+Joint latency:   0.2954 ms
+Actions:
+  B1: A0=360, A1=0
+  B2: A0=283, A1=77
+  C1: A0=360, A1=0
+  C2: A0=358, A1=2
+
+==============================================================================
+PPO V2 | 2x2 | high | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       220/3000 (7.33%)
+Travel:          365.35s
+Waiting:         234.24s
+Queue:           73.98
+Teleports:       127
+Joint latency:   0.2941 ms
+Actions:
+  B1: A0=360, A1=0
+  B2: A0=288, A1=72
+  C1: A0=360, A1=0
+  C2: A0=358, A1=2
+
+==============================================================================
+PPO V2 | 2x2 | high | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       236/3000 (7.87%)
+Travel:          388.17s
+Waiting:         268.82s
+Queue:           73.69
+Teleports:       131
+Joint latency:   0.2950 ms
+Actions:
+  B1: A0=360, A1=0
+  B2: A0=286, A1=74
+  C1: A0=360, A1=0
+  C2: A0=358, A1=2
+
+==============================================================================
+PPO V2 | 2x2 | high | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       223/3000 (7.43%)
+Travel:          337.70s
+Waiting:         206.03s
+Queue:           74.34
+Teleports:       132
+Joint latency:   0.2953 ms
+Actions:
+  B1: A0=360, A1=0
+  B2: A0=289, A1=71
+  C1: A0=360, A1=0
+  C2: A0=358, A1=2
+
+==============================================================================
+PPO V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                 7.447 +/- 0.279
+avg_travel_time                   358.441 +/- 19.920
+avg_waiting_time                  233.976 +/- 23.120
+avg_time_loss                     259.012 +/- 23.482
+mean_queue_length                  74.152 +/- 0.382
+teleports_started                 130.800 +/- 2.588
+mean_joint_decision_ms              0.295 +/- 0.001
+peak_process_tree_ram_mb          344.022 +/- 1.666
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/ppo/high/ppo_high_all_seeds.csv
+
+PASS: 5/5 deterministic PPO evaluation seeds completed.
+
+============================================================
+DQN | 2x2 | dynamic | seeds 11-15
+============================================================
+
+==============================================================================
+DQN V2 | 2x2 | dynamic | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1124/1200 (93.67%)
+Travel:          97.75s
+Waiting:         12.93s
+Queue:           1.70
+Teleports:       0
+Joint latency:   0.1793 ms
+Actions:
+  B1: A0=228, A1=132
+  B2: A0=199, A1=161
+  C1: A0=147, A1=213
+  C2: A0=246, A1=114
+
+==============================================================================
+DQN V2 | 2x2 | dynamic | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1130/1200 (94.17%)
+Travel:          95.79s
+Waiting:         11.52s
+Queue:           1.45
+Teleports:       0
+Joint latency:   0.1757 ms
+Actions:
+  B1: A0=249, A1=111
+  B2: A0=208, A1=152
+  C1: A0=168, A1=192
+  C2: A0=234, A1=126
+
+==============================================================================
+DQN V2 | 2x2 | dynamic | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1127/1200 (93.92%)
+Travel:          98.28s
+Waiting:         12.63s
+Queue:           1.68
+Teleports:       0
+Joint latency:   0.1828 ms
+Actions:
+  B1: A0=239, A1=121
+  B2: A0=191, A1=169
+  C1: A0=167, A1=193
+  C2: A0=224, A1=136
+
+==============================================================================
+DQN V2 | 2x2 | dynamic | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1130/1200 (94.17%)
+Travel:          97.20s
+Waiting:         12.23s
+Queue:           1.57
+Teleports:       0
+Joint latency:   0.1785 ms
+Actions:
+  B1: A0=235, A1=125
+  B2: A0=207, A1=153
+  C1: A0=157, A1=203
+  C2: A0=238, A1=122
+
+==============================================================================
+DQN V2 | 2x2 | dynamic | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1127/1200 (93.92%)
+Travel:          96.93s
+Waiting:         12.47s
+Queue:           1.58
+Teleports:       0
+Joint latency:   0.1767 ms
+Actions:
+  B1: A0=248, A1=112
+  B2: A0=202, A1=158
+  C1: A0=152, A1=208
+  C2: A0=240, A1=120
+
+==============================================================================
+DQN V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                93.967 +/- 0.209
+avg_travel_time                    97.190 +/- 0.939
+avg_waiting_time                   12.355 +/- 0.529
+avg_time_loss                      31.218 +/- 0.872
+mean_queue_length                   1.597 +/- 0.099
+teleports_started                   0.000 +/- 0.000
+mean_joint_decision_ms              0.179 +/- 0.003
+peak_process_tree_ram_mb          356.147 +/- 14.126
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/dqn/dynamic/dqn_dynamic_all_seeds.csv
+
+PASS: 5/5 deterministic DQN evaluation seeds completed.
+
+============================================================
+PPO | 2x2 | dynamic | seeds 11-15
+============================================================
+
+==============================================================================
+PPO V2 | 2x2 | dynamic | seed 11
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1116/1200 (93.00%)
+Travel:          104.22s
+Waiting:         16.15s
+Queue:           2.13
+Teleports:       0
+Joint latency:   0.2918 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 2x2 | dynamic | seed 12
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1121/1200 (93.42%)
+Travel:          102.37s
+Waiting:         15.22s
+Queue:           2.00
+Teleports:       0
+Joint latency:   0.2744 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 2x2 | dynamic | seed 13
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1116/1200 (93.00%)
+Travel:          106.95s
+Waiting:         17.30s
+Queue:           2.40
+Teleports:       0
+Joint latency:   0.2745 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 2x2 | dynamic | seed 14
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1124/1200 (93.67%)
+Travel:          104.71s
+Waiting:         16.24s
+Queue:           2.17
+Teleports:       0
+Joint latency:   0.2811 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+
+==============================================================================
+PPO V2 | 2x2 | dynamic | seed 15
+==============================================================================
+ Retrying in 1 seconds
+Completed:       1120/1200 (93.33%)
+Travel:          102.76s
+Waiting:         15.56s
+Queue:           2.05
+Teleports:       0
+Joint latency:   0.2750 ms
+Actions:
+  B1: A0=0, A1=360
+  B2: A0=0, A1=360
+  C1: A0=0, A1=360
+  C2: A0=0, A1=360
+
+==============================================================================
+PPO V2 — FIVE-SEED SUMMARY
+==============================================================================
+completion_rate_pct                93.283 +/- 0.286
+avg_travel_time                   104.203 +/- 1.818
+avg_waiting_time                   16.091 +/- 0.797
+avg_time_loss                      38.284 +/- 1.630
+mean_queue_length                   2.149 +/- 0.153
+teleports_started                   0.000 +/- 0.000
+mean_joint_decision_ms              0.279 +/- 0.007
+peak_process_tree_ram_mb          326.469 +/- 1.945
+
+CSV: /Users/venushambhuhullukattenataraju/thesis_project/results_v2/learned/grid2x2/ppo/dynamic/ppo_dynamic_all_seeds.csv
+
+PASS: 5/5 deterministic PPO evaluation seeds completed.
+
+============================================================
+PASS: ALL REMAINING 2x2 LEARNED EVALUATIONS FINISHED
+============================================================

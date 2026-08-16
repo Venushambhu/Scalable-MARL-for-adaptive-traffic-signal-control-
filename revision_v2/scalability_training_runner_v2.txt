@@ -1,0 +1,2024 @@
+
+==========================================================================================
+THESIS REVISION V2 — TRAINING PLAN
+==========================================================================================
+ 1. DQN  3x3  medium   RUN
+ 2. PPO  3x3  medium   RUN
+ 3. DQN  4x4  medium   RUN
+ 4. PPO  4x4  medium   RUN
+ 5. DQN  5x5  medium   RUN
+ 6. PPO  5x5  medium   RUN
+
+==========================================================================================
+STARTING: DQN | 3x3 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_dqn_marl_v2.py --grid 3x3 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/dqn_grid3x3_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — DQN TRAINING
+================================================================================
+Grid:             3x3
+Scenario:         medium
+Agents:           9
+Training steps:   50000
+Training seed:    1
+Decision interval:5s
+
+Agents:
+  B1, B2, B3, C1, C2, C3, D1, D2, D3
+
+Allocated replay-buffer memory:
+  Per agent: 3.242 MB
+  Total:     29.182 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-170.34 | epsilon=0.990
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-176.26 | epsilon=0.980
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-168.37 | epsilon=0.971
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-187.92 | epsilon=0.961
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-163.49 | epsilon=0.951
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-176.68 | epsilon=0.941
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-167.34 | epsilon=0.932
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-170.21 | epsilon=0.922
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-168.00 | epsilon=0.912
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-171.24 | epsilon=0.902
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-179.69 | epsilon=0.893
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-150.37 | epsilon=0.883
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-157.01 | epsilon=0.873
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-160.32 | epsilon=0.863
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-315.71 | epsilon=0.853
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-161.74 | epsilon=0.844
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-152.17 | epsilon=0.834
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-152.29 | epsilon=0.824
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-296.22 | epsilon=0.814
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-138.03 | epsilon=0.805
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-151.00 | epsilon=0.795
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-152.51 | epsilon=0.785
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-148.79 | epsilon=0.775
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-156.47 | epsilon=0.766
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-140.58 | epsilon=0.756
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-156.42 | epsilon=0.746
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-138.80 | epsilon=0.736
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-145.58 | epsilon=0.726
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-135.73 | epsilon=0.717
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-133.94 | epsilon=0.707
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-134.88 | epsilon=0.697
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-134.19 | epsilon=0.687
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-151.02 | epsilon=0.678
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-133.36 | epsilon=0.668
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-134.20 | epsilon=0.658
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-143.19 | epsilon=0.648
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-134.26 | epsilon=0.638
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-135.89 | epsilon=0.629
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-129.80 | epsilon=0.619
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-141.49 | epsilon=0.609
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-136.51 | epsilon=0.599
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-137.29 | epsilon=0.590
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-135.41 | epsilon=0.580
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-150.16 | epsilon=0.570
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-146.46 | epsilon=0.560
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-125.97 | epsilon=0.551
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-132.07 | epsilon=0.541
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-124.01 | epsilon=0.531
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-138.71 | epsilon=0.521
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-133.39 | epsilon=0.511
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-130.32 | epsilon=0.502
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-128.81 | epsilon=0.492
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-125.41 | epsilon=0.482
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-117.59 | epsilon=0.472
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-135.43 | epsilon=0.463
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-122.97 | epsilon=0.453
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-121.00 | epsilon=0.443
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-125.33 | epsilon=0.433
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-116.67 | epsilon=0.424
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-118.71 | epsilon=0.414
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-123.82 | epsilon=0.404
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-125.20 | epsilon=0.394
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-122.77 | epsilon=0.384
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-117.97 | epsilon=0.375
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-115.87 | epsilon=0.365
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-121.62 | epsilon=0.355
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-119.82 | epsilon=0.345
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-122.44 | epsilon=0.336
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-126.59 | epsilon=0.326
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-120.06 | epsilon=0.316
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-120.57 | epsilon=0.306
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-123.51 | epsilon=0.296
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-126.38 | epsilon=0.287
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-122.62 | epsilon=0.277
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-118.58 | epsilon=0.267
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-113.42 | epsilon=0.257
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-118.03 | epsilon=0.248
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-119.28 | epsilon=0.238
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-109.56 | epsilon=0.228
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-116.57 | epsilon=0.218
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-110.21 | epsilon=0.209
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-112.72 | epsilon=0.199
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-114.97 | epsilon=0.189
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-107.50 | epsilon=0.179
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-108.73 | epsilon=0.169
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-120.78 | epsilon=0.160
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-112.00 | epsilon=0.150
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-109.92 | epsilon=0.140
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-113.01 | epsilon=0.130
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-111.33 | epsilon=0.121
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-115.52 | epsilon=0.111
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-103.58 | epsilon=0.101
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-107.63 | epsilon=0.091
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-111.50 | epsilon=0.082
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-118.23 | epsilon=0.072
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-118.48 | epsilon=0.062
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-110.66 | epsilon=0.052
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-106.74 | epsilon=0.050
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-113.16 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-104.79 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-107.59 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-110.26 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-112.86 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-109.67 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-103.21 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-102.61 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-108.49 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-115.87 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-107.93 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-103.97 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-112.99 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-114.40 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-111.13 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-109.87 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-113.51 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-115.21 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-108.41 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-109.54 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-106.46 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-109.16 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-117.36 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-99.50 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-118.10 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-109.36 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-107.62 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-102.09 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-106.80 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-107.90 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-109.61 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-100.06 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-108.00 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-106.48 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-107.70 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-106.48 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-112.12 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-113.27 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-110.50 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-108.99 | epsilon=0.050
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/dqn/medium/dqn_D3_medium.zip
+
+================================================================================
+DQN TRAINING COMPLETE
+================================================================================
+Training runtime:       692.93s
+Peak process-tree RAM:  357.94 MB
+Replay buffer total:    29.182 MB
+Saved models total:     0.829 MB
+Saved model per agent:  0.092 MB
+Episodes completed:     138
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid3x3/dqn/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+STARTING: PPO | 3x3 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_ppo_marl_v2.py --grid 3x3 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/ppo_grid3x3_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — PPO TRAINING
+================================================================================
+Grid:             3x3
+Scenario:         medium
+Agents:           9
+Training steps:   50000
+Training seed:    1
+
+Training device:          cpu
+Rollout buffer / agent:   0.0068 MB
+Rollout buffers total:    0.0615 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-174.41 | updates=2
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-147.67 | updates=5
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-149.28 | updates=8
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-246.03 | updates=11
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-125.34 | updates=14
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-124.40 | updates=16
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-121.59 | updates=19
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-124.86 | updates=22
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-125.16 | updates=25
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-126.16 | updates=28
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-129.41 | updates=30
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-126.13 | updates=33
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-119.94 | updates=36
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-121.87 | updates=39
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-119.60 | updates=42
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-121.52 | updates=45
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-125.10 | updates=47
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-121.47 | updates=50
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-129.21 | updates=53
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-123.68 | updates=56
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-122.42 | updates=59
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-128.14 | updates=61
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-123.20 | updates=64
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-133.03 | updates=67
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-130.60 | updates=70
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-126.98 | updates=73
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-131.22 | updates=75
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-140.48 | updates=78
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-126.71 | updates=81
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-121.57 | updates=84
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-119.47 | updates=87
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-121.61 | updates=90
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-127.28 | updates=92
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-130.18 | updates=95
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-123.21 | updates=98
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-128.19 | updates=101
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-133.47 | updates=104
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-128.40 | updates=106
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-118.63 | updates=109
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-121.09 | updates=112
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-124.88 | updates=115
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-111.91 | updates=118
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-125.58 | updates=120
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-127.07 | updates=123
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-124.08 | updates=126
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-130.17 | updates=129
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-124.03 | updates=132
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-138.82 | updates=135
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-127.90 | updates=137
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-123.93 | updates=140
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-119.29 | updates=143
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-126.94 | updates=146
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-139.10 | updates=149
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-135.71 | updates=151
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-122.91 | updates=154
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-129.27 | updates=157
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-129.00 | updates=160
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-130.34 | updates=163
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-132.52 | updates=165
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-134.27 | updates=168
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-125.40 | updates=171
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-139.87 | updates=174
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-127.90 | updates=177
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-129.70 | updates=180
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-130.86 | updates=182
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-128.77 | updates=185
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-123.58 | updates=188
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-126.52 | updates=191
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-128.56 | updates=194
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-123.26 | updates=196
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-122.64 | updates=199
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-128.86 | updates=202
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-131.56 | updates=205
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-121.54 | updates=208
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-124.62 | updates=210
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-128.54 | updates=213
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-128.52 | updates=216
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-123.77 | updates=219
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-127.63 | updates=222
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-118.26 | updates=225
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-120.76 | updates=227
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-121.78 | updates=230
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-131.33 | updates=233
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-137.91 | updates=236
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-118.11 | updates=239
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-129.91 | updates=241
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-124.63 | updates=244
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-120.76 | updates=247
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-127.04 | updates=250
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-129.74 | updates=253
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-123.02 | updates=255
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-134.86 | updates=258
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-126.88 | updates=261
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-129.43 | updates=264
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-122.06 | updates=267
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-132.67 | updates=270
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-130.52 | updates=272
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-127.33 | updates=275
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-121.84 | updates=278
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-113.23 | updates=281
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-132.99 | updates=284
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-127.30 | updates=286
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-129.06 | updates=289
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-128.21 | updates=292
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-129.74 | updates=295
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-119.57 | updates=298
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-122.69 | updates=300
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-210.19 | updates=303
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-120.74 | updates=306
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-132.42 | updates=309
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-129.96 | updates=312
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-118.20 | updates=315
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-126.44 | updates=317
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-125.13 | updates=320
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-126.42 | updates=323
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-125.38 | updates=326
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-134.36 | updates=329
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-122.78 | updates=331
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-129.16 | updates=334
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-117.59 | updates=337
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-125.37 | updates=340
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-123.27 | updates=343
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-126.72 | updates=345
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-127.04 | updates=348
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-122.64 | updates=351
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-124.56 | updates=354
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-123.10 | updates=357
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-123.56 | updates=360
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-121.73 | updates=362
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-125.70 | updates=365
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-123.51 | updates=368
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-120.83 | updates=371
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-131.78 | updates=374
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-126.18 | updates=376
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-124.04 | updates=379
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-125.94 | updates=382
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-125.63 | updates=385
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-125.41 | updates=388
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid3x3/ppo/medium/ppo_D3_medium.zip
+
+================================================================================
+PPO TRAINING COMPLETE
+================================================================================
+Training runtime:        731.54s
+Peak process-tree RAM:   334.73 MB
+Rollout buffers total:   0.0615 MB
+Saved models total:      1.195 MB
+Saved model per agent:   0.133 MB
+Episodes completed:      138
+PPO updates completed:   390
+Partial final buffer:    80 steps
+Training device:         cpu
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid3x3/ppo/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+STARTING: DQN | 4x4 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_dqn_marl_v2.py --grid 4x4 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/dqn_grid4x4_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — DQN TRAINING
+================================================================================
+Grid:             4x4
+Scenario:         medium
+Agents:           16
+Training steps:   50000
+Training seed:    1
+Decision interval:5s
+
+Agents:
+  B1, B2, B3, B4, C1, C2, C3, C4, D1, D2, D3, D4, E1, E2, E3, E4
+
+Allocated replay-buffer memory:
+  Per agent: 3.242 MB
+  Total:     51.880 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-123.99 | epsilon=0.990
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-115.65 | epsilon=0.980
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-110.22 | epsilon=0.971
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-125.54 | epsilon=0.961
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-106.08 | epsilon=0.951
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-108.30 | epsilon=0.941
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-107.62 | epsilon=0.932
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-116.59 | epsilon=0.922
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-103.41 | epsilon=0.912
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-102.94 | epsilon=0.902
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-102.33 | epsilon=0.893
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-104.85 | epsilon=0.883
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-109.91 | epsilon=0.873
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-102.03 | epsilon=0.863
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-97.98 | epsilon=0.853
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-105.16 | epsilon=0.844
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-93.89 | epsilon=0.834
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-104.38 | epsilon=0.824
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-102.80 | epsilon=0.814
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-95.94 | epsilon=0.805
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-96.69 | epsilon=0.795
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-96.74 | epsilon=0.785
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-94.46 | epsilon=0.775
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-99.85 | epsilon=0.766
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-99.59 | epsilon=0.756
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-94.08 | epsilon=0.746
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-97.13 | epsilon=0.736
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-100.75 | epsilon=0.726
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-94.69 | epsilon=0.717
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-93.48 | epsilon=0.707
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-94.01 | epsilon=0.697
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-95.58 | epsilon=0.687
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-91.68 | epsilon=0.678
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-94.22 | epsilon=0.668
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-98.33 | epsilon=0.658
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-92.74 | epsilon=0.648
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-91.56 | epsilon=0.638
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-94.08 | epsilon=0.629
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-86.86 | epsilon=0.619
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-88.97 | epsilon=0.609
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-88.81 | epsilon=0.599
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-90.07 | epsilon=0.590
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-89.71 | epsilon=0.580
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-94.41 | epsilon=0.570
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-92.64 | epsilon=0.560
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-85.46 | epsilon=0.551
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-85.68 | epsilon=0.541
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-87.04 | epsilon=0.531
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-81.77 | epsilon=0.521
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-85.91 | epsilon=0.511
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-87.97 | epsilon=0.502
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-87.03 | epsilon=0.492
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-85.43 | epsilon=0.482
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-84.05 | epsilon=0.472
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-82.69 | epsilon=0.463
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-84.17 | epsilon=0.453
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-85.51 | epsilon=0.443
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-82.41 | epsilon=0.433
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-80.33 | epsilon=0.424
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-80.76 | epsilon=0.414
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-82.06 | epsilon=0.404
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-80.91 | epsilon=0.394
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-82.46 | epsilon=0.384
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-83.22 | epsilon=0.375
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-85.19 | epsilon=0.365
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-83.08 | epsilon=0.355
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-78.35 | epsilon=0.345
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-81.79 | epsilon=0.336
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-79.56 | epsilon=0.326
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-79.01 | epsilon=0.316
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-80.16 | epsilon=0.306
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-75.36 | epsilon=0.296
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-77.43 | epsilon=0.287
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-75.55 | epsilon=0.277
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-75.81 | epsilon=0.267
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-78.91 | epsilon=0.257
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-76.66 | epsilon=0.248
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-77.53 | epsilon=0.238
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-77.17 | epsilon=0.228
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-77.96 | epsilon=0.218
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-76.85 | epsilon=0.209
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-72.16 | epsilon=0.199
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-74.99 | epsilon=0.189
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-74.70 | epsilon=0.179
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-72.19 | epsilon=0.169
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-73.78 | epsilon=0.160
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-73.24 | epsilon=0.150
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-72.74 | epsilon=0.140
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-72.30 | epsilon=0.130
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-73.59 | epsilon=0.121
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-73.29 | epsilon=0.111
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-72.27 | epsilon=0.101
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-70.76 | epsilon=0.091
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-69.52 | epsilon=0.082
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-69.19 | epsilon=0.072
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-76.13 | epsilon=0.062
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-71.94 | epsilon=0.052
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-69.98 | epsilon=0.050
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-73.02 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-67.60 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-70.05 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-72.64 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-69.15 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-66.14 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-67.89 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-67.64 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-70.63 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-66.86 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-71.29 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-72.43 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-71.74 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-67.99 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-70.92 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-70.51 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-70.86 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-68.62 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-72.74 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-71.87 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-70.78 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-71.80 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-67.34 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-72.43 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-66.77 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-65.21 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-69.18 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-68.97 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-71.04 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-68.41 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-68.61 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-69.99 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-70.40 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-68.44 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-67.60 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-67.22 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-70.26 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-70.09 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-71.20 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-68.64 | epsilon=0.050
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_B4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_C4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_D3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_D4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_E1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_E2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_E3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/dqn/medium/dqn_E4_medium.zip
+
+================================================================================
+DQN TRAINING COMPLETE
+================================================================================
+Training runtime:       1046.14s
+Peak process-tree RAM:  388.56 MB
+Replay buffer total:    51.880 MB
+Saved models total:     1.475 MB
+Saved model per agent:  0.092 MB
+Episodes completed:     138
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid4x4/dqn/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+STARTING: PPO | 4x4 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_ppo_marl_v2.py --grid 4x4 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/ppo_grid4x4_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — PPO TRAINING
+================================================================================
+Grid:             4x4
+Scenario:         medium
+Agents:           16
+Training steps:   50000
+Training seed:    1
+
+Training device:          cpu
+Rollout buffer / agent:   0.0068 MB
+Rollout buffers total:    0.1094 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-116.10 | updates=2
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-107.09 | updates=5
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-100.24 | updates=8
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-94.31 | updates=11
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-87.57 | updates=14
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-87.09 | updates=16
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-87.16 | updates=19
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-85.94 | updates=22
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-84.82 | updates=25
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-83.40 | updates=28
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-86.34 | updates=30
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-86.05 | updates=33
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-85.29 | updates=36
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-85.97 | updates=39
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-85.19 | updates=42
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-85.30 | updates=45
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-88.50 | updates=47
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-89.45 | updates=50
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-89.81 | updates=53
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-93.44 | updates=56
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-84.88 | updates=59
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-88.33 | updates=61
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-88.94 | updates=64
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-84.42 | updates=67
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-85.36 | updates=70
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-88.43 | updates=73
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-84.20 | updates=75
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-84.20 | updates=78
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-85.81 | updates=81
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-87.51 | updates=84
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-87.09 | updates=87
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-88.46 | updates=90
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-81.13 | updates=92
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-83.00 | updates=95
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-85.28 | updates=98
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-85.96 | updates=101
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-85.78 | updates=104
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-88.67 | updates=106
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-83.05 | updates=109
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-93.91 | updates=112
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-86.22 | updates=115
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-86.75 | updates=118
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-89.77 | updates=120
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-88.20 | updates=123
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-89.08 | updates=126
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-91.51 | updates=129
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-86.91 | updates=132
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-89.66 | updates=135
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-89.02 | updates=137
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-92.89 | updates=140
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-88.03 | updates=143
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-88.03 | updates=146
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-85.33 | updates=149
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-88.94 | updates=151
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-82.83 | updates=154
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-86.00 | updates=157
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-83.12 | updates=160
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-90.82 | updates=163
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-84.44 | updates=165
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-84.57 | updates=168
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-85.06 | updates=171
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-86.31 | updates=174
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-88.00 | updates=177
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-89.56 | updates=180
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-86.30 | updates=182
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-84.64 | updates=185
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-88.01 | updates=188
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-88.90 | updates=191
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-85.54 | updates=194
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-87.47 | updates=196
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-82.21 | updates=199
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-90.57 | updates=202
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-86.28 | updates=205
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-89.06 | updates=208
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-88.76 | updates=210
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-81.15 | updates=213
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-89.88 | updates=216
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-79.71 | updates=219
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-89.30 | updates=222
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-86.55 | updates=225
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-82.15 | updates=227
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-87.74 | updates=230
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-89.48 | updates=233
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-89.30 | updates=236
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-81.39 | updates=239
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-84.61 | updates=241
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-82.52 | updates=244
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-91.97 | updates=247
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-87.61 | updates=250
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-90.73 | updates=253
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-87.01 | updates=255
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-88.70 | updates=258
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-89.84 | updates=261
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-86.51 | updates=264
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-87.01 | updates=267
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-88.09 | updates=270
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-91.83 | updates=272
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-86.46 | updates=275
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-88.36 | updates=278
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-86.29 | updates=281
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-88.82 | updates=284
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-87.94 | updates=286
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-93.33 | updates=289
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-84.50 | updates=292
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-84.47 | updates=295
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-90.79 | updates=298
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-86.91 | updates=300
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-89.53 | updates=303
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-91.91 | updates=306
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-90.17 | updates=309
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-86.89 | updates=312
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-88.51 | updates=315
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-85.28 | updates=317
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-80.69 | updates=320
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-83.81 | updates=323
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-85.92 | updates=326
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-84.02 | updates=329
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-86.74 | updates=331
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-85.78 | updates=334
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-87.78 | updates=337
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-90.28 | updates=340
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-89.54 | updates=343
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-85.61 | updates=345
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-86.51 | updates=348
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-88.64 | updates=351
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-88.77 | updates=354
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-88.26 | updates=357
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-86.42 | updates=360
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-89.59 | updates=362
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-93.79 | updates=365
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-89.29 | updates=368
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-87.91 | updates=371
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-89.56 | updates=374
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-87.06 | updates=376
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-87.09 | updates=379
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-89.44 | updates=382
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-86.87 | updates=385
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-84.73 | updates=388
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_B4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_C4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_D3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_D4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_E1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_E2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_E3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid4x4/ppo/medium/ppo_E4_medium.zip
+
+================================================================================
+PPO TRAINING COMPLETE
+================================================================================
+Training runtime:        1018.70s
+Peak process-tree RAM:   339.75 MB
+Rollout buffers total:   0.1094 MB
+Saved models total:      2.125 MB
+Saved model per agent:   0.133 MB
+Episodes completed:      138
+PPO updates completed:   390
+Partial final buffer:    80 steps
+Training device:         cpu
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid4x4/ppo/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+STARTING: DQN | 5x5 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_dqn_marl_v2.py --grid 5x5 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/dqn_grid5x5_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — DQN TRAINING
+================================================================================
+Grid:             5x5
+Scenario:         medium
+Agents:           25
+Training steps:   50000
+Training seed:    1
+Decision interval:5s
+
+Agents:
+  B1, B2, B3, B4, B5, C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, E1, E2, E3, E4, E5, F1, F2, F3, F4, F5
+
+Allocated replay-buffer memory:
+  Per agent: 3.242 MB
+  Total:     81.062 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-75.78 | epsilon=0.990
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-70.93 | epsilon=0.980
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-75.18 | epsilon=0.971
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-73.42 | epsilon=0.961
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-72.32 | epsilon=0.951
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-70.99 | epsilon=0.941
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-71.94 | epsilon=0.932
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-70.46 | epsilon=0.922
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-71.74 | epsilon=0.912
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-71.83 | epsilon=0.902
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-71.19 | epsilon=0.893
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-68.72 | epsilon=0.883
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-70.74 | epsilon=0.873
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-69.20 | epsilon=0.863
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-73.49 | epsilon=0.853
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-66.52 | epsilon=0.844
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-69.89 | epsilon=0.834
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-68.08 | epsilon=0.824
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-67.36 | epsilon=0.814
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-65.53 | epsilon=0.805
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-66.47 | epsilon=0.795
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-68.50 | epsilon=0.785
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-66.83 | epsilon=0.775
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-65.65 | epsilon=0.766
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-65.34 | epsilon=0.756
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-64.27 | epsilon=0.746
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-64.93 | epsilon=0.736
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-62.89 | epsilon=0.726
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-64.62 | epsilon=0.717
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-64.72 | epsilon=0.707
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-62.18 | epsilon=0.697
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-62.03 | epsilon=0.687
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-63.33 | epsilon=0.678
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-62.07 | epsilon=0.668
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-62.30 | epsilon=0.658
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-59.83 | epsilon=0.648
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-60.56 | epsilon=0.638
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-63.42 | epsilon=0.629
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-62.89 | epsilon=0.619
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-61.65 | epsilon=0.609
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-58.94 | epsilon=0.599
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-60.82 | epsilon=0.590
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-59.91 | epsilon=0.580
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-59.52 | epsilon=0.570
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-62.21 | epsilon=0.560
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-57.12 | epsilon=0.551
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-59.21 | epsilon=0.541
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-55.53 | epsilon=0.531
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-57.55 | epsilon=0.521
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-58.92 | epsilon=0.511
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-57.22 | epsilon=0.502
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-56.42 | epsilon=0.492
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-56.88 | epsilon=0.482
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-56.64 | epsilon=0.472
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-57.54 | epsilon=0.463
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-54.43 | epsilon=0.453
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-55.95 | epsilon=0.443
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-56.08 | epsilon=0.433
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-56.29 | epsilon=0.424
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-54.72 | epsilon=0.414
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-56.66 | epsilon=0.404
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-54.15 | epsilon=0.394
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-53.31 | epsilon=0.384
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-54.51 | epsilon=0.375
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-53.48 | epsilon=0.365
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-51.82 | epsilon=0.355
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-52.65 | epsilon=0.345
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-53.52 | epsilon=0.336
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-52.90 | epsilon=0.326
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-50.48 | epsilon=0.316
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-51.18 | epsilon=0.306
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-50.03 | epsilon=0.296
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-51.61 | epsilon=0.287
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-50.65 | epsilon=0.277
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-50.41 | epsilon=0.267
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-52.28 | epsilon=0.257
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-51.42 | epsilon=0.248
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-49.86 | epsilon=0.238
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-49.45 | epsilon=0.228
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-48.14 | epsilon=0.218
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-49.05 | epsilon=0.209
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-47.26 | epsilon=0.199
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-46.68 | epsilon=0.189
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-46.39 | epsilon=0.179
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-46.93 | epsilon=0.169
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-46.48 | epsilon=0.160
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-46.78 | epsilon=0.150
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-45.72 | epsilon=0.140
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-44.48 | epsilon=0.130
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-46.30 | epsilon=0.121
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-45.05 | epsilon=0.111
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-44.20 | epsilon=0.101
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-42.87 | epsilon=0.091
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-44.26 | epsilon=0.082
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-42.83 | epsilon=0.072
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-44.34 | epsilon=0.062
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-42.72 | epsilon=0.052
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-43.98 | epsilon=0.050
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-42.68 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-41.22 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-42.69 | epsilon=0.050
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-41.84 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-42.34 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-43.64 | epsilon=0.050
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-41.52 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-42.96 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-41.13 | epsilon=0.050
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-41.88 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-41.52 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-42.06 | epsilon=0.050
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-42.32 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-41.94 | epsilon=0.050
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-43.18 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-42.58 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-42.20 | epsilon=0.050
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-41.24 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-43.25 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-41.74 | epsilon=0.050
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-44.48 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-42.20 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-41.56 | epsilon=0.050
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-43.50 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-42.82 | epsilon=0.050
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-41.13 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-42.41 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-41.60 | epsilon=0.050
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-42.87 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-41.34 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-42.11 | epsilon=0.050
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-42.80 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-40.80 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-42.27 | epsilon=0.050
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-42.85 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-42.44 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-41.98 | epsilon=0.050
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-42.79 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-41.74 | epsilon=0.050
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-40.80 | epsilon=0.050
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_B4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_B5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_C4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_C5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_D3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_D4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_D5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_E1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_E2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_E3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_E4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_E5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_F1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_F2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_F3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_F4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/dqn/medium/dqn_F5_medium.zip
+
+================================================================================
+DQN TRAINING COMPLETE
+================================================================================
+Training runtime:       1398.06s
+Peak process-tree RAM:  422.66 MB
+Replay buffer total:    81.062 MB
+Saved models total:     2.304 MB
+Saved model per agent:  0.092 MB
+Episodes completed:     138
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid5x5/dqn/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+STARTING: PPO | 5x5 | medium
+==========================================================================================
+Command:
+/opt/anaconda3/envs/thesis/bin/python /Users/venushambhuhullukattenataraju/thesis_project/revision_v2/train_ppo_marl_v2.py --grid 5x5 --scenario medium --total_steps 50000 --seed 1
+
+Log:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/runner_logs/ppo_grid5x5_medium_50k.log
+
+================================================================================
+THESIS REVISION V2 — PPO TRAINING
+================================================================================
+Grid:             5x5
+Scenario:         medium
+Agents:           25
+Training steps:   50000
+Training seed:    1
+
+Training device:          cpu
+Rollout buffer / agent:   0.0068 MB
+Rollout buffers total:    0.1709 MB
+ Retrying in 1 seconds
+[step 360] episode 1 finished | avg reward/agent=-73.35 | updates=2
+ Retrying in 1 seconds
+[step 720] episode 2 finished | avg reward/agent=-75.74 | updates=5
+ Retrying in 1 seconds
+[step 1080] episode 3 finished | avg reward/agent=-68.13 | updates=8
+ Retrying in 1 seconds
+[step 1440] episode 4 finished | avg reward/agent=-66.72 | updates=11
+ Retrying in 1 seconds
+[step 1800] episode 5 finished | avg reward/agent=-67.97 | updates=14
+ Retrying in 1 seconds
+[step 2160] episode 6 finished | avg reward/agent=-65.91 | updates=16
+ Retrying in 1 seconds
+[step 2520] episode 7 finished | avg reward/agent=-66.74 | updates=19
+ Retrying in 1 seconds
+[step 2880] episode 8 finished | avg reward/agent=-65.02 | updates=22
+ Retrying in 1 seconds
+[step 3240] episode 9 finished | avg reward/agent=-67.01 | updates=25
+ Retrying in 1 seconds
+[step 3600] episode 10 finished | avg reward/agent=-66.82 | updates=28
+ Retrying in 1 seconds
+[step 3960] episode 11 finished | avg reward/agent=-67.96 | updates=30
+ Retrying in 1 seconds
+[step 4320] episode 12 finished | avg reward/agent=-67.50 | updates=33
+ Retrying in 1 seconds
+[step 4680] episode 13 finished | avg reward/agent=-66.54 | updates=36
+ Retrying in 1 seconds
+[step 5040] episode 14 finished | avg reward/agent=-69.65 | updates=39
+ Retrying in 1 seconds
+[step 5400] episode 15 finished | avg reward/agent=-68.03 | updates=42
+ Retrying in 1 seconds
+[step 5760] episode 16 finished | avg reward/agent=-66.45 | updates=45
+ Retrying in 1 seconds
+[step 6120] episode 17 finished | avg reward/agent=-66.55 | updates=47
+ Retrying in 1 seconds
+[step 6480] episode 18 finished | avg reward/agent=-66.60 | updates=50
+ Retrying in 1 seconds
+[step 6840] episode 19 finished | avg reward/agent=-66.98 | updates=53
+ Retrying in 1 seconds
+[step 7200] episode 20 finished | avg reward/agent=-68.38 | updates=56
+ Retrying in 1 seconds
+[step 7560] episode 21 finished | avg reward/agent=-67.42 | updates=59
+ Retrying in 1 seconds
+[step 7920] episode 22 finished | avg reward/agent=-68.57 | updates=61
+ Retrying in 1 seconds
+[step 8280] episode 23 finished | avg reward/agent=-69.88 | updates=64
+ Retrying in 1 seconds
+[step 8640] episode 24 finished | avg reward/agent=-66.57 | updates=67
+ Retrying in 1 seconds
+[step 9000] episode 25 finished | avg reward/agent=-67.93 | updates=70
+ Retrying in 1 seconds
+[step 9360] episode 26 finished | avg reward/agent=-68.82 | updates=73
+ Retrying in 1 seconds
+[step 9720] episode 27 finished | avg reward/agent=-67.07 | updates=75
+ Retrying in 1 seconds
+[step 10080] episode 28 finished | avg reward/agent=-68.58 | updates=78
+ Retrying in 1 seconds
+[step 10440] episode 29 finished | avg reward/agent=-68.51 | updates=81
+ Retrying in 1 seconds
+[step 10800] episode 30 finished | avg reward/agent=-69.00 | updates=84
+ Retrying in 1 seconds
+[step 11160] episode 31 finished | avg reward/agent=-67.00 | updates=87
+ Retrying in 1 seconds
+[step 11520] episode 32 finished | avg reward/agent=-68.51 | updates=90
+ Retrying in 1 seconds
+[step 11880] episode 33 finished | avg reward/agent=-68.18 | updates=92
+ Retrying in 1 seconds
+[step 12240] episode 34 finished | avg reward/agent=-67.70 | updates=95
+ Retrying in 1 seconds
+[step 12600] episode 35 finished | avg reward/agent=-66.93 | updates=98
+ Retrying in 1 seconds
+[step 12960] episode 36 finished | avg reward/agent=-68.77 | updates=101
+ Retrying in 1 seconds
+[step 13320] episode 37 finished | avg reward/agent=-67.53 | updates=104
+ Retrying in 1 seconds
+[step 13680] episode 38 finished | avg reward/agent=-69.28 | updates=106
+ Retrying in 1 seconds
+[step 14040] episode 39 finished | avg reward/agent=-67.62 | updates=109
+ Retrying in 1 seconds
+[step 14400] episode 40 finished | avg reward/agent=-69.32 | updates=112
+ Retrying in 1 seconds
+[step 14760] episode 41 finished | avg reward/agent=-68.82 | updates=115
+ Retrying in 1 seconds
+[step 15120] episode 42 finished | avg reward/agent=-68.98 | updates=118
+ Retrying in 1 seconds
+[step 15480] episode 43 finished | avg reward/agent=-68.30 | updates=120
+ Retrying in 1 seconds
+[step 15840] episode 44 finished | avg reward/agent=-68.16 | updates=123
+ Retrying in 1 seconds
+[step 16200] episode 45 finished | avg reward/agent=-68.03 | updates=126
+ Retrying in 1 seconds
+[step 16560] episode 46 finished | avg reward/agent=-68.81 | updates=129
+ Retrying in 1 seconds
+[step 16920] episode 47 finished | avg reward/agent=-68.49 | updates=132
+ Retrying in 1 seconds
+[step 17280] episode 48 finished | avg reward/agent=-68.69 | updates=135
+ Retrying in 1 seconds
+[step 17640] episode 49 finished | avg reward/agent=-68.11 | updates=137
+ Retrying in 1 seconds
+[step 18000] episode 50 finished | avg reward/agent=-67.76 | updates=140
+ Retrying in 1 seconds
+[step 18360] episode 51 finished | avg reward/agent=-67.40 | updates=143
+ Retrying in 1 seconds
+[step 18720] episode 52 finished | avg reward/agent=-67.36 | updates=146
+ Retrying in 1 seconds
+[step 19080] episode 53 finished | avg reward/agent=-67.04 | updates=149
+ Retrying in 1 seconds
+[step 19440] episode 54 finished | avg reward/agent=-67.21 | updates=151
+ Retrying in 1 seconds
+[step 19800] episode 55 finished | avg reward/agent=-65.03 | updates=154
+ Retrying in 1 seconds
+[step 20160] episode 56 finished | avg reward/agent=-65.80 | updates=157
+ Retrying in 1 seconds
+[step 20520] episode 57 finished | avg reward/agent=-66.65 | updates=160
+ Retrying in 1 seconds
+[step 20880] episode 58 finished | avg reward/agent=-64.29 | updates=163
+ Retrying in 1 seconds
+[step 21240] episode 59 finished | avg reward/agent=-65.50 | updates=165
+ Retrying in 1 seconds
+[step 21600] episode 60 finished | avg reward/agent=-63.74 | updates=168
+ Retrying in 1 seconds
+[step 21960] episode 61 finished | avg reward/agent=-66.50 | updates=171
+ Retrying in 1 seconds
+[step 22320] episode 62 finished | avg reward/agent=-64.03 | updates=174
+ Retrying in 1 seconds
+[step 22680] episode 63 finished | avg reward/agent=-63.62 | updates=177
+ Retrying in 1 seconds
+[step 23040] episode 64 finished | avg reward/agent=-63.67 | updates=180
+ Retrying in 1 seconds
+[step 23400] episode 65 finished | avg reward/agent=-62.92 | updates=182
+ Retrying in 1 seconds
+[step 23760] episode 66 finished | avg reward/agent=-66.43 | updates=185
+ Retrying in 1 seconds
+[step 24120] episode 67 finished | avg reward/agent=-64.13 | updates=188
+ Retrying in 1 seconds
+[step 24480] episode 68 finished | avg reward/agent=-62.39 | updates=191
+ Retrying in 1 seconds
+[step 24840] episode 69 finished | avg reward/agent=-63.33 | updates=194
+ Retrying in 1 seconds
+[step 25200] episode 70 finished | avg reward/agent=-62.95 | updates=196
+ Retrying in 1 seconds
+[step 25560] episode 71 finished | avg reward/agent=-65.06 | updates=199
+ Retrying in 1 seconds
+[step 25920] episode 72 finished | avg reward/agent=-64.35 | updates=202
+ Retrying in 1 seconds
+[step 26280] episode 73 finished | avg reward/agent=-64.24 | updates=205
+ Retrying in 1 seconds
+[step 26640] episode 74 finished | avg reward/agent=-62.70 | updates=208
+ Retrying in 1 seconds
+[step 27000] episode 75 finished | avg reward/agent=-63.31 | updates=210
+ Retrying in 1 seconds
+[step 27360] episode 76 finished | avg reward/agent=-64.14 | updates=213
+ Retrying in 1 seconds
+[step 27720] episode 77 finished | avg reward/agent=-63.47 | updates=216
+ Retrying in 1 seconds
+[step 28080] episode 78 finished | avg reward/agent=-62.96 | updates=219
+ Retrying in 1 seconds
+[step 28440] episode 79 finished | avg reward/agent=-60.60 | updates=222
+ Retrying in 1 seconds
+[step 28800] episode 80 finished | avg reward/agent=-62.53 | updates=225
+ Retrying in 1 seconds
+[step 29160] episode 81 finished | avg reward/agent=-61.50 | updates=227
+ Retrying in 1 seconds
+[step 29520] episode 82 finished | avg reward/agent=-61.49 | updates=230
+ Retrying in 1 seconds
+[step 29880] episode 83 finished | avg reward/agent=-62.01 | updates=233
+ Retrying in 1 seconds
+[step 30240] episode 84 finished | avg reward/agent=-63.04 | updates=236
+ Retrying in 1 seconds
+[step 30600] episode 85 finished | avg reward/agent=-60.89 | updates=239
+ Retrying in 1 seconds
+[step 30960] episode 86 finished | avg reward/agent=-60.89 | updates=241
+ Retrying in 1 seconds
+[step 31320] episode 87 finished | avg reward/agent=-60.42 | updates=244
+ Retrying in 1 seconds
+[step 31680] episode 88 finished | avg reward/agent=-60.58 | updates=247
+ Retrying in 1 seconds
+[step 32040] episode 89 finished | avg reward/agent=-60.48 | updates=250
+ Retrying in 1 seconds
+[step 32400] episode 90 finished | avg reward/agent=-61.12 | updates=253
+ Retrying in 1 seconds
+[step 32760] episode 91 finished | avg reward/agent=-57.56 | updates=255
+ Retrying in 1 seconds
+[step 33120] episode 92 finished | avg reward/agent=-60.02 | updates=258
+ Retrying in 1 seconds
+[step 33480] episode 93 finished | avg reward/agent=-59.89 | updates=261
+ Retrying in 1 seconds
+[step 33840] episode 94 finished | avg reward/agent=-58.36 | updates=264
+ Retrying in 1 seconds
+[step 34200] episode 95 finished | avg reward/agent=-59.96 | updates=267
+ Retrying in 1 seconds
+[step 34560] episode 96 finished | avg reward/agent=-58.94 | updates=270
+ Retrying in 1 seconds
+[step 34920] episode 97 finished | avg reward/agent=-60.70 | updates=272
+ Retrying in 1 seconds
+[step 35280] episode 98 finished | avg reward/agent=-56.87 | updates=275
+ Retrying in 1 seconds
+[step 35640] episode 99 finished | avg reward/agent=-58.30 | updates=278
+ Retrying in 1 seconds
+[step 36000] episode 100 finished | avg reward/agent=-57.64 | updates=281
+ Retrying in 1 seconds
+[step 36360] episode 101 finished | avg reward/agent=-56.76 | updates=284
+ Retrying in 1 seconds
+[step 36720] episode 102 finished | avg reward/agent=-57.38 | updates=286
+ Retrying in 1 seconds
+[step 37080] episode 103 finished | avg reward/agent=-59.02 | updates=289
+ Retrying in 1 seconds
+[step 37440] episode 104 finished | avg reward/agent=-58.61 | updates=292
+ Retrying in 1 seconds
+[step 37800] episode 105 finished | avg reward/agent=-56.28 | updates=295
+ Retrying in 1 seconds
+[step 38160] episode 106 finished | avg reward/agent=-59.00 | updates=298
+ Retrying in 1 seconds
+[step 38520] episode 107 finished | avg reward/agent=-57.14 | updates=300
+ Retrying in 1 seconds
+[step 38880] episode 108 finished | avg reward/agent=-55.94 | updates=303
+ Retrying in 1 seconds
+[step 39240] episode 109 finished | avg reward/agent=-58.81 | updates=306
+ Retrying in 1 seconds
+[step 39600] episode 110 finished | avg reward/agent=-58.98 | updates=309
+ Retrying in 1 seconds
+[step 39960] episode 111 finished | avg reward/agent=-56.06 | updates=312
+ Retrying in 1 seconds
+[step 40320] episode 112 finished | avg reward/agent=-56.81 | updates=315
+ Retrying in 1 seconds
+[step 40680] episode 113 finished | avg reward/agent=-55.21 | updates=317
+ Retrying in 1 seconds
+[step 41040] episode 114 finished | avg reward/agent=-56.10 | updates=320
+ Retrying in 1 seconds
+[step 41400] episode 115 finished | avg reward/agent=-56.22 | updates=323
+ Retrying in 1 seconds
+[step 41760] episode 116 finished | avg reward/agent=-57.09 | updates=326
+ Retrying in 1 seconds
+[step 42120] episode 117 finished | avg reward/agent=-56.91 | updates=329
+ Retrying in 1 seconds
+[step 42480] episode 118 finished | avg reward/agent=-56.77 | updates=331
+ Retrying in 1 seconds
+[step 42840] episode 119 finished | avg reward/agent=-55.66 | updates=334
+ Retrying in 1 seconds
+[step 43200] episode 120 finished | avg reward/agent=-56.31 | updates=337
+ Retrying in 1 seconds
+[step 43560] episode 121 finished | avg reward/agent=-55.60 | updates=340
+ Retrying in 1 seconds
+[step 43920] episode 122 finished | avg reward/agent=-57.16 | updates=343
+ Retrying in 1 seconds
+[step 44280] episode 123 finished | avg reward/agent=-54.14 | updates=345
+ Retrying in 1 seconds
+[step 44640] episode 124 finished | avg reward/agent=-55.80 | updates=348
+ Retrying in 1 seconds
+[step 45000] episode 125 finished | avg reward/agent=-54.43 | updates=351
+ Retrying in 1 seconds
+[step 45360] episode 126 finished | avg reward/agent=-56.55 | updates=354
+ Retrying in 1 seconds
+[step 45720] episode 127 finished | avg reward/agent=-54.35 | updates=357
+ Retrying in 1 seconds
+[step 46080] episode 128 finished | avg reward/agent=-53.92 | updates=360
+ Retrying in 1 seconds
+[step 46440] episode 129 finished | avg reward/agent=-54.37 | updates=362
+ Retrying in 1 seconds
+[step 46800] episode 130 finished | avg reward/agent=-54.26 | updates=365
+ Retrying in 1 seconds
+[step 47160] episode 131 finished | avg reward/agent=-53.94 | updates=368
+ Retrying in 1 seconds
+[step 47520] episode 132 finished | avg reward/agent=-55.03 | updates=371
+ Retrying in 1 seconds
+[step 47880] episode 133 finished | avg reward/agent=-53.09 | updates=374
+ Retrying in 1 seconds
+[step 48240] episode 134 finished | avg reward/agent=-53.30 | updates=376
+ Retrying in 1 seconds
+[step 48600] episode 135 finished | avg reward/agent=-54.68 | updates=379
+ Retrying in 1 seconds
+[step 48960] episode 136 finished | avg reward/agent=-53.50 | updates=382
+ Retrying in 1 seconds
+[step 49320] episode 137 finished | avg reward/agent=-54.20 | updates=385
+ Retrying in 1 seconds
+[step 49680] episode 138 finished | avg reward/agent=-53.35 | updates=388
+ Retrying in 1 seconds
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_B1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_B2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_B3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_B4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_B5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_C1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_C2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_C3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_C4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_C5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_D1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_D2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_D3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_D4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_D5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_E1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_E2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_E3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_E4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_E5_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_F1_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_F2_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_F3_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_F4_medium.zip
+Saved /Users/venushambhuhullukattenataraju/thesis_project/models_v2/grid5x5/ppo/medium/ppo_F5_medium.zip
+
+================================================================================
+PPO TRAINING COMPLETE
+================================================================================
+Training runtime:        1469.70s
+Peak process-tree RAM:   343.27 MB
+Rollout buffers total:   0.1709 MB
+Saved models total:      3.320 MB
+Saved model per agent:   0.133 MB
+Episodes completed:      138
+PPO updates completed:   390
+Partial final buffer:    80 steps
+Training device:         cpu
+
+Training summary:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training/grid5x5/ppo/medium/training_summary.csv
+
+PASS: training experiment validated.
+
+==========================================================================================
+TRAINING PHASE COMPLETE
+==========================================================================================
+New experiments completed: 6
+Experiments skipped:       0
+
+Master compute table:
+/Users/venushambhuhullukattenataraju/thesis_project/results_v2/training_compute_master.csv

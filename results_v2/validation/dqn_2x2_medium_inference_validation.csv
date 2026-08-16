@@ -1,0 +1,2 @@
+algorithm,grid,scenario,training_steps,training_seed,evaluation_seed,agents,decisions,prediction_calls,mean_agent_predict_ms,p95_agent_predict_ms,mean_joint_decision_ms,p95_joint_decision_ms,decision_budget_pct,peak_ram_mb,model_size_total_mb,wall_runtime_s,status
+dqn,2x2,medium,800,1,11,4,360,1440,0.04206079791666667,0.055,0.17086644444444446,0.1874399,0.003417328888888889,332.109375,0.36862945556640625,1.46133550000377,PASS

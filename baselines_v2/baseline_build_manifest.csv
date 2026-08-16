@@ -1,0 +1,12 @@
+controller,grid,scenario,status,output_file,route_vehicles,route_flows,route_trips
+actuated,2x2,all_applicable,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/actuated/grid2x2/grid2x2_actuated.net.xml,,,
+actuated,3x3,all_applicable,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/actuated/grid3x3/grid3x3_actuated.net.xml,,,
+actuated,4x4,all_applicable,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/actuated/grid4x4/grid4x4_actuated.net.xml,,,
+actuated,5x5,all_applicable,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/actuated/grid5x5/grid5x5_actuated.net.xml,,,
+webster_fixed,2x2,low,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_low_webster.add.xml,600,0,0
+webster_fixed,2x2,medium,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_medium_webster.add.xml,1500,0,0
+webster_fixed,2x2,high,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_high_webster.add.xml,3000,0,0
+webster_fixed,2x2,dynamic,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid2x2/grid2x2_dynamic_webster.add.xml,1200,0,0
+webster_fixed,3x3,medium,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid3x3/grid3x3_medium_webster.add.xml,1800,0,0
+webster_fixed,4x4,medium,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid4x4/grid4x4_medium_webster.add.xml,2000,0,0
+webster_fixed,5x5,medium,CREATED,/Users/venushambhuhullukattenataraju/thesis_project/baselines_v2/tuned_fixed/grid5x5/grid5x5_medium_webster.add.xml,1566,0,0
