@@ -1,169 +1,276 @@
 # Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control
 
-A simulation-based **Multi-Agent Reinforcement Learning (MARL)** framework for adaptive urban traffic signal control using **Python, SUMO, TraCI, Deep Q-Networks (DQN), and Proximal Policy Optimisation (PPO)**.
+A simulation-based **Multi-Agent Reinforcement Learning (MARL)** framework for adaptive urban traffic-signal control using **Python, SUMO, TraCI, Deep Q-Networks (DQN), and Proximal Policy Optimisation (PPO)**.
 
-This repository contains the complete implementation, trained models, simulation networks, traffic-demand files, evaluation outputs, statistical analysis scripts, and scalability experiments developed for the Master's thesis:
+This repository contains the implementation, simulation networks, calibrated traffic-demand files, trained models, evaluation outputs, statistical-analysis artefacts, computational-scaling measurements, and reproducibility material developed for the Master's thesis:
 
 > **Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control in Urban Environments**
 
-**Author:** Venushambhu Hullukatte Nataraju
-**Degree:** M.Sc. Data Science
-**Institution:** University of Europe for Applied Sciences, Potsdam
+**Author:** Venushambhu Hullukatte Nataraju  
+**Degree:** M.Sc. Data Science  
+**Institution:** University of Europe for Applied Sciences, Potsdam  
 **Year:** 2026
 
 ---
 
-## Overview
+## Final Thesis and IEEE-Style Paper
 
-Conventional fixed-time traffic signals use predefined phase schedules and cannot directly adapt to rapidly changing traffic conditions. This project investigates whether **independent reinforcement-learning agents**, with one agent controlling each signalised intersection, can improve traffic performance while remaining usable as the road network grows.
+- [Master's Thesis](docs/Master_Thesis_Venushambhu.pdf)
+- [IEEE-Style Research Paper](docs/IEEE_Paper_MARL_Traffic_Signal_Control.pdf)
 
-The framework was designed around two main questions:
-
-1. Can independent DQN and PPO agents outperform a conventional fixed-time controller under different traffic-demand conditions?
-2. Can the same MARL implementation scale from a small 2×2 traffic grid to larger networks without hard-coded intersection definitions?
-
-The project evaluates:
-
-* **Fixed-Time Control** — conventional baseline
-* **Independent DQN**
-* **Independent PPO**
-
-across synthetic SUMO road networks containing:
-
-| Grid | Controlled Intersections / Agents |
-| ---- | --------------------------------: |
-| 2×2  |                                 4 |
-| 3×3  |                                 9 |
-| 4×4  |                                16 |
-| 5×5  |                                25 |
-
-The same environment automatically discovers the signalised intersections and their direct neighbours from the SUMO network file.
+The repository should be interpreted together with these final documents. Earlier development outputs may remain in the Git history, but the **final thesis evidence is the corrected V2 experiment described below**.
 
 ---
 
-## Key Features
+## Project Overview
 
-* Fully integrated **Python + SUMO + TraCI** simulation pipeline
-* True **independent multi-agent learning**
-* One DQN or PPO model per signalised intersection
-* No shared neural-network parameters between agents
-* No explicit inter-agent communication
-* Automatic discovery of traffic lights and neighbouring intersections
-* Fixed-size local observation representation independent of total network size
-* DQN and PPO implementations using Stable-Baselines3 components
-* Low, medium, high and dynamic traffic-demand scenarios
-* Fixed-time baseline using identical traffic networks and SUMO seeds
-* Step-level traffic logging
-* SUMO `tripinfo` outputs
-* Training logs and saved model checkpoints
-* Matched-seed statistical evaluation
-* Paired t-tests and Wilcoxon signed-rank tests
-* 95% Student-t confidence intervals
-* Paired-samples Cohen's (d_z)
-* Dedicated 2×2 → 5×5 scalability experiment
-* Raw results retained, including unfavourable MARL outcomes
+Urban traffic-signal control is a networked sequential decision problem: a phase decision at one intersection changes immediate discharge, residual queues, downstream arrivals, and the future state observed by neighbouring intersections.
+
+This project evaluates a deliberately simple **independent-agent MARL architecture** in which each signalised intersection owns its own DQN or PPO model. The final study does **not** introduce a new RL algorithm. Instead, it focuses on whether a reproducible independent-agent architecture can:
+
+1. operate across multiple network sizes without hard-coded intersection definitions;
+2. adapt to different traffic-demand regimes;
+3. remain competitive with strong conventional traffic-signal controllers;
+4. preserve traffic performance as the number of controlled intersections increases; and
+5. remain computationally practical within the tested 4–25-agent range.
+
+A central finding of the final study is that **baseline strength materially changes the interpretation of MARL performance**. Large gains against a weak static controller do not automatically imply superiority over a strong demand-responsive controller.
+
+---
+
+## Final Experimental Design
+
+The final deterministic evaluation contains **175 unique runs** across **five controllers**:
+
+1. **Original Fixed-Time**
+2. **Webster-derived Fixed-Time**
+3. **Actuated**
+4. **Independent DQN**
+5. **Independent PPO**
+
+### 2×2 demand-sensitivity experiment
+
+Four traffic-demand scenarios are evaluated:
+
+- Low
+- Medium
+- High / severe oversaturation stress test
+- Dynamic
+
+For each scenario:
+
+```text
+5 controllers
+× 5 matched evaluation seeds
+= 25 runs
+```
+
+Across the four scenarios:
+
+```text
+4 scenarios
+× 5 controllers
+× 5 seeds
+= 100 runs
+```
+
+### Medium-demand scalability experiment
+
+The same controller set is evaluated on:
+
+| Grid | Controlled intersections / agents | Planned vehicles |
+|---|---:|---:|
+| 2×2 | 4 | 1,500 |
+| 3×3 | 9 | 1,800 |
+| 4×4 | 16 | 2,000 |
+| 5×5 | 25 | 1,566 |
+
+The 2×2 medium-demand results are already part of the 100-run demand experiment. The three larger grids add:
+
+```text
+3 additional grids
+× 5 controllers
+× 5 seeds
+= 75 additional runs
+```
+
+Therefore:
+
+```text
+100 demand-study runs
++ 75 additional scalability runs
+= 175 unique final evaluation runs
+```
+
+**Evaluation seeds:** `11, 12, 13, 14, 15`
+
+**Training seed:** `1`
+
+**Training budget:** `50,000 decision steps` per learned-controller training job
+
+---
+
+## Why the Final Experiment Uses Stronger Baselines
+
+The original development experiment compared learned controllers primarily with a simple fixed-time programme. That comparison was retained for continuity, but it was not considered sufficiently strong for the final thesis conclusions.
+
+The final evaluation therefore uses three conventional references:
+
+### Original Fixed-Time
+
+A simple fixed programme retained from the initial experiment.
+
+### Webster-derived Fixed-Time
+
+A stronger demand-informed fixed-time controller generated using Webster-style timing principles.
+
+### Actuated
+
+A non-learning adaptive controller that changes signal timing in response to detected traffic conditions.
+
+The final conclusions are based primarily on comparison with the **stronger Webster and Actuated controllers**, not only with Original Fixed-Time.
+
+---
+
+## Network Scalability
+
+The final architecture is instantiated on synthetic SUMO grids containing:
+
+| Grid | Agents |
+|---|---:|
+| 2×2 | 4 |
+| 3×3 | 9 |
+| 4×4 | 16 |
+| 5×5 | 25 |
+
+The environment discovers signalised intersections and their direct neighbours from the SUMO topology. The per-agent observation and action interfaces remain fixed as network size increases.
+
+The thesis separates three different meanings of scalability:
+
+### Architectural scalability
+
+Can the same software architecture instantiate more agents without redesigning the per-agent interface?
+
+### Behavioural scalability
+
+Does traffic performance remain competitive as the number of controlled intersections increases?
+
+### Computational scalability
+
+How do training runtime, memory, model storage, replay/rollout-buffer overhead, and decision latency change as the number of agents increases?
+
+The project demonstrates these properties only within the **tested synthetic 4–25-agent range**. It does not claim unbounded, city-scale, or field-deployment scalability.
 
 ---
 
 ## System Architecture
 
 ```mermaid
-flowchart LR
-    A[SUMO Network + Route Files] --> B[Python TrafficSignalEnv]
+flowchart TD
+    A[SUMO Network + Route Files] --> B[SUMO Microscopic Traffic Simulator]
+    B --> C[TraCI Interface]
+    C --> D[TrafficSignalEnvV2]
 
-    B --> C[Auto-discover Signalised Intersections]
-    C --> D[Discover One-hop Neighbours]
+    D --> E[Auto-discover Signalised Intersections]
+    E --> F[Discover Direct Neighbours]
 
-    D --> E[6-feature Observation per Agent]
+    F --> G[6-Feature Observation per Agent]
 
-    E --> F1[Independent DQN Agent 1]
-    E --> F2[Independent DQN / PPO Agent 2]
-    E --> F3[...]
-    E --> FN[Independent Agent N]
+    G --> H1[Independent DQN Agent i]
+    G --> H2[Independent PPO Agent i]
 
-    F1 --> G[Hold / Advance Signal Phase]
-    F2 --> G
-    F3 --> G
-    FN --> G
+    H1 --> I[Binary Action]
+    H2 --> I
 
-    G --> H[TraCI]
-    H --> I[SUMO Simulation]
+    I --> J[0 = HOLD Current Green]
+    I --> K[1 = SWITCH After Minimum Green]
 
-    I --> J[Queue / Waiting / Occupancy / Throughput]
-    J --> B
+    J --> D
+    K --> D
 
-    I --> K[Step-level CSV + Tripinfo XML]
-    K --> L[Statistical Analysis]
-    L --> M[Performance & Scalability Results]
+    D --> L[Local Reward]
+    L --> H1
+    L --> H2
+
+    B --> M[Traffic + Trip Outputs]
+    M --> N[Evaluation + Statistical Analysis]
+    N --> O[Frozen Final Evidence]
 ```
 
-Each traffic-light-controlled intersection is represented by an independent reinforcement-learning agent.
+Each signalised intersection is represented by an independent reinforcement-learning agent.
 
-The number of models therefore increases with the number of signalised intersections:
+The final implementation uses:
 
-* 4 agents → 2×2
-* 9 agents → 3×3
-* 16 agents → 4×4
-* 25 agents → 5×5
-
-The environment code itself does not need to be rewritten when the network size changes.
-
----
-
-## Agent State Representation
-
-Each agent receives a **6-dimensional observation vector** containing local and neighbouring traffic information:
-
-1. Local queue length
-2. Local accumulated waiting time
-3. Mean lane occupancy
-4. Current traffic-signal phase
-5. Time since the previous phase change
-6. Mean queue pressure at directly neighbouring signalised intersections
-
-The features are normalised before being supplied to the learning algorithm.
-
-This provides each agent with local traffic information while incorporating limited spatial context without exposing the entire network state.
+- no shared critic;
+- no parameter sharing;
+- no explicit agent-to-agent messaging;
+- one independent DQN or PPO model per controlled intersection;
+- a fixed six-feature local / one-hop observation; and
+- a fixed binary HOLD/SWITCH action interface.
 
 ---
 
-## Action Space
+## Final Agent Observation
 
-Each intersection uses a discrete binary action space:
+Every agent receives the same **six-element observation vector** regardless of total network size:
 
-| Action | Meaning                         |
-| ------ | ------------------------------- |
-| `0`    | Hold the current signal phase   |
-| `1`    | Advance to the next legal phase |
+1. local halted-vehicle count;
+2. accumulated local lane waiting time;
+3. mean lane occupancy;
+4. encoded current traffic-signal phase;
+5. elapsed time in the current green phase; and
+6. mean queue condition of directly connected traffic-light neighbours.
 
-A **minimum green time of 10 seconds** is enforced to prevent unrealistic rapid switching.
+Queue, waiting-time, and timing features are scaled before being passed to the learning model.
 
-The controller makes a decision every **5 simulation seconds**.
+Because the observation dimension stays fixed, increasing network size increases the **number of independent agents**, not the dimensionality of each agent's input.
+
+---
+
+## Corrected Action Space
+
+The final V2 environment uses a discrete binary action space:
+
+| Action | Meaning |
+|---|---|
+| `0` | **HOLD** the current green |
+| `1` | Request **SWITCH** to the opposite green after the minimum-green constraint |
+
+Timing constraints:
+
+| Parameter | Final value |
+|---|---:|
+| Decision interval | 5 s |
+| Minimum green | 10 s |
+| Yellow transition | 3 s |
+| Dedicated all-red | 0 s |
+
+### Important V2 correction
+
+`HOLD` genuinely holds the active green. It does **not** allow an underlying fixed programme to advance automatically.
+
+A permitted `SWITCH` initiates the required yellow transition and then activates the opposite green.
+
+All final learned-controller models were retrained under these corrected semantics. Earlier learned models from the pre-V2 control semantics are not used as final thesis evidence.
 
 ---
 
 ## Reward Function
 
-For agent (i) at time (t), the implemented reward is:
+For agent \(i\) at decision time \(t\), the local reward is:
 
-[
-r_{i,t}
-=======
-
--\alpha \Delta W_{i,t}
--\beta Q_{i,t}
-+\delta T_{i,t}
--\lambda C_{i,t}
-]
+```text
+r_i,t = -α ΔW_i,t - β Q_i,t + δ T_i,t - λ C_i,t
+```
 
 where:
 
-* (\Delta W) = change in local waiting time
-* (Q) = current queue length
-* (T) = vehicles discharged from the controlled approaches
-* (C) = phase-switch penalty
+- `ΔW` = change in accumulated local waiting time;
+- `Q` = local halted-vehicle queue;
+- `T` = local discharge measure;
+- `C` = permitted agent-requested switching cost.
 
-The final weights are:
+Final weights:
 
 ```text
 α = 0.3
@@ -172,282 +279,424 @@ The final weights are:
 λ = 0.5
 ```
 
-The reward therefore encourages queue dissipation and vehicle discharge while discouraging unnecessary switching.
+The reward is used to train the learned controllers, but **final controller quality is evaluated using external traffic-performance metrics rather than cumulative reward alone**.
 
 ---
 
 ## Reinforcement-Learning Algorithms
 
-### Deep Q-Network — DQN
+### Independent DQN
 
 Each signalised intersection owns an independent DQN model.
 
-Final training configuration:
+Final configuration:
 
-| Hyperparameter        |                   Value |
-| --------------------- | ----------------------: |
-| Learning rate         |                  `1e-3` |
-| Discount factor       |                  `0.95` |
-| Replay buffer         |                `50,000` |
-| Batch size            |                    `64` |
-| Learning starts       |             `500` steps |
-| Exploration           |                ε-greedy |
-| Initial ε             |                   `1.0` |
-| Final ε               |                  `0.05` |
-| Exploration decay     |   First 70% of training |
-| Target-network update |         Every 250 steps |
-| Training budget       | `50,000` decision steps |
+| Hyperparameter | Value |
+|---|---:|
+| Learning rate | `1e-3` |
+| Discount factor γ | `0.95` |
+| Replay-buffer capacity | `50,000` |
+| Batch size | `64` |
+| Learning starts | `500` decision steps |
+| Gradient update | Every `4` decision steps |
+| Initial ε | `1.0` |
+| Final ε | `0.05` |
+| Exploration decay | First `70%` of training |
+| Target-network update | Every `250` decision steps |
+| Training budget | `50,000` decision steps |
+| Training seed | `1` |
 
-A separate target Q-network is maintained and updated using Polyak updates.
+### Independent PPO
 
----
-
-### Proximal Policy Optimisation — PPO
-
-Each intersection similarly owns an independent PPO actor-critic model.
+Each signalised intersection owns an independent PPO policy/value model.
 
 Final configuration:
 
-| Hyperparameter      |                   Value |
-| ------------------- | ----------------------: |
-| Learning rate       |                  `3e-4` |
-| Discount factor     |                  `0.95` |
-| Rollout length      |                   `128` |
-| Batch size          |                    `32` |
-| Epochs per update   |                     `4` |
-| GAE λ               |                   `0.9` |
-| PPO clipping range  |                   `0.2` |
-| Entropy coefficient |                  `0.01` |
-| Training budget     | `50,000` decision steps |
-
-Because Stable-Baselines3 is primarily designed around single-agent environments, separate models and rollout buffers are maintained for each traffic-signal agent.
-
----
-
-## Traffic Scenarios
-
-The primary 2×2 experiment evaluates four traffic conditions.
-
-### Low Demand
-
-Represents uncongested traffic where the network operates well below capacity.
-
-### Medium Demand
-
-Represents moderate congestion where traffic-signal decisions can substantially influence queue formation and dissipation.
-
-### High Demand
-
-Represents heavily saturated traffic approaching the physical capacity of the simulated network.
-
-### Dynamic Demand
-
-Represents temporally changing traffic.
-
-The dominant demand direction changes during the simulation, testing whether the trained controllers can respond to a changing traffic pattern within an episode.
-
-> The dynamic experiment evaluates adaptation within a demand structure encountered during training; it should not be interpreted as out-of-distribution generalisation.
-
-For the larger 3×3, 4×4 and 5×5 scalability networks, the repository contains the **calibrated medium-demand scenario** used in the final scalability study.
+| Hyperparameter | Value |
+|---|---:|
+| Learning rate | `3e-4` |
+| Discount factor γ | `0.95` |
+| Rollout length | `128` |
+| Batch size | `32` |
+| Optimisation epochs | `4` |
+| GAE λ | `0.9` |
+| PPO clip range | `0.2` |
+| Entropy coefficient | `0.01` |
+| Training budget | `50,000` decision steps |
+| Training seed | `1` |
 
 ---
 
-## Experimental Design
+## Traffic-Demand Scenarios
 
-### Primary Experiment — 2×2
+### Low demand
+
+Represents sparse traffic where signal timing has limited opportunity to improve already-light traffic conditions.
+
+Planned vehicles:
 
 ```text
-3 controllers
-× 4 demand scenarios
-× 5 evaluation seeds
-= 60 evaluation runs
+600
 ```
 
-Controllers:
+### Medium demand
 
-* Fixed-Time
-* DQN
-* PPO
+Represents the main operational comparison regime.
 
-Scenarios:
+Planned vehicles on 2×2:
 
-* Low
-* Medium
-* High
-* Dynamic
+```text
+1,500
+```
 
-Evaluation seeds:
+### High-demand stress test
+
+A deliberately severe oversaturated condition used to examine controller failure behaviour.
+
+Planned vehicles:
+
+```text
+3,000
+```
+
+This condition should **not** be interpreted as ordinary medium congestion.
+
+### Dynamic demand
+
+Contains two temporal demand regimes within the same 1,800-second episode.
+
+Planned vehicles:
+
+```text
+1,200
+```
+
+The learned models are trained on the same route structure and evaluated with different SUMO seeds. The dynamic experiment therefore tests adaptation to changing traffic within a trained scenario class; it is **not** presented as out-of-distribution generalisation.
+
+---
+
+## Cross-Network Demand Calibration
+
+The larger-network experiment intentionally does **not** scale vehicle count directly in proportion to the number of intersections.
+
+Increasing network size changes:
+
+- total road length;
+- route-length distribution;
+- available paths;
+- congestion formation; and
+- network storage capacity.
+
+Direct proportional scaling produced severe gridlock during calibration and would have confounded network-size effects with uncontrolled demand severity.
+
+The final medium-demand route sets were therefore calibrated independently.
+
+| Grid | Planned vehicles |
+|---|---:|
+| 2×2 | 1,500 |
+| 3×3 | 1,800 |
+| 4×4 | 2,000 |
+| 5×5 | 1,566 |
+
+Under the Webster-derived fixed-time reference, mean waiting time remains approximately **15–16 seconds** across the four final medium-demand networks.
+
+Because the route sets are calibrated separately, raw queue values should not be interpreted as proof that one grid size is intrinsically easier than another. The final thesis compares controller performance **within each calibrated network**.
+
+---
+
+## Final Evaluation Metrics
+
+The primary operational metrics are:
+
+- **Trip completion rate**
+- **Average travel time**
+- **Average waiting time**
+- **Average time loss**
+- **Mean sampled queue length**
+
+Additional diagnostic information includes:
+
+- teleport count;
+- arrivals and departures;
+- step-level traffic state;
+- SUMO trip information;
+- training reward;
+- model/resource measurements.
+
+Training reward is treated only as a **learning diagnostic**, not as the final traffic-performance measure.
+
+---
+
+## Statistical Evaluation
+
+All final controller comparisons use matched SUMO evaluation seeds:
 
 ```text
 11, 12, 13, 14, 15
 ```
 
----
-
-### Scalability Experiment
-
-The medium-demand experiment was extended across:
+Seven predefined paired comparisons are used within each scenario–metric or grid–metric family:
 
 ```text
-2×2 → 4 agents
-3×3 → 9 agents
-4×4 → 16 agents
-5×5 → 25 agents
+DQN vs Original Fixed
+DQN vs Webster
+DQN vs Actuated
+PPO vs Original Fixed
+PPO vs Webster
+PPO vs Actuated
+DQN vs PPO
 ```
 
-For each size:
+For each paired comparison, the final analysis reports:
+
+- paired mean difference;
+- paired t-test;
+- **Holm-Bonferroni family-wise multiplicity correction**;
+- 95% confidence interval;
+- paired-samples Cohen's `d_z`;
+- median paired difference; and
+- exact two-sided paired sign-flip sensitivity check.
+
+The sign-flip test is retained as a sensitivity analysis because with only five matched pairs its minimum attainable exact two-sided p-value is `0.0625`.
+
+The final conclusions therefore emphasise:
+
+- effect direction;
+- effect magnitude;
+- confidence intervals;
+- Holm-adjusted p-values; and
+- consistency across matched seeds.
+
+---
+
+# Final Results
+
+## 2×2 Demand-Sensitivity Results
+
+Five-seed means:
+
+| Scenario | Controller | Completion (%) | Travel (s) | Waiting (s) | Time loss (s) | Queue |
+|---|---|---:|---:|---:|---:|---:|
+| Low | Original Fixed | 94.93 | 97.43 | 19.57 | 33.80 | 1.627 |
+| Low | Webster | 95.03 | 83.73 | 6.32 | 20.05 | 0.468 |
+| Low | Actuated | **95.37** | **81.59** | **4.81** | **17.88** | **0.356** |
+| Low | DQN | 95.17 | 83.15 | 6.11 | 19.43 | 0.383 |
+| Low | PPO | 95.07 | 83.07 | 5.97 | 19.34 | 0.377 |
+| Medium | Original Fixed | 92.95 | 122.23 | 36.24 | 59.56 | 6.513 |
+| Medium | Webster | 94.27 | 98.89 | 15.13 | 36.28 | 2.315 |
+| Medium | Actuated | **94.43** | **96.62** | **14.85** | **33.95** | **2.128** |
+| Medium | DQN | 94.13 | 98.48 | 15.49 | 35.85 | 2.192 |
+| Medium | PPO | 94.12 | 100.96 | 17.07 | 38.34 | 2.511 |
+| High | Original Fixed | 13.44 | 273.54 | 162.00 | 200.89 | 74.092 |
+| High | Webster | **15.53** | **258.63** | **134.48** | **187.96** | **70.123** |
+| High | Actuated | 13.17 | 288.17 | 177.36 | 215.33 | 73.682 |
+| High | DQN | 14.55 | 261.99 | 139.49 | 189.10 | 72.385 |
+| High | PPO | 7.45 | 358.44 | 233.98 | 259.01 | 74.152 |
+| Dynamic | Original Fixed | 93.02 | 116.10 | 28.95 | 50.18 | 4.334 |
+| Dynamic | Webster | 93.95 | 102.84 | 14.54 | 36.87 | 2.005 |
+| Dynamic | Actuated | **94.40** | **94.47** | **10.69** | **28.49** | **1.361** |
+| Dynamic | DQN | 93.97 | 97.19 | 12.36 | 31.22 | 1.597 |
+| Dynamic | PPO | 93.28 | 104.20 | 16.09 | 38.28 | 2.149 |
+
+### Main demand-study findings
+
+- **Low demand:** all controllers complete roughly 95% of trips; Actuated has the strongest descriptive efficiency.
+- **Medium demand:** DQN is statistically competitive with Actuated across the five primary metrics after Holm-Bonferroni correction.
+- **High demand:** the network enters a severe oversaturated breakdown regime; Webster is strongest descriptively, DQN remains relatively robust, and PPO deteriorates substantially.
+- **Dynamic demand:** DQN improves strongly over Original Fixed-Time and Webster on several delay metrics, but Actuated remains the strongest controller.
+
+Across the complete 2×2 demand statistical analysis:
 
 ```text
-3 controllers × 5 seeds = 15 runs
+81 / 140 Holm-adjusted paired comparisons were significant
 ```
 
-The 15 medium-demand 2×2 runs are shared with the primary experiment.
+This number is not treated as a controller-quality score; it only summarises detectable separation across the predefined comparison families.
 
-Therefore:
+---
+
+## Medium-Demand Scalability Results
+
+Five-seed means:
+
+| Grid | Agents | Controller | Completion (%) | Travel (s) | Waiting (s) | Time loss (s) | Queue |
+|---|---:|---|---:|---:|---:|---:|---:|
+| 2×2 | 4 | Original Fixed | 92.95 | 122.23 | 36.24 | 59.56 | 6.513 |
+| 2×2 | 4 | Webster | 94.27 | 98.89 | 15.13 | 36.28 | 2.315 |
+| 2×2 | 4 | Actuated | **94.43** | **96.62** | **14.85** | **33.95** | **2.128** |
+| 2×2 | 4 | DQN | 94.13 | 98.48 | 15.49 | 35.85 | 2.192 |
+| 2×2 | 4 | PPO | 94.12 | 100.96 | 17.07 | 38.34 | 2.511 |
+| 3×3 | 9 | Original Fixed | 91.69 | 135.94 | 40.06 | 63.84 | 4.086 |
+| 3×3 | 9 | Webster | 93.58 | 111.52 | 16.10 | 39.33 | 1.507 |
+| 3×3 | 9 | Actuated | **93.73** | **107.20** | **14.28** | **35.01** | **1.324** |
+| 3×3 | 9 | DQN | 93.49 | 110.99 | 16.48 | 38.80 | 1.444 |
+| 3×3 | 9 | PPO | 93.28 | 115.63 | 19.68 | 43.45 | 1.753 |
+| 4×4 | 16 | Original Fixed | 91.57 | 144.55 | 40.10 | 62.54 | 2.650 |
+| 4×4 | 16 | Webster | 92.98 | 121.26 | 15.02 | 39.13 | 0.909 |
+| 4×4 | 16 | Actuated | **93.12** | **116.34** | **12.85** | **34.22** | **0.767** |
+| 4×4 | 16 | DQN | 92.95 | 120.53 | 15.73 | 38.41 | 0.862 |
+| 4×4 | 16 | PPO | 92.47 | 124.13 | 18.28 | 42.05 | 1.033 |
+| 5×5 | 25 | Original Fixed | 91.26 | 156.21 | 43.14 | 64.89 | 1.484 |
+| 5×5 | 25 | Webster | 92.36 | 132.23 | 15.18 | 40.87 | 0.484 |
+| 5×5 | 25 | Actuated | **92.81** | **125.43** | **12.07** | **34.00** | **0.385** |
+| 5×5 | 25 | DQN | 92.57 | 129.50 | 15.20 | 38.10 | 0.417 |
+| 5×5 | 25 | PPO | 92.48 | 131.49 | 16.64 | 40.11 | 0.469 |
+
+### Main behavioural-scalability findings
+
+**Actuated is the strongest descriptive controller under calibrated medium demand at every tested grid size.**
+
+For DQN:
+
+- completion remains statistically similar to Actuated at 4, 9, 16, and 25 agents;
+- at 4 agents, DQN is statistically indistinguishable from Actuated on all five primary metrics;
+- from 9 agents onward, DQN develops statistically significant disadvantages in travel time, waiting time, and queue length;
+- the 25-agent DQN queue difference is statistically borderline and small in magnitude.
+
+For PPO:
+
+- PPO is generally weaker than DQN on delay and queue metrics;
+- significant disadvantages relative to Actuated appear earlier and are larger;
+- PPO is particularly weak under the severe high-demand stress test.
+
+Across the complete medium-demand scalability statistical analysis:
 
 ```text
-60 primary runs
-+ 45 additional larger-network runs
-= 105 unique final evaluation runs
+101 / 140 Holm-adjusted paired comparisons were significant
 ```
 
----
+The final behavioural conclusion is therefore **not** that MARL performance improves with scale. Instead:
 
-## Evaluation Metrics
-
-The principal operational metrics are:
-
-* **Average travel time**
-* **Average waiting time**
-* **Queue length**
-* **Completed trips / throughput**
-* **Trip completion rate**
-* **Cumulative training reward**
-
-Additional raw simulation information is retained in the step-level logs and SUMO `tripinfo` files.
-
-Training reward is treated as an optimisation diagnostic rather than as evidence of traffic performance by itself.
+> Independent DQN preserves completion-rate performance comparatively well, but does not preserve equality with the strong Actuated controller on congestion-efficiency metrics beyond the 2×2 network.
 
 ---
 
-## Main Results
+## Computational Scalability
 
-### 2×2 Demand-Sensitivity Experiment
+Measured final V2 results:
 
-Under **low, medium and dynamic demand**, both learned controllers substantially reduced travel time and waiting time relative to fixed-time control.
+| Method | Agents | Training time (s) | Simulation wall time (s) | RAM (MB) | Buffer (MB) | Model size (MB) | Mean latency (ms) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| DQN | 4 | 357.24 | 2.02 | 343.30 | 12.970 | 0.369 | 0.1978 |
+| DQN | 9 | 692.93 | 3.96 | 357.94 | 29.182 | 0.829 | 0.3926 |
+| DQN | 16 | 1046.14 | 6.84 | 388.56 | 51.880 | 1.475 | 0.6537 |
+| DQN | 25 | 1398.06 | 10.63 | 422.66 | 81.062 | 2.304 | 1.0388 |
+| PPO | 4 | 388.05 | 2.01 | 335.06 | 0.027 | 0.531 | 0.2827 |
+| PPO | 9 | 731.54 | 4.05 | 334.73 | 0.062 | 1.195 | 0.5995 |
+| PPO | 16 | 1018.70 | 6.95 | 339.75 | 0.109 | 2.125 | 0.9859 |
+| PPO | 25 | 1469.70 | 10.79 | 343.27 | 0.171 | 3.320 | 1.5655 |
 
-| Scenario | DQN Waiting-Time Reduction | PPO Waiting-Time Reduction | DQN Travel-Time Reduction | PPO Travel-Time Reduction |
-| -------- | -------------------------: | -------------------------: | ------------------------: | ------------------------: |
-| Low      |                  **68.1%** |                  **69.1%** |                 **14.4%** |                 **14.7%** |
-| Medium   |                  **56.4%** |                  **53.9%** |                 **19.0%** |                 **17.9%** |
-| Dynamic  |                  **57.6%** |                  **50.5%** |                 **16.3%** |                 **13.2%** |
-
-Most delay improvements were highly statistically significant under the matched five-seed evaluation.
-
-### High-Demand Failure Case
-
-The learned-controller advantage **did not hold under high traffic saturation**.
-
-DQN became approximately comparable with fixed-time control, while PPO deteriorated:
-
-* PPO average travel time: **+10.9%**
-* PPO average waiting time: **+15.5%**
-* PPO throughput: **−14.3%**
-* PPO throughput comparison: **p = 0.044**
-
-This negative result is retained deliberately.
-
-The findings indicate that adaptive signal control cannot necessarily overcome a network operating near its physical capacity simply by altering signal phases.
-
----
-
-## Scalability Results
-
-The same architecture was evaluated from **4 to 25 independent traffic-signal agents** under calibrated medium demand.
-
-### Average waiting-time reduction vs fixed-time
-
-| Network | Agents |       DQN |       PPO |
-| ------- | -----: | --------: | --------: |
-| 2×2     |      4 | **56.4%** | **53.9%** |
-| 3×3     |      9 | **58.3%** | **53.6%** |
-| 4×4     |     16 | **60.2%** | **55.6%** |
-| 5×5     |     25 | **65.2%** | **62.3%** |
-
-### Average travel-time reduction vs fixed-time
-
-| Network | Agents |       DQN |       PPO |
-| ------- | -----: | --------: | --------: |
-| 2×2     |      4 | **19.0%** | **17.9%** |
-| 3×3     |      9 | **18.0%** | **16.1%** |
-| 4×4     |     16 | **16.4%** | **14.6%** |
-| 5×5     |     25 | **17.1%** | **16.2%** |
-
-Within the tested synthetic range, the relative advantage of the learned controllers therefore did **not materially degrade as network size increased**.
-
-This supports:
-
-* **architectural scalability** — the same implementation operates with 4, 9, 16 and 25 agents;
-* **behavioural scalability** — relative performance remains favourable within the tested range.
-
-It does **not** establish city-scale, computational or real-world scalability.
-
----
-
-## Scalability Visualisation
-
-![MARL waiting-time improvement across network sizes](results/scalability_analysis/scalability_improvement.png)
-
-Additional scalability figures are available in:
+At 25 agents:
 
 ```text
-results/scalability_analysis/
+DQN mean joint latency = 1.0388 ms
+PPO mean joint latency = 1.5655 ms
 ```
 
-including:
-
-* average travel time
-* average waiting time
-* completed trips
-* completion rate
-* relative waiting-time improvement
-
----
-
-## Primary Experiment Visualisation
-
-![Average waiting time by controller and demand scenario](results/grid2x2/analysis/plot_avg_waiting_time.png)
-
-Additional plots are available in:
+Relative to the 5,000-ms decision interval:
 
 ```text
-results/grid2x2/analysis/
+DQN ≈ 0.0208% of decision budget
+PPO ≈ 0.0313% of decision budget
 ```
+
+The measured 95th-percentile joint decision latencies at 25 agents were approximately:
+
+```text
+DQN = 1.1955 ms
+PPO = 1.8251 ms
+```
+
+### Computational interpretation
+
+- training runtime increases with agent count for both algorithms;
+- total saved model storage increases because each intersection owns an independent model;
+- DQN replay-buffer memory grows substantially with agent count;
+- PPO rollout-buffer memory remains much smaller;
+- deterministic inference remains extremely small relative to the 5-second control interval throughout the tested range.
+
+**CPU/GPU utilisation percentages were not instrumented during the frozen final runs and are not reconstructed retrospectively.**
+
+The computational conclusions therefore rely only on measurements that were actually captured.
 
 ---
 
-## Statistical Analysis
+## Final Conclusions
 
-Matched SUMO seeds are used for controller comparisons so that Fixed-Time, DQN and PPO encounter consistent stochastic traffic conditions.
+The final experiment supports the following conclusions:
 
-The analysis includes:
+- Stronger conventional baselines materially change the apparent advantage of MARL.
+- Original Fixed-Time is a useful weak reference but is insufficient as the sole baseline.
+- Actuated control is the strongest descriptive medium-demand controller across all tested grid sizes.
+- DQN is the strongest learned controller in the final study.
+- On the 2×2 medium-demand network, DQN is statistically competitive with Actuated across the five primary traffic metrics.
+- From 3×3 onward, DQN preserves a similar completion rate but develops significant delay and queue disadvantages relative to Actuated.
+- PPO scales less favourably and deteriorates strongly in the severe high-demand stress test.
+- The architecture successfully instantiates 4, 9, 16, and 25 independent agents without network-specific hard-coded control logic.
+- Deterministic inference remains computationally lightweight throughout the tested 4–25-agent range.
+- Training time, model storage, and DQN replay-buffer memory grow with agent count.
+- The evidence does **not** support universal MARL superiority over strong conventional adaptive traffic control.
+- The study does **not** claim city-scale, unbounded, or field-deployment scalability.
 
-* mean
-* standard deviation
-* paired-samples t-test
-* Wilcoxon signed-rank test
-* percentage change relative to Fixed-Time
-* Student-t 95% confidence intervals
-* paired-samples Cohen's (d_z)
+---
 
-The scalability analysis uses **Student's t critical value with 4 degrees of freedom** for the five-seed confidence intervals rather than a large-sample normal approximation.
+## Final V2 Evidence and Reproducibility
+
+The final thesis revision keeps corrected V2 experiments separate from earlier development outputs.
+
+Important final locations include:
+
+```text
+revision_v2/
+results_v2/
+models_v2/
+baselines_v2/
+docs/
+```
+
+The authoritative final-results manifest is:
+
+```text
+results_v2/FINAL_RESULTS_MANIFEST.txt
+```
+
+Final thesis-ready derived figures/tables are retained under:
+
+```text
+results_v2/thesis_package/
+```
+
+The final evidence package includes:
+
+- SUMO network and route files;
+- final DQN and PPO models;
+- training logs;
+- step-level evaluation outputs;
+- SUMO trip information;
+- conventional-controller summaries;
+- learned-controller summaries;
+- paired statistical test outputs;
+- computational-resource summaries;
+- final figures and tables; and
+- checksum-based evidence verification.
+
+The final numerical evidence was frozen before thesis reporting so that tables and conclusions were generated from retained outputs rather than manually edited values.
 
 ---
 
 ## Repository Structure
 
+The repository contains both earlier development work and the corrected final V2 revision.
+
+A simplified view is:
+
 ```text
 .
+├── README.md
+├── docs/
+│   ├── Master_Thesis_Venushambhu.pdf
+│   └── IEEE_Paper_MARL_Traffic_Signal_Control.pdf
+│
 ├── env/
 │   ├── traffic_env.py
 │   ├── train_dqn_marl.py
@@ -457,8 +706,10 @@ The scalability analysis uses **Student's t critical value with 4 degrees of fre
 │   ├── run_grid_evaluations.py
 │   ├── analyze_results.py
 │   ├── analyze_scalability.py
-│   ├── validate_and_summarize_grid.py
 │   └── ...
+│
+├── revision_v2/
+│   └── corrected final V2 environment / experiment workflow
 │
 ├── network/
 │   ├── grid2x2/
@@ -473,41 +724,38 @@ The scalability analysis uses **Student's t critical value with 4 degrees of fre
 │   └── grid5x5/
 │
 ├── models/
-│   ├── grid2x2/
-│   ├── grid3x3/
-│   ├── grid4x4/
-│   └── grid5x5/
+├── models_v2/
+├── baselines_v2/
 │
 ├── results/
-│   ├── grid2x2/
-│   ├── grid3x3/
-│   ├── grid4x4/
-│   ├── grid5x5/
-│   └── scalability_analysis/
+├── results_v2/
+│   ├── analysis/
+│   ├── thesis_package/
+│   └── FINAL_RESULTS_MANIFEST.txt
 │
-├── test/
-├── PROJECT_STATE.md
-└── README.md
+└── test/
 ```
+
+> **Important:** directories without the `_v2` suffix may contain earlier development artefacts. The final thesis conclusions are based on the corrected V2 evidence.
 
 ---
 
 ## Software Environment
 
-The final thesis experiments were executed with the following verified environment:
+The project was developed and evaluated using the following environment:
 
-| Software          | Version   |
-| ----------------- | --------- |
-| Python            | `3.11.15` |
-| Eclipse SUMO      | `1.27.1`  |
-| Stable-Baselines3 | `2.9.0`   |
-| PyTorch           | `2.13.0`  |
-| NumPy             | `2.4.6`   |
-| Gymnasium         | `1.3.0`   |
-| pandas            | `3.0.5`   |
-| SciPy             | `1.17.1`  |
+| Software | Version |
+|---|---|
+| Python | `3.11.15` |
+| Eclipse SUMO | `1.27.1` |
+| Stable-Baselines3 | `2.9.0` |
+| PyTorch | `2.13.0` |
+| NumPy | `2.4.6` |
+| Gymnasium | `1.3.0` |
+| pandas | `3.0.5` |
+| SciPy | `1.17.1` |
 
-Matplotlib is used for result visualisation.
+Matplotlib is used for analysis visualisation.
 
 ---
 
@@ -520,8 +768,6 @@ git clone https://github.com/Venushambhu/Scalable-MARL-for-adaptive-traffic-sign
 
 cd Scalable-MARL-for-adaptive-traffic-signal-control-
 ```
-
----
 
 ### 2. Create a Python environment
 
@@ -538,27 +784,23 @@ Install the required Python libraries:
 pip install stable-baselines3 gymnasium torch numpy pandas scipy matplotlib
 ```
 
-For exact reproduction, use versions matching the verified environment listed above.
-
----
+For exact reproduction, use versions matching the verified environment above.
 
 ### 3. Install SUMO
 
-Install **Eclipse SUMO** and confirm that the command is available:
+Confirm SUMO is available:
 
 ```bash
 sumo --version
 ```
 
-The project was evaluated with:
+The final experiments used:
 
 ```text
 SUMO 1.27.1
 ```
 
-Set `SUMO_HOME` to the root of your SUMO installation if it is not configured automatically.
-
-For example:
+If required, configure `SUMO_HOME`:
 
 ```bash
 export SUMO_HOME="/path/to/sumo"
@@ -572,324 +814,198 @@ python -c "import traci, sumolib; print('TraCI and sumolib available')"
 
 ---
 
-## Running the Project
+## Running the Repository
 
-The experiment scripts use paths relative to the `env/` directory.
+This repository contains both the earlier development workflow and the corrected final V2 experiment.
 
-Start from:
+### Earlier development scripts
+
+The original `env/` scripts remain useful for understanding the project structure and development process.
+
+Examples include:
+
+```text
+env/train_dqn_marl.py
+env/train_ppo_marl.py
+env/collect_baseline.py
+env/evaluate_trained.py
+env/analyze_results.py
+env/analyze_scalability.py
+```
+
+These scripts should **not** be assumed to reproduce the final 175-run thesis evidence unless they explicitly use the V2 environment and final baseline definitions.
+
+### Final V2 workflow
+
+Use the scripts/configurations under:
+
+```text
+revision_v2/
+```
+
+for the corrected HOLD/SWITCH environment and final experiment workflow.
+
+Before running any script, inspect its supported arguments:
 
 ```bash
-cd env
+python <script_name>.py --help
 ```
+
+The retained `results_v2/`, `models_v2/`, and `baselines_v2/` directories provide the final thesis evidence and should be used when validating the published thesis results.
 
 ---
 
-### Train DQN
+## Output Types
 
-```bash
-python train_dqn_marl.py \
-  --grid 2x2 \
-  --scenario medium \
-  --total_steps 50000 \
-  --seed 1
-```
+The project retains multiple levels of evidence.
 
-General form:
+### Step-level traffic outputs
 
-```bash
-python train_dqn_marl.py \
-  --grid GRID \
-  --scenario SCENARIO \
-  --total_steps 50000 \
-  --seed SEED
-```
+Contain time-dependent controller and traffic information such as:
 
----
+- simulation time;
+- intersection identifier;
+- queue state;
+- waiting state;
+- vehicle state;
+- signal state;
+- departures;
+- arrivals;
+- teleport diagnostics.
 
-### Train PPO
+### SUMO trip information
 
-```bash
-python train_ppo_marl.py \
-  --grid 2x2 \
-  --scenario medium \
-  --total_steps 50000 \
-  --seed 1
-```
+Vehicle-level trip outputs provide:
 
----
+- completed trips;
+- travel time;
+- waiting time;
+- time loss;
+- route/trip information.
 
-### Run a Fixed-Time Baseline
+### Run summaries
 
-```bash
-python collect_baseline.py \
-  --grid 2x2 \
-  --scenario medium \
-  --seed 11
-```
+Per-run summaries retain:
 
----
+- controller;
+- grid;
+- demand scenario;
+- seed;
+- planned/completed trips;
+- completion rate;
+- average travel time;
+- average waiting time;
+- average time loss;
+- sampled queue statistics;
+- simulation diagnostics.
 
-### Evaluate a Trained DQN Controller
+### Statistical outputs
 
-```bash
-python evaluate_trained.py \
-  --grid 2x2 \
-  --controller dqn \
-  --scenario medium \
-  --seed 11
-```
+Final analysis retains:
 
----
+- descriptive summaries;
+- matched paired comparisons;
+- Holm-adjusted p-values;
+- confidence intervals;
+- effect sizes;
+- sign-flip sensitivity checks.
 
-### Evaluate a Trained PPO Controller
+### Computational outputs
 
-```bash
-python evaluate_trained.py \
-  --grid 2x2 \
-  --controller ppo \
-  --scenario medium \
-  --seed 11
-```
+Final profiling retains:
 
-Evaluation is deterministic with respect to the loaded learned policy while SUMO is executed with the specified evaluation seed.
+- training runtime;
+- simulation/evaluation wall time;
+- process-tree RAM;
+- replay/rollout-buffer overhead;
+- total saved model size;
+- mean joint decision latency;
+- 95th-percentile joint decision latency.
 
 ---
 
-## Run All Five Evaluation Seeds
+## Validation
 
-Once DQN and PPO models for a grid/scenario exist:
+The final V2 environment was regression-tested before the learned models were retrained.
 
-```bash
-python run_grid_evaluations.py \
-  --grid 3x3 \
-  --scenario medium
-```
+The validation checks included:
 
-This executes:
+- Action `0` genuinely holds the active green;
+- Action `1` obeys the minimum-green constraint;
+- yellow transition duration is exactly 3 seconds;
+- reset returns signals to the expected state;
+- route and network structures are internally consistent;
+- final result inputs are checksum-verified.
 
-```text
-5 Fixed-Time runs
-+ 5 DQN runs
-+ 5 PPO runs
-= 15 evaluation runs
-```
-
-using seeds:
-
-```text
-11 12 13 14 15
-```
-
----
-
-## Validate a Grid
-
-To verify that all expected output files exist and cross-check the generated CSV summaries against the raw SUMO `tripinfo` files:
-
-```bash
-python validate_and_summarize_grid.py \
-  --grid 3x3 \
-  --scenario medium
-```
-
-The script also prints descriptive statistics and paired t-tests against Fixed-Time.
-
----
-
-## Analyse the Primary 2×2 Experiment
-
-```bash
-python analyze_results.py
-```
-
-Outputs are written to:
-
-```text
-results/grid2x2/analysis/
-```
-
-including:
-
-```text
-descriptive_stats.csv
-significance_tests.csv
-plot_avg_travel_time.png
-plot_avg_waiting_time.png
-plot_completed_trips.png
-```
-
----
-
-## Reproduce the Scalability Analysis
-
-After the required medium-demand results are available for all four network sizes:
-
-```bash
-python analyze_scalability.py
-```
-
-Outputs are written to:
-
-```text
-results/scalability_analysis/
-```
-
-including:
-
-```text
-master_results.csv
-scalability_summary.csv
-scalability_avg_travel_time.png
-scalability_avg_waiting_time.png
-scalability_completion_rate_pct.png
-scalability_improvement.png
-```
-
----
-
-## Generated Output Files
-
-For each evaluation condition, the project stores three types of output.
-
-### Step-level traffic log
-
-```text
-dqn_medium_seed11_steps.csv
-```
-
-Contains intersection-level observations such as:
-
-* simulation time
-* intersection
-* queue length
-* waiting time
-* vehicle count
-
-### SUMO trip output
-
-```text
-dqn_medium_seed11_tripinfo.xml
-```
-
-Contains vehicle-level SUMO trip information.
-
-### Run summary
-
-```text
-dqn_medium_seed11_summary.csv
-```
-
-Contains:
-
-* controller
-* grid
-* scenario
-* seed
-* completed trips
-* average travel time
-* average waiting time
-* average time loss
-
-This separation allows headline results to be traced back to raw simulation outputs.
-
----
-
-## Reproducibility
-
-The repository retains the experimental artefacts required to audit the reported results:
-
-* SUMO `.net.xml` network files
-* generated demand/route files
-* independent DQN models
-* independent PPO models
-* training logs
-* evaluation step logs
-* SUMO `tripinfo.xml` files
-* per-run summaries
-* aggregated statistical tables
-* analysis scripts
-* generated figures
-
-The thesis experiment snapshot corresponds to Git history containing the completed **2×2–5×5 scalability study**.
-
-Matched evaluation seeds are:
-
-```text
-11, 12, 13, 14, 15
-```
-
-The original training seed used by the supplied training scripts defaults to:
-
-```text
-1
-```
+No final results are based on the obsolete learned models trained before the action-semantics correction.
 
 ---
 
 ## Research Limitations
 
-The results should be interpreted within the scope of the experiment.
+The final conclusions are intentionally bounded.
 
-### Synthetic Networks
+### Synthetic networks
 
-All experiments use synthetic SUMO grids rather than a calibrated real-city road network.
+The experiments use synthetic regular SUMO grids rather than calibrated real-city networks.
 
-### Scalability Range
+### Network heterogeneity
 
-The largest tested network contains **25 signalised intersections**.
+Larger grids do not reproduce the full geometric, traffic, sensing, and operational heterogeneity of real urban networks.
 
-The project therefore demonstrates scalability within a small-to-moderate synthetic range, not city-wide deployment.
+### Scalability range
 
-### Demand at Scale
+The largest tested network contains **25 controlled intersections**.
 
-The 3×3, 4×4 and 5×5 scalability experiment is evaluated only under **calibrated medium demand**.
+The study therefore demonstrates only tested-range scalability, not city-scale deployment.
 
-### Five Evaluation Seeds
+### Demand at scale
 
-Five matched seeds provide repeated evaluation but remain a relatively small statistical sample.
+The 3×3, 4×4, and 5×5 scalability experiments are evaluated under calibrated medium demand only.
 
-### Independent Learning
+Low, high, and dynamic demand are not crossed with every larger grid size.
 
-Agents do not share parameters, a central critic, or explicit messages. Other agents' simultaneously changing policies therefore create a non-stationary learning environment.
+### Training variability
 
-### Computational Scalability
+Each learned configuration uses one training seed.
 
-Training and evaluation runtime were not systematically benchmarked across network sizes.
+The study therefore does not quantify variability across multiple neural-network initialisations.
 
-The project therefore makes claims about **architectural and behavioural scalability**, not computational scalability.
+### Evaluation sample size
 
-### Simulation-to-Real Gap
+Five matched evaluation seeds provide repeated observations but remain a small inferential sample.
 
-Real road networks introduce:
+### Independent learning
 
-* sensor noise
-* incidents
-* pedestrians
-* public transport
-* emergency vehicles
-* heterogeneous drivers
-* communication delays
-* controller hardware constraints
+Agents do not use:
 
-These factors are outside the present simulation study.
+- parameter sharing;
+- a centralised critic; or
+- explicit inter-agent messaging.
 
----
+This simplicity supports architectural scalability but may limit coordination as the network grows.
 
-## Important Interpretation
+### CPU/GPU utilisation
 
-The project does **not** claim that reinforcement learning always outperforms fixed-time control.
+CPU/GPU utilisation percentages were not instrumented during the final runs and are not reconstructed retrospectively.
 
-One of the central empirical findings is that MARL performs strongly when signal timing has meaningful capacity to influence traffic flow, but the advantage can disappear under severe saturation.
+### Simulation-to-real gap
 
-The high-demand failure case is intentionally retained as part of the research evidence.
+Real deployments would additionally involve:
 
----
+- noisy detectors;
+- incidents;
+- pedestrians;
+- public transport;
+- emergency vehicles;
+- heterogeneous driver behaviour;
+- communication delays;
+- controller hardware;
+- redundancy and monitoring;
+- safety certification; and
+- field validation.
 
-## Repository
-
-GitHub:
-
-**[Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-](https://github.com/Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-)**
+The project does not claim deployment readiness.
 
 ---
 
@@ -897,9 +1013,11 @@ GitHub:
 
 This repository accompanies the Master's thesis:
 
-**Venushambhu Hullukatte Nataraju.**
-*Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control in Urban Environments.*
+**Venushambhu Hullukatte Nataraju.**  
+*Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control in Urban Environments.*  
 M.Sc. Data Science, University of Europe for Applied Sciences, Potsdam, 2026.
+
+The repository also contains a concise IEEE-style paper derived from the final experiment.
 
 ---
 
@@ -909,14 +1027,22 @@ If you use this project in academic work, please cite:
 
 ```bibtex
 @mastersthesis{nataraju2026scalablemarl,
-  author = {Venushambhu Hullukatte Nataraju},
-  title  = {Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control in Urban Environments},
-  school = {University of Europe for Applied Sciences},
-  year   = {2026},
+  author  = {Venushambhu Hullukatte Nataraju},
+  title   = {Scalable Multi-Agent Reinforcement Learning for Adaptive Traffic Signal Control in Urban Environments},
+  school  = {University of Europe for Applied Sciences},
+  year    = {2026},
   address = {Potsdam, Germany},
-  url = {https://github.com/Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-}
+  url     = {https://github.com/Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-}
 }
 ```
+
+---
+
+## Repository
+
+GitHub:
+
+**[Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-](https://github.com/Venushambhu/Scalable-MARL-for-adaptive-traffic-signal-control-)**
 
 ---
 
@@ -930,8 +1056,8 @@ Unless a licence is added, reuse and redistribution should not be assumed to be 
 
 ## Author
 
-**Venushambhu Hullukatte Nataraju**
-M.Sc. Data Science
-University of Europe for Applied Sciences
+**Venushambhu Hullukatte Nataraju**  
+M.Sc. Data Science  
+University of Europe for Applied Sciences  
 
 GitHub: [@Venushambhu](https://github.com/Venushambhu)
